@@ -3,12 +3,24 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface LongTailKeyword {
+  keyword: string;
+  searchIntent: 'informational' | 'navigational' | 'commercial';
+  monthlySearches: string; // descriptive range e.g. "1.000–5.000/Monat"
+}
+
 export interface DeficiencyData {
   slug: string;
   name: string;
   subTitle: string;
   metaTitle: string;
   metaDescription: string;
+  // SEO: Primary Long-Tail H1 (the actual targeted search query, not just the name)
+  seoH1: string;
+  // Cluster of long-tail keywords this page is optimized for
+  longTailKeywords: LongTailKeyword[];
+  // FAQ questions written as exact search queries (= voice search & People Also Ask)
+  faqLongTail?: FaqItem[];
   category: 'Spurenelement' | 'Vitamin' | 'Mineralstoff';
   dailyRequirement: string;
   dailyRequirementNote: string;

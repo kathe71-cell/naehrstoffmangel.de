@@ -112,7 +112,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-          {data.name} – Symptome, Ursachen und was du tun kannst
+          {data.seoH1 || `${data.name} – Symptome, Ursachen und was du tun kannst`}
         </h1>
 
         <p className="text-lg text-emerald-800 font-medium">
@@ -387,6 +387,50 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
           })}
         </div>
       </section>
+
+      {/* Long-Tail FAQ: Search-Intent-optimierte Zusatzfragen */}
+      {data.faqLongTail && data.faqLongTail.length > 0 && (
+        <section aria-labelledby="faq-longtail-heading" className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 sm:p-8">
+          <h2 id="faq-longtail-heading" className="text-xl font-bold text-slate-900 tracking-tight mb-2 flex items-center gap-2">
+            <Activity className="w-5 h-5 text-emerald-700" />
+            Detailfragen – häufig gesucht
+          </h2>
+          <p className="text-xs text-slate-500 mb-6">Antworten auf konkrete Suchanfragen, die Betroffene am häufigsten stellen</p>
+          <div className="space-y-5">
+            {data.faqLongTail.map((f, i) => (
+              <div key={i} className="bg-white rounded-xl border border-emerald-100 p-5 shadow-xs">
+                <h3 className="font-bold text-slate-900 text-base mb-2 leading-snug">{f.question}</h3>
+                <p className="text-sm text-slate-700 leading-relaxed">{f.answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Keyword-Cluster: Semantische Signale für Googlebot */}
+      {data.longTailKeywords && data.longTailKeywords.length > 0 && (
+        <section aria-label="Verwandte Suchbegriffe" className="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Häufig gesuchte Begriffe zu {data.name}</h3>
+          <div className="flex flex-wrap gap-2">
+            {data.longTailKeywords.map((kw, i) => (
+              <span
+                key={i}
+                className={`text-xs px-3 py-1.5 rounded-full font-medium border ${
+                  kw.searchIntent === 'commercial'
+                    ? 'bg-amber-50 text-amber-900 border-amber-200'
+                    : 'bg-white text-slate-700 border-slate-200'
+                }`}
+                title={`Suchvolumen: ${kw.monthlySearches}`}
+              >
+                {kw.keyword}
+              </span>
+            ))}
+          </div>
+          <p className="text-[11px] text-slate-400 mt-3">
+            Goldene Labels = Kaufabsicht-Suchen · Weiße Labels = Informationssuchen
+          </p>
+        </section>
+      )}
 
       {/* Zitations-Box (APA-Format) */}
       <section className="bg-slate-50 border border-slate-200 rounded-xl p-5 text-xs text-slate-600">

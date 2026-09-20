@@ -5,8 +5,32 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'eisenmangel',
     name: 'Eisenmangel',
     subTitle: 'Häufigster Nährstoffmangel weltweit – besonders Frauen & Schwangere betroffen',
-    metaTitle: 'Eisenmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Eisenmangel erkennen: Symptome wie chronische Erschöpfung, Blässe und Haarausfall. Ferritin-Laborwerte, DGE-Bedarf und beste Eisenquellen.',
+    metaTitle: 'Eisenmangel Symptome Frau: Müdigkeit, Haarausfall & Ferritin | nährstoffmangel.de',
+    metaDescription: 'Eisenmangel Symptome bei Frauen: Warum Ferritin unter 50 µg/l trotz "normalem Blutbild" Erschöpfung und Haarausfall verursacht – mit Laborwert-Erklärung und Ernährungstipps.',
+    seoH1: 'Eisenmangel Symptome bei Frauen: Müdigkeit, Haarausfall & was Ferritin wirklich aussagt',
+    longTailKeywords: [
+      { keyword: 'Eisenmangel Symptome Frau', searchIntent: 'informational', monthlySearches: '5.000–12.000/Monat' },
+      { keyword: 'Eisenmangel trotz normalem Blutbild', searchIntent: 'informational', monthlySearches: '1.000–3.000/Monat' },
+      { keyword: 'Ferritin Normalwert Frau', searchIntent: 'informational', monthlySearches: '3.000–8.000/Monat' },
+      { keyword: 'Eisenmangel ohne Anämie', searchIntent: 'informational', monthlySearches: '1.000–2.500/Monat' },
+      { keyword: 'Eisenmangel Haarausfall', searchIntent: 'informational', monthlySearches: '4.000–9.000/Monat' },
+      { keyword: 'Eisenmangel Test Blut', searchIntent: 'commercial', monthlySearches: '1.500–4.000/Monat' },
+      { keyword: 'Eisenbisglycinat Dosierung', searchIntent: 'commercial', monthlySearches: '800–2.000/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Kann ich Eisenmangel haben, obwohl mein "Blutbild normal" war?',
+        answer: 'Ja – das ist der häufigste Irrtum. Das "große Blutbild" beim Hausarzt misst nur Hämoglobin und Blutzellanzahl, nicht Ferritin (Speichereisen). Hämoglobin fällt erst ganz am Ende ab, wenn die Eisenspeicher bereits seit Monaten leer sind. Ein Ferritin unter 50 µg/l bedeutet latenten Eisenmangel mit realen Symptomen – auch wenn das Blutbild "unauffällig" ist.'
+      },
+      {
+        question: 'Was ist der ideale Ferritin-Wert für Frauen?',
+        answer: 'Labore geben als "Normalbereich" häufig 7–140 µg/l an – dieser Bereich ist medizinisch irreführend weit. Funktionelle Energiemedizin und aktuelle Hämatologie empfehlen für Frauen im gebärfähigen Alter Ferritin-Werte von mindestens 50 µg/l, idealerweise 70–100 µg/l, damit Haare, Mitochondrien und Kognition optimal versorgt sind.'
+      },
+      {
+        question: 'Wie lange dauert es, bis Eisenmangel-Symptome verschwinden?',
+        answer: 'Mit konsequenter oraler Supplementierung (z. B. Eisenbisglycinat 20–25 mg täglich nüchtern) verbessern sich Energielevel und Herzrasen meist nach 4–6 Wochen. Haarausfall normalisiert sich erst nach 3–5 Monaten, da Haarwachstumszyklen lang sind. Ferritin auf 70+ µg/l aufzufüllen dauert in der Regel 3 bis 6 Monate.'
+      }
+    ],
     category: 'Spurenelement',
     dailyRequirement: '10–15 mg (Frauen bis 15 mg, Schwangere bis 30 mg)',
     dailyRequirementNote: 'Laut DGE-Referenzwert. Männer benötigen ca. 10 mg/Tag.',
@@ -128,8 +152,32 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'vitamin-d-mangel',
     name: 'Vitamin-D-Mangel',
     subTitle: 'Das Sonnenhormon – Deutschland-spezifisch im Winter weit verbreitet',
-    metaTitle: 'Vitamin-D-Mangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Vitamin-D-Mangel: Über 50% der Deutschen weisen im Winter suboptimale 25(OH)D-Werte auf. Symptome, Knochen- und Immunfunktion sowie richtige Dosierung.',
+    metaTitle: 'Vitamin D Mangel Symptome & Werte: Was 25(OH)D unter 50 nmol/l bedeutet | nährstoffmangel.de',
+    metaDescription: 'Vitamin D Mangel Symptome im Winter: Müdigkeit, Immunschwäche, Knochenschmerzen. Was Ihr 25(OH)D-Wert bedeutet, ab wann Sie supplementieren sollten & welche Dosierung sinnvoll ist.',
+    seoH1: 'Vitamin D Mangel Symptome: Was Ihr 25(OH)D-Wert wirklich bedeutet (und wann Sie supplementieren sollten)',
+    longTailKeywords: [
+      { keyword: 'Vitamin D Mangel Symptome', searchIntent: 'informational', monthlySearches: '12.000–30.000/Monat' },
+      { keyword: 'Vitamin D Mangel im Winter', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
+      { keyword: 'Vitamin D Mangel Test Blut', searchIntent: 'commercial', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: '25 OH Vitamin D Normalwert', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
+      { keyword: 'Vitamin D Dosierung Erwachsene', searchIntent: 'informational', monthlySearches: '4.000–9.000/Monat' },
+      { keyword: 'Vitamin D Mangel Müdigkeit', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Vitamin D Mangel Depression', searchIntent: 'informational', monthlySearches: '1.500–4.000/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Was sind typische Vitamin D Mangel Symptome im Winter?',
+        answer: 'Im Winter – besonders von Oktober bis März – kann die Haut in Deutschland durch den flachen Sonnenwinkel kaum Vitamin D synthetisieren. Typische Symptome eines Vitamin D Mangels sind dann: anhaltende Müdigkeit und Erschöpfung, erhöhte Infektanfälligkeit und schwächere Immunabwehr, dumpfe Knochen- oder Muskelschmerzen (besonders Rücken, Knie), gedrückte Stimmung bis hin zu saisonal affektiven Verstimmungen sowie Konzentrationsprobleme.'
+      },
+      {
+        question: 'Was bedeutet ein 25(OH)D-Wert unter 50 nmol/l?',
+        answer: 'Der 25-Hydroxyvitamin-D3-Wert (kurz: 25(OH)D oder Calcidiol) ist der zuverlässigste Marker für Ihren Vitamin-D-Status. Werte unter 50 nmol/l (= 20 ng/ml) gelten laut DGE als Mangel. Funktionelle Medizin und Endokrinologie empfehlen Werte zwischen 75 und 125 nmol/l als optimal. Unter 30 nmol/l (< 12 ng/ml) besteht ein schwerer Mangel mit Knochenrisiko.'
+      },
+      {
+        question: 'Welche Vitamin D Dosierung brauche ich täglich?',
+        answer: 'Die DGE empfiehlt 800 I.E. (20 µg) täglich als Basisversorgung ohne Sonne. Bei einem gemessenen Mangel (< 50 nmol/l) empfehlen die meisten Endokrinologen 2.000–4.000 I.E. täglich für 3 Monate, dann Kontrollmessung. Vitamin D sollte idealerweise morgens mit einer fetthaltigen Mahlzeit eingenommen werden und oft mit Vitamin K2 kombiniert werden, um die Calciumeinlagerung in die Knochen (statt in Arterien) zu lenken.'
+      }
+    ],
     category: 'Vitamin',
     dailyRequirement: '20 µg (800 I.E.) bei fehlender Eigensynthese',
     dailyRequirementNote: 'DGE-Schätzwert bei fehlender Sonnenexposition. Therapeuten empfehlen oft 1.000–2.000 I.E.',
@@ -237,8 +285,27 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'magnesiummangel',
     name: 'Magnesiummangel',
     subTitle: 'Der Zündfunke für Muskeln, Nervensystem & zelluläre Energie',
-    metaTitle: 'Magnesiummangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Magnesiummangel erkennen: Wadenkrämpfe, Lidzucken, innere Unruhe und Schlafprobleme. Bioverfügbarkeit von Magnesiumcitrat vs. Bisglycinat.',
+    metaTitle: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlaf | nährstoffmangel.de',
+    metaDescription: 'Magnesiummangel Symptome: Wadenkrämpfe nachts, Lidzucken, innere Unruhe und Einschlafprobleme erkennen. Welche Magnesiumform (Bisglycinat vs. Citrat) am besten aufgenommen wird.',
+    seoH1: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlafprobleme – und wie Magnesiumform entscheidet',
+    longTailKeywords: [
+      { keyword: 'Magnesiummangel Symptome Wadenkrämpfe', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
+      { keyword: 'Magnesium Bisglycinat vs Citrat', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Magnesium Dosierung Schlaf', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
+      { keyword: 'Magnesiummangel Lidzucken', searchIntent: 'informational', monthlySearches: '1.500–4.000/Monat' },
+      { keyword: 'Magnesiummangel Test', searchIntent: 'commercial', monthlySearches: '1.000–2.500/Monat' },
+      { keyword: 'Magnesiummangel Herzrasen', searchIntent: 'informational', monthlySearches: '1.200–3.000/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Warum bekomme ich nachts Wadenkrämpfe – ist das Magnesiummangel?',
+        answer: 'Nächtliche Wadenkrämpfe sind eines der bekanntesten Zeichen eines funktionellen Magnesiummangels. Magnesium ist für die Muskelentspannung (Calcium-Antagonist) zuständig: Fehlt es, bleibt Calcium in der Muskelzelle und löst Dauerkontraktionen aus. Besonders häufig sind Krämpfe in der zweiten Nachthälfte, da Nierenfiltration und Stresshormone dann einen Magnesium-Tief erzeugen. Wichtig: Im Standard-Blutbild (Serum-Magnesium) wird nur ~1% des Körper-Magnesiums erfasst – die Muskel-Intrazellulärmessung ist aussagekräftiger.'
+      },
+      {
+        question: 'Magnesium Bisglycinat oder Citrat – was ist besser für den Schlaf?',
+        answer: 'Magnesiumbisglycinat hat im Vergleich die höchste Bioverfügbarkeit (bis 40%) und gilt als magenfreundlichste Form. Die Glycin-Bindung hat zusätzlich eine leicht dämpfende Wirkung auf das ZNS, was den Einsatz speziell vor dem Schlafengehen sinnvoll macht. Magnesiumcitrat ist ebenfalls gut bioverfügbar (~30%) und oft günstiger, wirkt aber leicht abführend bei höheren Dosen. Magnesiumoxid (das günstigste Supplement) hat nur ~4% Bioverfügbarkeit – kaum wirksam.'
+      }
+    ],
     category: 'Mineralstoff',
     dailyRequirement: '300–350 mg (Männer 350 mg, Frauen 300 mg)',
     dailyRequirementNote: 'DGE-Referenzwert. Sportler und Gestresste haben höheren Bedarf.',
@@ -348,8 +415,27 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'vitamin-b12-mangel',
     name: 'Vitamin-B12-Mangel',
     subTitle: 'Lebenswichtig für Nervensystem & Zellteilung – Pflichtthema für Veganer',
-    metaTitle: 'Vitamin-B12-Mangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Vitamin-B12-Mangel: Symptome wie Taubheitsgefühle, Brain Fog und Blutarmut. Diagnostik mit Holo-TC, Ursachen bei Veganern und Resorption via Intrinsic Factor.',
+    metaTitle: 'Vitamin B12 Mangel Symptome vegan: Taubheit, Brain Fog & Holotranscobalamin | nährstoffmangel.de',
+    metaDescription: 'Vitamin B12 Mangel Symptome: Warum Veganer und ältere Menschen besonders gefährdet sind, was Holotranscobalamin (Holo-TC) vs. Gesamt-B12 bedeutet & welche Supplementform wirklich ins Blut geht.',
+    seoH1: 'Vitamin B12 Mangel Symptome: Taubheit, Brain Fog & warum das "normale" Blutbild täuscht (besonders bei Veganern)',
+    longTailKeywords: [
+      { keyword: 'Vitamin B12 Mangel Symptome vegan', searchIntent: 'informational', monthlySearches: '4.000–9.000/Monat' },
+      { keyword: 'Holotranscobalamin Normalwert', searchIntent: 'informational', monthlySearches: '1.500–3.500/Monat' },
+      { keyword: 'Vitamin B12 Mangel Taubheitsgefühl', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Methylcobalamin vs Cyanocobalamin', searchIntent: 'informational', monthlySearches: '1.500–4.000/Monat' },
+      { keyword: 'Vitamin B12 Mangel Test', searchIntent: 'commercial', monthlySearches: '2.000–4.500/Monat' },
+      { keyword: 'Vitamin B12 Mangel Nervenschäden', searchIntent: 'informational', monthlySearches: '1.000–2.500/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Warum zeigt der Bluttest "normales B12", obwohl ich Symptome habe?',
+        answer: 'Standard-B12-Bluttests messen das Gesamt-Cobalamin im Serum – dazu zählen auch inaktive Transportformen, die biologisch wertlos sind. Holotranscobalamin (Holo-TC oder "aktives B12") ist der einzige Marker, der anzeigt, ob B12 tatsächlich in die Zellen gelangt. Holo-TC unter 35 pmol/l gilt als Mangel, zwischen 35–70 pmol/l als latenter Mangel – auch wenn Gesamt-B12 "normal" erscheint. Veganer, Ältere >60 Jahre und Menschen mit Metformin- oder Pantoprazol-Dauertherapie haben erhöhtes Risiko.'
+      },
+      {
+        question: 'Methylcobalamin oder Cyanocobalamin – was ist besser für Veganer?',
+        answer: 'Methylcobalamin ist die körpereigene, biologisch aktive Form, die ohne Umwandlung direkt genutzt werden kann. Cyanocobalamin muss erst zu Methylcobalamin umgewandelt werden und enthält eine geringe Menge Cyanid (toxikologisch unbedenklich bei normaler Dosierung). Für Veganer ist Methylcobalamin unter der Zunge (sublingual, 1.000 µg täglich) die empfohlene Form, da es auch bei schwacher Intrinsic-Factor-Produktion noch ausreichend resorbiert wird. Bei schwerem Mangel: ärztliche B12-Injektion (Hydroxocobalamin).'
+      }
+    ],
     category: 'Vitamin',
     dailyRequirement: '4,0 µg (Schwangere 4,5 µg, Stillende 5,5 µg)',
     dailyRequirementNote: 'Aktualisierter DGE-Referenzwert (früher 3,0 µg).',
@@ -458,8 +544,27 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'zinkmangel',
     name: 'Zinkmangel',
     subTitle: 'Schlüsselelement für Abwehrkräfte, Wundheilung, Haut & Hormone',
-    metaTitle: 'Zinkmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Zinkmangel erkennen: Anfälligkeit für Infekte, Wundheilungsstörungen, brüchige Nägel und Haarausfall. Phytinsäure-Hemmung und beste organische Zinkformen.',
+    metaTitle: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & Testosteron | nährstoffmangel.de',
+    metaDescription: 'Zinkmangel Symptome: Warum häufige Erkältungen, Haarausfall und schlechte Wundheilung auf Zinkmangel hindeuten. Phytinsäure-Problem bei Veganern & beste Zinkform im Vergleich.',
+    seoH1: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & warum Veganer doppelt so viel Zink brauchen',
+    longTailKeywords: [
+      { keyword: 'Zinkmangel Symptome Haarausfall', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
+      { keyword: 'Zinkmangel Immunsystem Infekte', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Zink Bisglycinat Dosierung', searchIntent: 'commercial', monthlySearches: '1.500–3.500/Monat' },
+      { keyword: 'Phytinsäure Zink Aufnahme vegan', searchIntent: 'informational', monthlySearches: '800–2.000/Monat' },
+      { keyword: 'Zink Testosteron Mann', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
+      { keyword: 'Zinkmangel Test Blut', searchIntent: 'commercial', monthlySearches: '1.000–2.500/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Warum haben Veganer häufiger Zinkmangel als Fleischesser?',
+        answer: 'Pflanzliche Zinkquellen enthalten Phytinsäure (Phytate), die Zink im Darm bindet und dessen Aufnahme um bis zu 50% hemmt. Fleisch enthält kein Phytat und liefert Zink in hoch bioverfügbarer Form. Die DGE empfiehlt Veganern daher eine um 50% höhere Zinkzufuhr (bis 16 mg/Tag statt 10 mg). Einweichen und Keimen von Hülsenfrüchten, Saaten und Nüssen reduziert den Phytatgehalt erheblich. Sauerteiggärung von Getreide erhöht die Zink-Bioverfügbarkeit spürbar.'
+      },
+      {
+        question: 'Kann Zinkmangel wirklich Haarausfall verursachen?',
+        answer: 'Ja – Zink ist essenziell für die Keratinozyten-Proliferation und den Aufbau von Haarprotein (Keratin). Zink hemmt außerdem das Enzym 5-alpha-Reduktase, das Testosteron in das haarschädigende DHT umwandelt. Niedrige Zinkwerte (< 70 µg/dl im Serum) korrelieren klinisch mit diffusem Haarausfall, langsamer Haarwachstumsphase und brüchigem Haar. Wichtig: Erst Zink spiegeln lassen, denn zu viel Zink hemmt die Kupferaufnahme und verursacht sekundäre Mängel.'
+      }
+    ],
     category: 'Spurenelement',
     dailyRequirement: '7–16 mg (abhängig von der Phytatzufuhr)',
     dailyRequirementNote: 'DGE stuft den Bedarf nach Phytatgehalt der Nahrung ein (niedrig/mittel/hoch).',
@@ -568,8 +673,27 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'folsaeuremangel',
     name: 'Folsäuremangel',
     subTitle: 'Unverzichtbar für Zellteilung, DNS-Bildung & gesunde Schwangerschaft',
-    metaTitle: 'Folsäuremangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Folsäuremangel: Ursachen, Symptome und warum Folat bei Kinderwunsch und Frühschwangerschaft entscheidend ist. DGE-Bedarf, Laborwerte und Lebensmittel.',
+    metaTitle: 'Folsäure Schwangerschaft: Wann anfangen & Folat vs. Folsäure erklärt | nährstoffmangel.de',
+    metaDescription: 'Folsäure in der Schwangerschaft: Wann anfangen, welche Dosierung und warum Methylfolat (Folat) für MTHFR-Mutationsträger besser ist als synthetische Folsäure. Laborwerte & Symptome.',
+    seoH1: 'Folsäure in der Schwangerschaft: Wann anfangen, Dosierung & der Unterschied zu Methylfolat',
+    longTailKeywords: [
+      { keyword: 'Folsäure Schwangerschaft wann anfangen', searchIntent: 'informational', monthlySearches: '8.000–18.000/Monat' },
+      { keyword: 'Folat vs Folsäure Unterschied', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
+      { keyword: 'Methylfolat MTHFR Mutation', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Folsäuremangel Symptome Erschöpfung', searchIntent: 'informational', monthlySearches: '1.500–3.500/Monat' },
+      { keyword: 'Folsäure Kinderwunsch Dosierung', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
+      { keyword: 'Folat Bluttest Normalwert', searchIntent: 'informational', monthlySearches: '1.000–2.500/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Wann soll ich mit der Einnahme von Folsäure beginnen, wenn ich schwanger werden möchte?',
+        answer: 'Die Empfehlung von DGE und BfR ist eindeutig: Mindestens 4 Wochen vor der geplanten Empfängnis mit 400 µg Folsäure täglich beginnen und die Einnahme bis zum Ende des ersten Trimesters (12. SSW) fortsetzen. Der Neuralrohrverschluss des Embryos passiert bereits zwischen dem 22. und 28. Tag nach Befruchtung – zu einem Zeitpunkt, an dem viele Frauen noch nicht wissen, dass sie schwanger sind. Frühzeitige Supplementierung ist daher entscheidend für die Prävention von Neuralrohrdefekten (Spina bifida).'
+      },
+      {
+        question: 'Was ist der Unterschied zwischen Folsäure und Folat (Methylfolat)?',
+        answer: 'Folsäure ist die synthetische, oxidierte Form, die im Körper in mehreren Schritten zu aktiver 5-Methyltetrahydrofolsäure (5-MTHF) umgewandelt werden muss. Ca. 10–15% der Bevölkerung tragen eine MTHFR-Genmutation (C677T oder A1298C), die diese Umwandlung reduziert. Diese Personen profitieren von direkt aktivem Methylfolat (5-MTHF) als Supplement, da es den Umwandlungsschritt überspringt. Natürliche Folatquellen in Lebensmitteln (Hülsenfrüchte, Blattgemüse, Hefe) enthalten Folat in halbaktiver Form mit mittlerer Bioverfügbarkeit.'
+      }
+    ],
     category: 'Vitamin',
     dailyRequirement: '300 µg (Schwangere 550 µg, Frauen mit Kinderwunsch 400 µg zusätzlich)',
     dailyRequirementNote: 'DGE-Empfehlung für Folat-Äquivalente.',
@@ -677,8 +801,27 @@ export const deficiencies: DeficiencyData[] = [
     slug: 'jodmangel',
     name: 'Jodmangel',
     subTitle: 'Deutschland ist Jodmangel-Gebiet – Schilddrüse & Gehirnentwicklung gefährdet',
-    metaTitle: 'Jodmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    metaDescription: 'Jodmangel in Deutschland: Symptome wie Kropf (Struma), Schilddrüsenunterfunktion, Müdigkeit und Frieren. DGE-Referenzwerte, Jodsalz und Algen.',
+    metaTitle: 'Jodmangel Schilddrüse Symptome: Struma, Hashimoto & warum Deutschland Jodmangel-Gebiet ist | nährstoffmangel.de',
+    metaDescription: 'Jodmangel Symptome: Müdigkeit, Frieren, Gewichtszunahme und Schliddrüsenvergrößerung (Struma). Warum Deutschland Jodmangelgebiet ist und was bei Hashimoto-Thyreoiditis gilt.',
+    seoH1: 'Jodmangel & Schilddrüse: Symptome einer Unterfunktion, Struma & was bei Hashimoto zu beachten ist',
+    longTailKeywords: [
+      { keyword: 'Jodmangel Schilddrüse Symptome', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
+      { keyword: 'Jodmangel Deutschland Verbreitung', searchIntent: 'informational', monthlySearches: '1.000–2.500/Monat' },
+      { keyword: 'Hashimoto Jod schädlich', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
+      { keyword: 'Jodmangel Symptome Müdigkeit', searchIntent: 'informational', monthlySearches: '1.500–4.000/Monat' },
+      { keyword: 'Struma Kropf Jodmangel', searchIntent: 'informational', monthlySearches: '1.200–3.000/Monat' },
+      { keyword: 'Jod Test Urin Normalwert', searchIntent: 'informational', monthlySearches: '800–2.000/Monat' },
+    ],
+    faqLongTail: [
+      {
+        question: 'Sollte ich bei Hashimoto-Thyreoiditis kein Jod supplementieren?',
+        answer: 'Das ist eine wichtige und häufige Frage. Bei Hashimoto-Thyreoiditis (autoimmuner Schilddrüsenentzündung) ist Vorsicht geboten: Hohe Joddosen (> 500 µg/Tag) können theoretisch die autoimmune Entzündungsaktivität verstärken. Die DGE-Empfehlung von 200 µg/Tag über Jodsalz und jodhaltiges Mineralwasser gilt jedoch auch für Menschen mit Hashimoto als sicher. Mega-Dosen über Algenprodukte (bis zu 3.000 µg/Tag möglich) sollten vermieden werden. Vor einer Supplementierung immer erst TSH, fT3, fT4 und TPO-Antikörper bestimmen lassen.'
+      },
+      {
+        question: 'Warum ist Deutschland ein Jodmangel-Gebiet?',
+        answer: 'Der Boden in Deutschland – wie in den meisten mitteleuropäischen Binnenstaaten – ist geologisch arm an Jod, da durch Eiszeit-Gletscherverschiebungen und Auswaschung durch Regenwasser über Jahrtausende das Jod aus dem Boden gespült wurde. Pflanzen, die auf jodarmen Böden wachsen, enthalten entsprechend wenig Jod. Meeresbewohner (Fisch, Meeresfrüchte, Algen) sind die einzigen natürlichen Jodquellen. Die Deutsche Schilddrüsenstudie (Papillon) zeigt, dass 30–40% der Deutschen unzureichend mit Jod versorgt sind.'
+      }
+    ],
     category: 'Spurenelement',
     dailyRequirement: '180–200 µg (Schwangere 230 µg, Stillende 260 µg)',
     dailyRequirementNote: 'DGE-Referenzwert für Jugendliche und Erwachsene.',

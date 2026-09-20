@@ -16,38 +16,38 @@ const routesToPrerender = [
   },
   {
     url: '/eisenmangel',
-    title: 'Eisenmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Eisenmangel erkennen: Symptome wie chronische Erschöpfung, Blässe und Haarausfall. Ferritin-Laborwerte, DGE-Bedarf und beste Eisenquellen.'
+    title: 'Eisenmangel Symptome Frau: Müdigkeit, Haarausfall & Ferritin | nährstoffmangel.de',
+    desc: 'Eisenmangel Symptome bei Frauen: Warum Ferritin unter 50 µg/l trotz "normalem Blutbild" Erschöpfung und Haarausfall verursacht – mit Laborwert-Erklärung und Ernährungstipps.'
   },
   {
     url: '/vitamin-d-mangel',
-    title: 'Vitamin-D-Mangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Vitamin-D-Mangel: Über 50% der Deutschen weisen im Winter suboptimale 25(OH)D-Werte auf. Symptome, Knochen- und Immunfunktion sowie richtige Dosierung.'
+    title: 'Vitamin D Mangel Symptome & Werte: Was 25(OH)D unter 50 nmol/l bedeutet | nährstoffmangel.de',
+    desc: 'Vitamin D Mangel Symptome im Winter: Müdigkeit, Immunschwäche, Knochenschmerzen. Was Ihr 25(OH)D-Wert bedeutet, ab wann Sie supplementieren sollten & welche Dosierung sinnvoll ist.'
   },
   {
     url: '/magnesiummangel',
-    title: 'Magnesiummangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Magnesiummangel erkennen: Wadenkrämpfe, Lidzucken, innere Unruhe und Schlafprobleme. Bioverfügbarkeit von Magnesiumcitrat vs. Bisglycinat.'
+    title: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlaf | nährstoffmangel.de',
+    desc: 'Magnesiummangel Symptome: Wadenkrämpfe nachts, Lidzucken, innere Unruhe und Einschlafprobleme erkennen. Welche Magnesiumform (Bisglycinat vs. Citrat) am besten aufgenommen wird.'
   },
   {
     url: '/vitamin-b12-mangel',
-    title: 'Vitamin-B12-Mangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Vitamin-B12-Mangel: Symptome wie Taubheitsgefühle, Brain Fog und Blutarmut. Diagnostik mit Holo-TC, Ursachen bei Veganern und Resorption via Intrinsic Factor.'
+    title: 'Vitamin B12 Mangel Symptome vegan: Taubheit, Brain Fog & Holotranscobalamin | nährstoffmangel.de',
+    desc: 'Vitamin B12 Mangel Symptome: Warum Veganer und ältere Menschen besonders gefährdet sind, was Holotranscobalamin (Holo-TC) vs. Gesamt-B12 bedeutet & welche Supplementform wirklich ins Blut geht.'
   },
   {
     url: '/zinkmangel',
-    title: 'Zinkmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Zinkmangel erkennen: Anfälligkeit für Infekte, Wundheilungsstörungen, brüchige Nägel und Haarausfall. Phytinsäure-Hemmung und beste organische Zinkformen.'
+    title: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & Testosteron | nährstoffmangel.de',
+    desc: 'Zinkmangel Symptome: Warum häufige Erkältungen, Haarausfall und schlechte Wundheilung auf Zinkmangel hindeuten. Phytinsäure-Problem bei Veganern & beste Zinkform im Vergleich.'
   },
   {
     url: '/folsaeuremangel',
-    title: 'Folsäuremangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Folsäuremangel: Ursachen, Symptome und warum Folat bei Kinderwunsch und Frühschwangerschaft entscheidend ist. DGE-Bedarf, Laborwerte und Lebensmittel.'
+    title: 'Folsäure Schwangerschaft: Wann anfangen & Folat vs. Folsäure erklärt | nährstoffmangel.de',
+    desc: 'Folsäure in der Schwangerschaft: Wann anfangen, welche Dosierung und warum Methylfolat (Folat) für MTHFR-Mutationsträger besser ist als synthetische Folsäure. Laborwerte & Symptome.'
   },
   {
     url: '/jodmangel',
-    title: 'Jodmangel – Symptome, Ursachen & Hilfe | nährstoffmangel.de',
-    desc: 'Jodmangel in Deutschland: Symptome wie Kropf (Struma), Schilddrüsenunterfunktion, Müdigkeit und Frieren. DGE-Referenzwerte, Jodsalz und Algen.'
+    title: 'Jodmangel Schilddrüse Symptome: Struma, Hashimoto & warum Deutschland Jodmangel-Gebiet ist | nährstoffmangel.de',
+    desc: 'Jodmangel Symptome: Müdigkeit, Frieren, Gewichtszunahme und Schilddrüsenvergrößerung (Struma). Warum Deutschland Jodmangelgebiet ist und was bei Hashimoto-Thyreoiditis gilt.'
   },
   {
     url: '/symptome',
