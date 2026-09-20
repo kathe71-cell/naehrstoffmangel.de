@@ -139,15 +139,6 @@ export default function Navbar() {
               <UtensilsCrossed className="w-4 h-4 text-emerald-600" />
               <span>Lebensmittel</span>
             </Link>
-
-            <Link
-              to="/ueber-uns"
-              className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors min-h-[44px] flex items-center ${
-                isActive('/ueber-uns') ? 'text-emerald-700 bg-emerald-50' : 'text-slate-700 hover:text-emerald-700 hover:bg-slate-50'
-              }`}
-            >
-              Über uns
-            </Link>
           </div>
 
           {/* Quick CTA button */}
@@ -237,16 +228,6 @@ export default function Navbar() {
               >
                 <UtensilsCrossed className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>Lebensmittel-Tabelle</span>
-              </Link>
-
-              <Link
-                to="/ueber-uns"
-                onClick={() => setMobileOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm min-h-[48px] ${
-                  isActive('/ueber-uns') ? 'bg-emerald-50 text-emerald-900 font-bold' : 'text-slate-700 hover:bg-slate-50'
-                }`}
-              >
-                <span>Über uns &amp; Redaktionsleitlinien</span>
               </Link>
 
               <div className="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-slate-100 text-xs">
