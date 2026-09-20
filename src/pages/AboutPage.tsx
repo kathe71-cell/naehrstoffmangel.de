@@ -64,7 +64,7 @@ export default function AboutPage() {
               100 % Werbetransparenz
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Unsere redaktionellen Inhalte sind unabhängig. Werbeanzeigen (Google AdSense) sind unmissverständlich als solche gekennzeichnet. Partner- und Affiliate-Links (z. B. zu zertifizierten Diagnostik-Laboren oder Reinsubstanzen) werden stets mit einem Sternchen (*) und Erläuterung ausgewiesen.
+              Unsere redaktionellen Inhalte sind unabhängig und werden nicht von Werbepartnern beeinflusst. Partner- und Affiliate-Links (z. B. zu zertifizierten Diagnostik-Laboren oder Reinsubstanzen) werden stets mit einem Sternchen (*) und Erläuterung ausgewiesen.
             </p>
           </div>
 

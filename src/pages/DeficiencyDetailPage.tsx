@@ -21,7 +21,6 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
 import AffiliateProductCard from '../components/AffiliateProductCard';
-import AdSenseBanner from '../components/AdSenseBanner';
 
 interface DeficiencyDetailPageProps {
   customSlug?: string;
@@ -174,8 +173,6 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </div>
       </section>
 
-      {/* AdSense Unit */}
-      <AdSenseBanner slotId="deficiency-mid-1" />
 
       {/* Häufige Symptome (Strukturierte Liste für Rich Snippets) */}
       <section aria-labelledby="symptoms-heading" className="space-y-4">
@@ -354,8 +351,6 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
       {/* Affiliate Product Recommendations */}
       <AffiliateProductCard nutrient={data.name.replace('mangel', '').replace('-Mangel', '')} />
 
-      {/* AdSense Unit */}
-      <AdSenseBanner slotId="deficiency-mid-2" />
 
       {/* FAQ-Block (3-5 Fragen, Schema.org FAQPage) */}
       <section aria-labelledby="faq-detail-heading" className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">

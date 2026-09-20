@@ -13,7 +13,6 @@ import {
 import { foodsDatabase } from '../data/foods';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
-import AdSenseBanner from '../components/AdSenseBanner';
 
 export default function NutritionPage() {
   const [selectedNutrient, setSelectedNutrient] = useState<string>('Alle');
@@ -192,8 +191,6 @@ export default function NutritionPage() {
         </div>
       </section>
 
-      {/* AdSense Unit */}
-      <AdSenseBanner slotId="nutrition-table-bottom" />
 
       {/* Bioavailability Guide Box */}
       <section className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-4">

@@ -53,28 +53,14 @@ export default function Datenschutz() {
         </div>
 
         <div>
-          <h2 className="text-base font-bold text-slate-900 mb-2">5. Google AdSense</h2>
-          <p>
-            Diese Website bindet Werbeanzeigen von <strong>Google AdSense</strong> ein (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Publisher-ID: <code className="font-mono text-xs bg-slate-100 p-1 rounded">ca-pub-7078147966379221</code>.
-          </p>
-          <p className="mt-2">
-            Google AdSense verwendet Technologien wie Cookies oder Web Beacons, um Anzeigen auf Basis früherer Besuche der Nutzer auf dieser oder anderen Websites auszuspielen. Sie können die Verwendung personalisierter Cookies in den Google-Anzeigeneinstellungen unter{' '}
-            <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-800 underline">
-              https://www.google.com/settings/ads
-            </a>{' '}
-            deaktivieren.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-base font-bold text-slate-900 mb-2">6. Keine externen Google Fonts (Zero-CDN)</h2>
+          <h2 className="text-base font-bold text-slate-900 mb-2">5. Keine externen Google Fonts (Zero-CDN)</h2>
           <p>
             Diese Website verzichtet vollständig auf die Einbindung externer Web-Schriftarten (wie Google Fonts). Es werden ausschließlich lokal auf Ihrem Endgerät bereits installierte System-Schriftarten verwendet. Beim Seitenaufbau werden keine Schriftdateien von Drittservern nachgeladen und keine IP-Adressen zu Schrift-Hostern übertragen.
           </p>
         </div>
 
         <div>
-          <h2 className="text-base font-bold text-slate-900 mb-2">7. Ihre Rechte als betroffene Person</h2>
+          <h2 className="text-base font-bold text-slate-900 mb-2">6. Ihre Rechte als betroffene Person</h2>
           <p>
             Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen können Sie sich jederzeit unter den im Impressum angegebenen Kontaktdaten an uns wenden.
           </p>

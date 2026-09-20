@@ -15,7 +15,6 @@ import {
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
-import AdSenseBanner from '../components/AdSenseBanner';
 
 export default function BloodTestPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -169,8 +168,6 @@ export default function BloodTestPage() {
         </div>
       </section>
 
-      {/* AdSense Unit */}
-      <AdSenseBanner slotId="bloodtest-mid" />
 
       {/* Cost Table: IGeL vs. Home Tests */}
       <section className="space-y-4">

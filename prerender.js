@@ -95,6 +95,8 @@ for (const route of routesToPrerender) {
     const fullUrl = `https://www.nährstoffmangel.de${route.url === '/' ? '/' : route.url}`;
     rendered = rendered.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${fullUrl}" />`);
     rendered = rendered.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${fullUrl}" />`);
+    rendered = rendered.replace(/<link rel="alternate" hreflang="de" href=".*?" \/>/, `<link rel="alternate" hreflang="de" href="${fullUrl}" />`);
+    rendered = rendered.replace(/<link rel="alternate" hreflang="x-default" href=".*?" \/>/, `<link rel="alternate" hreflang="x-default" href="${fullUrl}" />`);
     rendered = rendered.replace(/<meta name="twitter:url" content=".*?" \/>/, `<meta name="twitter:url" content="${fullUrl}" />`);
     rendered = rendered.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${route.title}" />`);
     rendered = rendered.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${route.title}" />`);

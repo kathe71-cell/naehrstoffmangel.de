@@ -19,7 +19,6 @@ import {
   AlertTriangle,
   Info
 } from 'lucide-react';
-import AdSenseBanner from '../components/AdSenseBanner';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
 
@@ -292,8 +291,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* AdSense Unit */}
-        <AdSenseBanner slotId="home-mid-banner" />
 
         {/* Interactive Feature Teaser: Symptom-Navigator & Nutrition */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -16,7 +16,6 @@ import { deficiencies } from '../data/deficiencies';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
-import AdSenseBanner from '../components/AdSenseBanner';
 
 export default function SymptomNavigatorPage() {
   const [selectedSymptoms, setSelectedSymptoms] = useState<string[]>([]);
@@ -278,8 +277,6 @@ export default function SymptomNavigatorPage() {
         )}
       </section>
 
-      {/* AdSense Unit */}
-      <AdSenseBanner slotId="symptom-navigator-bottom" />
 
       {/* Blood Test CTA */}
       <BloodTestCta />

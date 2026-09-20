@@ -16,7 +16,7 @@
 
 /* Print-to-PDF / Clean Data Sheet */
 @media print {
-  header, footer, .no-print, .sticky-bar, button, .adsense-slot, .scroll-to-top {
+  header, footer, .no-print, .sticky-bar, button, .scroll-to-top {
     display: none !important;
   }
   body {
