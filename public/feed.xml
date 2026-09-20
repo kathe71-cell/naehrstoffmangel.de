@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>nährstoffmangel.de - Fachportal für Mikronährstoffe &amp; Vitalstoffe</title>
+    <link>https://www.nährstoffmangel.de/</link>
+    <description>Wissenschaftlich fundierte Leitfäden zu Nährstoffmangel, Symptomen, Ursachen und evidenzbasierter Ernährung.</description>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 20 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <item>
+      <title>Eisenmangel erkennen und beheben: Symptome, Ferritin-Werte &amp; Ernährung</title>
+      <link>https://www.nährstoffmangel.de/eisenmangel</link>
+      <description>Umfassender Ratgeber zu Ferritin-Werten, Ursachen für Eisenmangel bei Frauen und Männern sowie optimale Eisenquellen.</description>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Vitamin-D-Mangel im Winter: Sonnenvitamin, 25(OH)D3 &amp; Dosierung</title>
+      <link>https://www.nährstoffmangel.de/vitamin-d-mangel</link>
+      <description>Warum über 50 % der Menschen in Deutschland im Winter suboptimale Vitamin-D-Spiegel aufweisen und was wirklich hilft.</description>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Magnesiummangel: Stress, Muskelkrämpfe &amp; Bioverfügbarkeit</title>
+      <link>https://www.nährstoffmangel.de/magnesiummangel</link>
+      <description>Organische Magnesiumverbindungen im Vergleich: Magnesiumcitrat vs. Bisglycinat bei Wadenkrämpfen und Anspannung.</description>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 +0200</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+# nährstoffmangel.de
+
+> Wissenschaftlich fundiertes, unabhängiges Fachportal für Mikronährstoffe, Vitamin- und Mineralstoffmängel im deutschsprachigen Raum (D-A-CH).
+
+## Kernfokus
+- Aufklärung über Symptome, Ursachen und Risikogruppen häufiger Mangelzustände
+- Orientierung an Referenzwerten der Deutschen Gesellschaft für Ernährung (DGE) und des Robert Koch-Instituts (RKI)
+- Differenzierung zwischen Vollblut- und Serum-Analysen bei Blutuntersuchungen
+- Evidenzbasierte Empfehlungen zu Lebensmitteln und Nahrungsergänzungsmitteln
+- Wichtiger Hinweis: Rein redaktionelles Informationsportal. Ersetzt keinesfalls eine ärztliche Diagnose oder Therapie.
+
+## Wichtigste Mangelthemen
+- Eisenmangel (/eisenmangel): Häufigster Mangel weltweit, Frauen und Schwangere stark betroffen, Diagnostik via Ferritin & Transferrinsättigung.
+- Vitamin-D-Mangel (/vitamin-d-mangel): Geringe Eigensynthese in Deutschland zwischen Oktober und März (Breitengrad > 51° N), 25(OH)D3-Serumspiegel.
+- Magnesiummangel (/magnesiummangel): Muskelkrämpfe, Stress-Induktion, organische Chelate (Bisglycinat, Citrat) vs. Oxide.
+- Vitamin-B12-Mangel (/vitamin-b12-mangel): Pflanzliche Ernährung (Vegan/Vegetarisch), Resorption via Intrinsic Factor, Diagnostik via Holotranscobalamin (Holo-TC).
+- Zinkmangel (/zinkmangel): Immunsystem, Wundheilung, Phytinsäure als Resorptionshemmer in Getreide und Hülsenfrüchten.
+- Folsäuremangel (/folsaeuremangel): Kritisch für Neuralrohrschluss in der Frühschwangerschaft, Folat vs. synthetische Folsäure.
+- Jodmangel (/jodmangel): Jodmangel-Risikoland Deutschland, Schilddrüsenhormone T3/T4, Kropfbildung, Meeresfisch & Jodsalz.
+
+## Interaktive Tools
+- Symptom-Navigator (/symptome): Live-Zuordnung von Symptomen zu potenziell mangelhaften Mikronährstoffen.
+- Bluttest-Guide (/bluttest): Orientierungshilfe zu Laborkosten, Blutbild-Arten und Selbsttests für Zuhause.
+- Nährstoff-Datenbank (/ernaehrung): Lebensmittel-Tabelle mit Mikronährstoffgehalt pro 100g.
