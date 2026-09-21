@@ -20,7 +20,7 @@ import { deficiencies } from '../data/deficiencies';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
-import AffiliateProductCard from '../components/AffiliateProductCard';
+
 
 interface DeficiencyDetailPageProps {
   customSlug?: string;
@@ -348,8 +348,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </div>
       </section>
 
-      {/* Affiliate Product Recommendations */}
-      <AffiliateProductCard nutrient={data.name.replace('mangel', '').replace('-Mangel', '')} />
+
 
 
       {/* FAQ-Block (3-5 Fragen, Schema.org FAQPage) */}
