@@ -42,13 +42,6 @@ export default function Impressum() {
         </div>
 
         <div>
-          <h2 className="text-base font-bold text-slate-900 mb-2">Umsatzsteuer</h2>
-          <p>
-            Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet und ausgewiesen.
-          </p>
-        </div>
-
-        <div>
           <h2 className="text-base font-bold text-slate-900 mb-2">
             Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
           </h2>

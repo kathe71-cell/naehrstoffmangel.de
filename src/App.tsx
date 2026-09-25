@@ -10,6 +10,7 @@ import SymptomNavigatorPage from './pages/SymptomNavigatorPage';
 import BloodTestPage from './pages/BloodTestPage';
 import NutritionPage from './pages/NutritionPage';
 import AboutPage from './pages/AboutPage';
+import VitaminHubPage from './pages/VitaminHubPage';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 
@@ -66,6 +67,7 @@ export function AppRoutes() {
       <Route path="/zinkmangel" element={<DeficiencyDetailPage customSlug="zinkmangel" />} />
       <Route path="/folsaeuremangel" element={<DeficiencyDetailPage customSlug="folsaeuremangel" />} />
       <Route path="/jodmangel" element={<DeficiencyDetailPage customSlug="jodmangel" />} />
+      <Route path="/vitaminmangel" element={<VitaminHubPage />} />
       <Route path="/symptome" element={<SymptomNavigatorPage />} />
       <Route path="/bluttest" element={<BloodTestPage />} />
       <Route path="/ernaehrung" element={<NutritionPage />} />

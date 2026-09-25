@@ -197,7 +197,10 @@ export default function HomePage() {
                 </h2>
 
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  Ein <strong>Nährstoffmangel</strong> (Hypovitaminose oder Hypomineralämie) beschreibt einen Zustand, bei dem die Zufuhr oder Resorption essenzieller Vitamine, Mineralstoffe oder Spurenelemente unter dem physiologischen Bedarf liegt. Der Organismus kompensiert dies zunächst durch Entleerung seiner Gewebedepots, bevor funktionelle Mangelsymptome oder Anämien auftreten.
+                  Ein <strong>Nährstoffmangel</strong> (Hypovitaminose oder Hypomineralämie) beschreibt einen Zustand, bei dem die Zufuhr oder Resorption essenzieller Vitamine, Mineralstoffe oder Spurenelemente unter dem physiologischen Bedarf liegt. Der Organismus kompensiert dies zunächst durch Entleerung seiner Gewebedepots, bevor funktionelle Mangelsymptome auftreten.
+                </p>
+                <p className="text-xs text-slate-600 leading-relaxed mt-2 pt-2 border-t border-slate-200">
+                  Nährstoffmangel umfasst sowohl <Link to="/vitaminmangel" className="text-emerald-700 font-bold hover:underline">Vitaminmängel</Link> (z. B. Vitamin D, B12, Folsäure) als auch Defizite an Mineralstoffen (z. B. Magnesium) und Spurenelementen (z. B. Eisen, Zink, Jod).
                 </p>
 
                 <div className="mt-4 pt-3 border-t border-slate-200 grid grid-cols-2 gap-2 text-xs">

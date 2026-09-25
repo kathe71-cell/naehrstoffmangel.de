@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   Menu, 
@@ -13,12 +13,21 @@ import {
   Baby, 
   Droplet,
   UtensilsCrossed,
-  FileText
+  FileText,
+  Search
 } from 'lucide-react';
+import SearchModal from './SearchModal';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const handleCustomToggle = () => setSearchOpen(prev => !prev);
+    window.addEventListener('toggle-search-modal', handleCustomToggle);
+    return () => window.removeEventListener('toggle-search-modal', handleCustomToggle);
+  }, []);
   const location = useLocation();
 
   const deficiencies = [
@@ -53,7 +62,7 @@ export default function Navbar() {
                 nährstoff<span className="text-emerald-700">mangel</span>.de
               </span>
               <span className="hidden sm:block text-[11px] text-slate-600 font-medium tracking-wide">
-                Unabhängiges Fachportal für Mikronährstoffe
+                Unabhängiges Informationsportal für Mikronährstoffe
               </span>
             </div>
           </Link>
@@ -105,6 +114,23 @@ export default function Navbar() {
                       </Link>
                     );
                   })}
+                  <div className="pt-1 border-t border-slate-100">
+                    <Link
+                      to="/vitaminmangel"
+                      className={`flex items-start gap-3 p-2.5 rounded-xl text-sm transition-colors ${
+                        isActive('/vitaminmangel') ? 'bg-emerald-50 text-emerald-900 font-bold' : 'hover:bg-slate-50 text-slate-800'
+                      }`}
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      <div className="p-2 rounded-lg bg-amber-100/80 text-amber-800 shrink-0 mt-0.5">
+                        <Sparkles className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="font-bold text-slate-900">Vitaminmangel Hub</div>
+                        <div className="text-xs text-slate-500">Übersicht &amp; Diagnostik aller Vitamine</div>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -141,16 +167,29 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Quick CTA button */}
-          <div className="hidden sm:flex items-center gap-2">
+          {/* Quick Search & CTA buttons */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setSearchOpen(true)}
+              className="px-3.5 py-2 rounded-xl text-slate-700 hover:text-emerald-800 bg-slate-100 hover:bg-emerald-50 text-xs font-bold transition-all min-h-[44px] flex items-center gap-1.5 border border-slate-200"
+              title="Suche öffnen (Strg + K)"
+              aria-label="Suche öffnen"
+            >
+              <Search className="w-4 h-4 text-slate-600" />
+              <span className="hidden md:inline">Suche</span>
+              <kbd className="hidden lg:inline-block bg-white border border-slate-300 text-[10px] font-mono px-1 rounded text-slate-500">⌘K</kbd>
+            </button>
+
             <Link
               to="/symptome"
-              className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl min-h-[44px] flex items-center gap-1.5 shadow-2xs hover:shadow-xs transition-all active:scale-98"
+              className="hidden sm:flex bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl min-h-[44px] items-center gap-1.5 shadow-2xs hover:shadow-xs transition-all active:scale-98"
             >
               <Activity className="w-3.5 h-3.5" />
               <span>Symptome prüfen</span>
             </Link>
           </div>
+
+          <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
 
           {/* Mobile Hamburger Button (>= 48px touch target) */}
           <div className="lg:hidden flex items-center">
@@ -196,6 +235,17 @@ export default function Navbar() {
               <div className="text-xs font-bold uppercase tracking-wider text-slate-600 px-3 py-2">
                 Tools &amp; Ratgeber
               </div>
+
+              <Link
+                to="/vitaminmangel"
+                onClick={() => setMobileOpen(false)}
+                className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm min-h-[48px] ${
+                  isActive('/vitaminmangel') ? 'bg-emerald-50 text-emerald-900 font-bold' : 'text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+                <span>Vitaminmangel Hub</span>
+              </Link>
 
               <Link
                 to="/symptome"

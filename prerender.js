@@ -12,7 +12,7 @@ const routesToPrerender = [
   {
     url: '/',
     title: 'Nährstoffmangel erkennen: Symptome, Ursachen & Tests | nährstoffmangel.de',
-    desc: 'Unabhängiges Fachportal zu Nährstoffmangel: Eisen, Vitamin D, B12, Magnesium, Zink, Folsäure & Jod. Symptom-Navigator, Bluttest-Ratgeber & Ernährungstipps.',
+    desc: 'Unabhängiges Informationsportal zu Nährstoffmangel: Eisen, Vitamin D, B12, Magnesium, Zink, Folsäure & Jod. Symptom-Navigator, Bluttest-Ratgeber & Ernährungstipps.',
     keywords: 'Nährstoffmangel, Vitaminmangel, Mineralstoffmangel, Eisenmangel, Vitamin D Mangel, Vitamin B12, Magnesiummangel, Zinkmangel, Folsäure, Jodmangel, Bluttest, Symptome'
   },
   {
@@ -74,6 +74,12 @@ const routesToPrerender = [
     title: 'Nährstoffreiche Lebensmittel: Die Mikronährstoff-Matrix | nährstoffmangel.de',
     desc: 'Lebensmittel-Tabelle für Eisen, Vitamin D, Magnesium, B12, Zink, Folsäure & Jod mit Gehalt pro 100g und Tipps zur optimalen Bioverfügbarkeit.',
     keywords: 'nährstoffreiche Lebensmittel Tabelle, Eisen Lebensmittel, Vitamin D Lebensmittel, Magnesium Lebensmittel, Bioverfügbarkeit Vitamine, Mikronährstoff Ernährung'
+  },
+  {
+    url: '/vitaminmangel',
+    title: 'Vitaminmangel: Symptome, Ursachen & Tests | nährstoffmangel.de',
+    desc: 'Wann liegt ein Vitaminmangel vor? Ursachen, typische Symptome, relevante Blutwerte & Vitamine im Überblick. Wissenschaftlich fundierte Orientierung.',
+    keywords: 'Vitaminmangel, Vitaminmangel Symptome, Vitaminmangel Test, Vitaminmangel erkennen, welche Vitamine fehlen mir, Vitamin D B12 Folsäure'
   },
   {
     url: '/ueber-uns',

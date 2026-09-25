@@ -87,6 +87,11 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
     }
   };
 
+  const isVitamin = ['vitamin-d-mangel', 'vitamin-b12-mangel', 'folsaeuremangel'].includes(data.slug);
+  const breadcrumbItems = isVitamin
+    ? [{ name: 'Vitaminmangel', url: '/vitaminmangel' }, { name: data.name, url: `/${data.slug}` }]
+    : [{ name: data.name, url: `/${data.slug}` }];
+
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-10">
       
@@ -97,7 +102,18 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
       />
 
       {/* Breadcrumbs Navigation */}
-      <Breadcrumbs items={[{ name: data.name, url: `/${data.slug}` }]} />
+      <Breadcrumbs items={breadcrumbItems} />
+
+      {isVitamin && (
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs sm:text-sm text-emerald-950">
+          <div>
+            <strong>Themen-Hub:</strong> Dieser Leitfaden ist Teil unseres Schwerpunkts <strong>Vitaminmangel</strong>.
+          </div>
+          <Link to="/vitaminmangel" className="font-bold text-emerald-800 hover:text-emerald-950 hover:underline shrink-0">
+            Zum Vitaminmangel-Hub →
+          </Link>
+        </div>
+      )}
 
       {/* Header Section */}
       <header className="space-y-4 border-b border-slate-200 pb-8">

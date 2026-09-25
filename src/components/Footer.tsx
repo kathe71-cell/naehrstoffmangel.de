@@ -23,7 +23,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-md">
-              Unabhängiges deutsches Fachportal für Mikronährstoffe, Vitamine und Spurenelemente. Wir vermitteln wissenschaftlich fundierte Orientierung anhand der aktuellen Referenzwerte der Deutschen Gesellschaft für Ernährung (DGE) und des Robert Koch-Instituts (RKI).
+              Unabhängiges deutsches Informationsportal für Mikronährstoffe, Vitamine und Spurenelemente. Wir vermitteln wissenschaftlich fundierte Orientierung anhand der aktuellen Referenzwerte der Deutschen Gesellschaft für Ernährung (DGE) und des Robert Koch-Instituts (RKI).
             </p>
 
             <div className="p-3 bg-slate-800/60 rounded-xl border border-slate-700/60 text-xs text-slate-300 flex items-start gap-2.5">
