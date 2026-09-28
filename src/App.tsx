@@ -13,9 +13,13 @@ import AboutPage from './pages/AboutPage';
 import VitaminHubPage from './pages/VitaminHubPage';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import { SiteProvider } from '@plattform/core';
+import { siteConfig } from './site.config';
+import { products } from './products';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
+    <SiteProvider config={siteConfig} products={products}>
     <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 font-sans antialiased">
       <Navbar />
       <main className="flex-1">
@@ -24,6 +28,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <ScrollToTop />
       <Footer />
     </div>
+    </SiteProvider>
   );
 }
 

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Breadcrumbs from '../components/Breadcrumbs';
+import { PrivacyAmazonSection } from '@plattform/core';
 
 export default function Datenschutz() {
   return (
@@ -59,8 +60,10 @@ export default function Datenschutz() {
           </p>
         </div>
 
+        <PrivacyAmazonSection number="6." headingClassName="text-base font-bold text-slate-900 mb-2" className="space-y-2" />
+
         <div>
-          <h2 className="text-base font-bold text-slate-900 mb-2">6. Ihre Rechte als betroffene Person</h2>
+          <h2 className="text-base font-bold text-slate-900 mb-2">7. Ihre Rechte als betroffene Person</h2>
           <p>
             Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen können Sie sich jederzeit unter den im Impressum angegebenen Kontaktdaten an uns wenden.
           </p>

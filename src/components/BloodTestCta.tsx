@@ -1,12 +1,18 @@
 import { Activity, ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AffiliateLink, AffiliateDisclosure, useActiveProduct } from '@plattform/core';
 
 interface BloodTestCtaProps {
   nutrientName?: string;
+  /** Produkt-ID aus products.ts; ohne ID → interner Link auf /bluttest, ohne Werbekennzeichnung */
+  productId?: string;
   className?: string;
 }
 
-export default function BloodTestCta({ nutrientName, className = '' }: BloodTestCtaProps) {
+const primaryBtn = 'inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl min-h-[48px] shadow-sm hover:shadow-md transition-all duration-200 active:scale-98 text-sm';
+
+export default function BloodTestCta({ nutrientName, productId, className = '' }: BloodTestCtaProps) {
+  const product = useActiveProduct(productId);
   return (
     <section aria-labelledby="blood-test-cta-title" className={`bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden ${className}`}>
       {/* Background decoration */}
@@ -42,25 +48,31 @@ export default function BloodTestCta({ nutrientName, className = '' }: BloodTest
         </div>
 
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-          <a
-            href="/bluttest"
-            className="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl min-h-[48px] shadow-sm hover:shadow-md transition-all duration-200 active:scale-98 text-sm"
-          >
-            <span>Bluttest online bestellen *</span>
-            <ArrowRight className="w-4 h-4" />
-          </a>
+          {product ? (
+            <AffiliateLink id={product.id} className={primaryBtn}>
+              <span>Bluttest online bestellen *</span>
+              <ArrowRight className="w-4 h-4" />
+            </AffiliateLink>
+          ) : (
+            <Link to="/bluttest" className={primaryBtn}>
+              <span>Kosten &amp; Ablauf im Ratgeber lesen</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          )}
 
-          <Link
-            to="/bluttest"
-            className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl min-h-[48px] border border-white/20 hover:bg-white/10 text-white font-medium text-sm transition-colors"
-          >
-            Kosten &amp; Ablauf im Ratgeber lesen
-          </Link>
+          {product && (
+  
+            <Link
+              to="/bluttest"
+              className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl min-h-[48px] border border-white/20 hover:bg-white/10 text-white font-medium text-sm transition-colors"
+            >
+              Kosten &amp; Ablauf im Ratgeber lesen
+            </Link>
+
+          )}
         </div>
 
-        <p className="text-[11px] text-slate-400 mt-4 leading-normal">
-          * Werbelink / Partnerlink: Bei Bestellung über einen unserer Partner erhalten wir ggf. eine kleine Vermittlungsprovision. Für Sie ändert sich der Preis selbstverständlich nicht.
-        </p>
+        {product && <AffiliateDisclosure className="text-slate-400 mt-4" />}
       </div>
     </section>
   );

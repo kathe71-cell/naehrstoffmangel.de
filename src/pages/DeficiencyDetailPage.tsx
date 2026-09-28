@@ -20,6 +20,8 @@ import { deficiencies } from '../data/deficiencies';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
+import { ProductLinks, AdPageNotice } from '@plattform/core';
+import { supplementTipProducts, bloodTestProduct } from '../placements';
 
 
 interface DeficiencyDetailPageProps {
@@ -144,6 +146,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
             <Calendar className="w-3.5 h-3.5 text-emerald-600" />
             Aktualisiert: September 2026
           </span>
+          {(supplementTipProducts[data.slug] || bloodTestProduct[data.slug]) && <AdPageNotice />}
           <span className="flex items-center gap-1 font-mono text-[11px] bg-slate-100 px-2 py-0.5 rounded">
             Biomarker: {data.testBiomarker}
           </span>
@@ -279,7 +282,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
       </section>
 
       {/* Blood Test CTA Box */}
-      <BloodTestCta nutrientName={data.name} />
+      <BloodTestCta nutrientName={data.name} productId={bloodTestProduct[data.slug]} />
 
       {/* Was hilft? (Ernährung + Nahrungsergänzung) */}
       <section aria-labelledby="treatment-heading" className="space-y-6">
@@ -349,9 +352,14 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
           </h3>
           <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
             {data.treatmentInfo.supplementTips.map((tip, idx) => (
-              <li key={idx} className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span>{tip}</span>
+              <li key={idx} className="flex flex-col">
+                <span className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>{tip}</span>
+                </span>
+                {supplementTipProducts[data.slug]?.[idx] && (
+                  <ProductLinks ids={supplementTipProducts[data.slug][idx]} className="ml-6" />
+                )}
               </li>
             ))}
           </ul>
