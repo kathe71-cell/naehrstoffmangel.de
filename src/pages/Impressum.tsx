@@ -1,4 +1,5 @@
 import Breadcrumbs from '../components/Breadcrumbs';
+import { AmazonPartnerSentence } from '@plattform/core';
 
 export default function Impressum() {
   return (
@@ -79,6 +80,11 @@ export default function Impressum() {
             </a>
             . Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
           </p>
+        </div>
+
+        <div>
+          <h2 className="text-base font-bold text-slate-900 mb-2">Amazon-Partnerprogramm</h2>
+          <AmazonPartnerSentence />
         </div>
       </section>
 

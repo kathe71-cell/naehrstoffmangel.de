@@ -15,6 +15,8 @@ import {
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
+import { AdPageNotice, ProductLinks } from '@plattform/core';
+import { bloodTestProduct, bloodTestPageProducts } from '../placements';
 
 export default function BloodTestPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -99,6 +101,7 @@ export default function BloodTestPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
           Nährstoff-Bluttest: Warum er sinnvoll ist, welche Werte zählen und was er kostet
         </h1>
+        <AdPageNotice />
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
           Nahrungsergänzungsmittel blind auf Verdacht zu schlucken, ist ineffizient und birgt Überdosierungsrisiken. Erfahren Sie hier, warum das normale Hausarzt-Blutbild Vitamine verschweigt, welche Spezialbiomarker Sie wirklich fordern müssen und wo die Unterschiede zwischen Praxis und Selbsttest liegen.
@@ -255,10 +258,11 @@ export default function BloodTestPage() {
             </ul>
           </div>
         </div>
+        <ProductLinks ids={bloodTestPageProducts} title="Heimtests mit Laboranalyse – Beispiele" />
       </section>
 
       {/* Blood Test CTA Component */}
-      <BloodTestCta />
+      <BloodTestCta productId={bloodTestProduct.bluttest} />
 
       {/* FAQ Accordion */}
       <section className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">

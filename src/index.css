@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../node_modules/@plattform/core/src";
 
 @layer base {
   html {

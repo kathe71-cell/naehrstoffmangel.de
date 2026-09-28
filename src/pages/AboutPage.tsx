@@ -1,6 +1,7 @@
 import { Award, BookOpen, HeartHandshake, ShieldAlert, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
+import { TransparencySection } from '@plattform/core';
 
 export default function AboutPage() {
   return (
@@ -107,6 +108,12 @@ export default function AboutPage() {
           </li>
         </ul>
       </section>
+
+      <TransparencySection
+        siteName="nährstoffmangel.de"
+        className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-2 text-sm text-slate-700 leading-relaxed"
+        headingClassName="text-xl font-bold text-slate-900"
+      />
 
       {/* Medical Disclaimer */}
       <MedicalDisclaimer />

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Activity, ShieldCheck, HeartPulse } from 'lucide-react';
+import { AmazonPartnerSentence } from '@plattform/core';
 
 export default function Footer() {
   const year = 2026;
@@ -152,6 +153,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
             &copy; {year} nährstoffmangel.de · Alle Rechte vorbehalten.
+            <AmazonPartnerSentence className="mt-1 text-slate-300" />
           </div>
           <div className="flex flex-wrap items-center gap-4 text-slate-400 font-mono text-[11px]">
             <span className="flex items-center gap-1">
