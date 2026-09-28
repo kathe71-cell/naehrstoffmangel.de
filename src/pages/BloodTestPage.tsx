@@ -15,8 +15,8 @@ import {
 import Breadcrumbs from '../components/Breadcrumbs';
 import MedicalDisclaimer from '../components/MedicalDisclaimer';
 import BloodTestCta from '../components/BloodTestCta';
-import { AdPageNotice } from '@plattform/core';
-import { bloodTestProduct } from '../placements';
+import { AdPageNotice, ProductLinks } from '@plattform/core';
+import { bloodTestProduct, bloodTestPageProducts } from '../placements';
 
 export default function BloodTestPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -258,6 +258,7 @@ export default function BloodTestPage() {
             </ul>
           </div>
         </div>
+        <ProductLinks ids={bloodTestPageProducts} title="Heimtests mit Laboranalyse – Beispiele" />
       </section>
 
       {/* Blood Test CTA Component */}
