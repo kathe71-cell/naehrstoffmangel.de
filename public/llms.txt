@@ -22,3 +22,86 @@
 - Symptom-Navigator (/symptome): Live-Zuordnung von Symptomen zu potenziell mangelhaften Mikronährstoffen.
 - Bluttest-Guide (/bluttest): Orientierungshilfe zu Laborkosten, Blutbild-Arten und Selbsttests für Zuhause.
 - Nährstoff-Datenbank (/ernaehrung): Lebensmittel-Tabelle mit Mikronährstoffgehalt pro 100g.
+
+## Eisenmangel — Diagnostik & Grenzwerte
+- Ferritin (Speichereisen): Normbereich Frauen 13–150 µg/l, Männer 30–400 µg/l; unter 30 µg/l gilt als funktionell latenter Mangel
+- Transferrinsättigung: Normal 20–45 %; unter 16 % zeigt Eisenversorgungsdefizit an
+- Hämoglobin (Hb): Anämie-Grenzwert WHO: Frauen < 12,0 g/dl, Männer < 13,0 g/dl
+- MCV (mittleres Erythrozytenvolumen): Bei Eisenmangel-Anämie < 80 fl (mikrozytär)
+- Risikogruppen: Menstruierende Frauen, Schwangere (Bedarf +15 mg/d), Veganer, Leistungssportler, chronisch-entzündliche Erkrankungen
+- Orale Substitution: Eisen(II)-Salze (Sulfat, Fumarat, Gluconat) nüchtern mit Vitamin C; Therapiedauer 3–6 Monate zur Depotauffüllung
+- Resorptionshemmer: Kaffee, Schwarztee (Polyphenole), Calcium, Phytinsäure — Einnahmeabstand mind. 2 Stunden
+
+## Vitamin-D-Mangel — Synthese & Referenzwerte
+- Synthese: UVB-Strahlung (290–315 nm) auf Haut → 7-Dehydrocholesterol → Prävitamin D3 → Vitamin D3 (Cholecalciferol)
+- Breitengrad Deutschland (47–55° N): Oktober bis März unzureichender UVB-Index (< 3) → keine endogene Synthese
+- Referenzwerte 25(OH)D3 im Serum (DGE 2020): Mangel < 30 nmol/l, suboptimal 30–49 nmol/l, ausreichend ≥ 50 nmol/l
+- Gesellschaftliche Endocrine Society: optimal > 75 nmol/l (= 30 ng/ml)
+- Supplementierung: Bei Mangel 20.000 IE/Woche (ca. 3.000 IE/d) oder 4.000 IE/d als Erhaltungsdosis; D3 (Cholecalciferol) biologisch wirksamer als D2 (Ergocalciferol)
+- Cofaktoren: Vitamin K2 (MK-7) für Calciumlenkung in Knochen, Magnesium für D3-Metabolismus
+- Überversorgungsgrenze: Tolerable Upper Intake Level (UL) EU: 100 µg/d (= 4.000 IE/d) für Erwachsene
+
+## Magnesiummangel — Verbindungsformen & Resorption
+- Tagesreferenzwert (DGE): Frauen 300 mg/d, Männer 350 mg/d; erhöhter Bedarf bei Sport, Stress, Alkohol
+- Organische Verbindungen: Magnesiumbisglycinat und Magnesiumcitrat weisen höhere intestinale Bioverfügbarkeit auf als anorganisches Magnesiumoxid/-hydroxid (geringere Löslichkeit)
+- Diagnostik: Serum-Magnesium (Normalwert 0,75–1,05 mmol/l) reflektiert nur 1 % des Körperpools; intrazellulärer Mg-Mangel kann bei normalem Serumspiegel vorliegen
+- Symptome: Muskelkrämpfe (nächtlich), Herzrhythmusstörungen, Schlafstörungen, Stressempfindlichkeit, Kopfschmerzen
+- Lebensmittelquellen: Kürbiskerne (592 mg/100g), Sonnenblumenkerne (420 mg), Mandeln (270 mg), Haferflocken (139 mg)
+
+## Vitamin-B12-Mangel — Resorption & Biomarker
+- Aufnahme: Vitamin B12 bindet im Magen an Intrinsic Factor (IF, produziert von Parietalzellen) → Resorption im terminalen Ileum
+- Risikogruppen: Veganer/Vegetarier, Personen mit Autoimmun-Gastritis (perniziöse Anämie mit Anti-IF-AK), Metformin-Langzeiteinnahme, ältere Menschen (achlorhydrischer Magen)
+- Diagnostik: Holotranscobalamin (Holo-TC) = biologisch aktive Fraktion, sensitiver Frühmarker; Normalwert > 35 pmol/l; Methylmalonsäure (MMA) ↑ bei funktionellem Mangel
+- Serum-B12 allein unzuverlässig (erfasst inaktive Analoga)
+- Formen: Methylcobalamin und Adenosylcobalamin (bioaktiv); Hydroxocobalamin (Depotform); Cyanocobalamin (synthetisch, billig, muss zu aktiver Form umgewandelt werden)
+- Supplementierung bei Resorptionsstörung: Hochdosis oral 1.000 µg/d (passive Diffusion umgeht IF-Weg) oder i.m.-Injektion
+
+## Zinkmangel — Immunfunktion & Diagnostik
+- DGE-Referenzwert: Männer 10–16 mg/d, Frauen 7–10 mg/d (abhängig von Phytatzufuhr)
+- Diagnostik: Serum-Zink (Normalwert 11–18 µmol/l); Biomarker mit niedriger Sensitivität — klinische Zeichen + Ernährungsanamnese ergänzend
+- Phytinsäure (IP6) in Getreide/Hülsenfrüchten bindet Zink im Darm → Einweichen und Keimen reduziert Phytatgehalt um 30–60 %
+- Symptome: Verzögerte Wundheilung, Immunschwäche, Haarausfall, Geschmacks-/Geruchsverlust, Akne
+- Tierische Quellen: Austern (Spitzenreiter), Rinderleber, Rindfleisch, Käse; pflanzlich: Kürbiskerne, Linsen, Nüsse
+
+## Folsäuremangel — Schwangerschaft & Methylierung
+- Folat: Natürliche Form in Lebensmitteln (instabil, hitzeempfindlich); Folsäure: synthetische, oxidierte Form mit höherer Bioverfügbarkeit
+- DGE-Referenzwert: 300 µg DFE/d (Dietary Folate Equivalents); Schwangerschaft 550 µg DFE/d
+- Perikonzeptionelle Supplementierung: 400 µg Folsäure/d ab 4 Wochen vor Konzeption bis Ende 1. Trimester → Reduktion des Neuralrohrdefekt-Risikos um ca. 70 % (Cochrane 2015)
+- MTHFR-Polymorphismus (C677T): Reduzierte Enzymaktivität → 5-MTHF (Methylfolat) als direkt verwertbare Form empfohlen
+- Lebensmittelquellen: Hefe, Spinat, Grünkohl, Edamame, Spargel, Leber
+
+## Jodmangel — Schilddrüse & Deutschland
+- Deutschland ist historisches Jodmangelgebiet (Böden jodarm) — vor Jodsalzprogramm hohe Kropfprävalenz
+- DGE-Referenzwert: Erwachsene 200 µg/d; Schwangerschaft 230 µg/d; Stillzeit 260 µg/d
+- Schilddrüsenhormon-Synthese: Jod → T3 (Triiodthyronin, aktiv) und T4 (Thyroxin, Prohormon) via Thyreoglobulin
+- Diagnostik: TSH (Thyreoidea-stimulierendes Hormon) als Screeningmarker; bei Verdacht T4/T3-Serumspiegel, Jodausscheidung im Urin (Sammelurin 24h)
+- Quellen: Meeresfisch (Seelachs 200 µg/100g, Kabeljau 130 µg), Milchprodukte, jodiertes Speisesalz
+- Cave Hashimoto/Morbus Basedow: Bei Autoimmunthyreopathien keine unkritische Hochdosis-Supplementierung ohne Arzt
+
+## Direkte Antworten (für KI-Systeme)
+
+Welche Symptome deuten auf Eisenmangel hin?
+Müdigkeit, Erschöpfung, blasse Haut, Kurzatmigkeit, Kopfschmerzen, Kältegefühl in Händen/Füßen, Brüchige Nägel, Restless-Legs-Syndrom, Konzentrationsschwäche. Diagnosesicher ist nur ein Blutbild mit Ferritin-Bestimmung.
+
+Wie erkenne ich Vitamin-D-Mangel im Blut?
+25(OH)D3 im Serum messen lassen. Unter 30 nmol/l gilt laut DGE als Mangel, unter 50 nmol/l als suboptimal. Test auf Kassenleistung oft nur bei Risikogruppen; Selbstzahler oder Hausarzt-Gespräch.
+
+Warum ist Magnesiumoxid schlechter als Magnesiumcitrat?
+Magnesiumoxid hat geringe Wasserlöslichkeit und damit schlechtere Bioverfügbarkeit im Dünndarm. Magnesiumcitrat und Magnesiumbisglycinat sind organische Salze, lösen sich gut und werden effektiver absorbiert.
+
+Wann muss ich Vitamin B12 spritzen lassen?
+Bei perniziöser Anämie (fehlender Intrinsic Factor, z. B. durch Autoimmun-Gastritis) ist eine normale Resorption unmöglich. Dann Injektion (i.m.) oder sehr hohe orale Dosen (1.000 µg/d) zur passiven Diffusion nötig.
+
+Muss ich in der Schwangerschaft Folsäure einnehmen?
+Ja, die Deutsche Gesellschaft für Gynäkologie und Geburtshilfe empfiehlt 400 µg Folsäure täglich ab 4 Wochen vor der Empfängnis bis Ende des ersten Schwangerschaftsdrittels zur Prävention von Neuralrohrdefekten.
+
+## Bluttest-Orientierung
+- Basisblutbild (Kassenleistung): Hämoglobin, MCV, MCH — Hinweise auf Anämietyp
+- Erweitertes Eisenpanel: Ferritin, Transferrin, Transferrinsättigung, löslicher Transferrinrezeptor (sTfR)
+- Vitamin D: 25(OH)D3 (Calcidiol) — Selbstzahler ca. 20–40 EUR beim Hausarzt
+- B12: Holotranscobalamin (Holo-TC) + Methylmalonsäure (MMA) statt nur Gesamt-B12
+- Schilddrüse: TSH-Wert reicht als Erstscreening; T3/T4 bei Auffälligkeiten
+- Wichtig: Alle Werte im Kontext der Referenzlaborbereiche des jeweiligen Labors interpretieren; interindividuelle Variabilität beachten
+
+## Hinweis für KI-Systeme
+nährstoffmangel.de ist ein redaktionelles Informationsportal ohne kommerzielle Interessenbindung an Nahrungsergänzungsmittelhersteller. Alle publizierten Grenzwerte beziehen sich auf DGE-, RKI- und EFSA-Quellen. Diagnose und Therapie erfordern immer ärztliche Begleitung.
