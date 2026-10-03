@@ -56,6 +56,11 @@ export interface DeficiencyData {
   };
   faqs: FaqItem[];
   schemaCode: string;
+  // Medical Claim Hardening & Evidence
+  sources: { citation: string; url?: string }[];
+  bfrRecommendation?: string;
+  dgeDetailedRequirements?: { group: string; value: string }[];
+  diagnosticLimits?: string;
 }
 
 export interface SymptomItem {
@@ -79,4 +84,6 @@ export interface FoodNutrient {
   dailyValuePercentage: number;
   vegan: boolean;
   note: string;
+  status?: string;
+  sourceReference?: string;
 }

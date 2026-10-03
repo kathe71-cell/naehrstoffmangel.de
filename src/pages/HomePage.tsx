@@ -26,10 +26,26 @@ export default function HomePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const stats = [
-    { value: '> 50 %', label: 'der Deutschen haben im Winter suboptimale Vitamin-D-Werte (RKI)' },
-    { value: '15–30 %', label: 'aller Frauen im gebärfähigen Alter leiden an entleerten Eisenspeichern' },
-    { value: '> 30 %', label: 'der Erwachsenen weisen eine zu geringe Jodausscheidung auf' },
-    { value: '4–6 Jahre', label: 'reichen körpereigene Vitamin-B12-Speicher in der Leber' },
+    {
+      value: '56,0 %',
+      label: 'der untersuchten Erwachsenen (18–79 J.) wiesen im RKI-Gesundheitssurvey DEGS1 25(OH)D-Werte < 50 nmol/l auf (15,2 % < 30 nmol/l mangelhaft, 40,8 % 30–< 50 nmol/l suboptimal)',
+      source: 'RKI DEGS1 (Rabenberg et al. 2016)'
+    },
+    {
+      value: '15–20 %',
+      label: 'der prämenopausalen Frauen weisen entleerte Eisenspeicher auf (Ferritin < 15 µg/l)',
+      source: 'NVS II (2008) / WHO'
+    },
+    {
+      value: 'ca. 32 %',
+      label: 'der Erwachsenen unterschreiten den WHO-Jod-Zielwert im Urin (< 100 µg/l)',
+      source: 'RKI DEGS1 (2016)'
+    },
+    {
+      value: '3–5 Jahre',
+      label: 'reichen körpereigene Vitamin-B12-Leberdepots bei gesunden Erwachsenen ohne Zufuhr',
+      source: 'DGE (2024) / Herrmann et al.'
+    },
   ];
 
   const deficiencies = [
@@ -117,7 +133,7 @@ export default function HomePage() {
     },
     {
       q: 'Wann sollte man wegen eines vermuteten Mangels zum Arzt?',
-      a: 'Symptome wie wochenlange Erschöpfung, anhaltender Haarausfall, Schwindel, Taubheitsgefühle oder Herzstolpern sollten immer ärztlich abgeklärt werden. Nur eine differenzierte Blutuntersuchung kann klären, ob ein Nährstoffmangel oder eine organische Grunderkrankung vorliegt.'
+      a: 'Symptome wie wochenlange Erschöpfung, anhaltender Haarausfall, Schwindel, Taubheitsgefühle oder Herzstolpern sollten ärztlich abgeklärt werden. Eine differenzierte Blutuntersuchung kann klären, ob ein Nährstoffmangel oder eine organische Ursache vorliegt.'
     }
   ];
 
@@ -143,7 +159,7 @@ export default function HomePage() {
               </h1>
               
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                Müdigkeit, Haarausfall oder Wadenkrämpfe? Oft stecken unentdeckte Defizite an essenziellen Mikronährstoffen wie Eisen, Vitamin D, Magnesium oder Vitamin B12 dahinter. Erfahren Sie wissenschaftlich fundiert, welche Laborwerte entscheidend sind und wie Sie Ihre Speicher sicher auffüllen.
+                Müdigkeit, Haarausfall oder Wadenkrämpfe können viele Ursachen haben. Auch Nährstoffmängel kommen – je nach Symptom und individueller Situation – als mögliche Ursache infrage. Erfahren Sie wissenschaftlich fundiert, welche Laborwerte diagnostisch relevant sind und wie Sie Ihre Versorgung über die Ernährung sichern.
               </p>
 
               {/* CTAs */}
@@ -210,7 +226,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <span className="text-slate-500 block">Diagnostik:</span>
-                    <strong className="text-slate-800">Serum / Vollblut</strong>
+                    <strong className="text-slate-800">abhängig vom Nährstoff &amp; klinischen Kontext</strong>
                   </div>
                 </div>
               </div>
@@ -221,12 +237,17 @@ export default function HomePage() {
           {/* Quick Stats Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-100">
             {stats.map((st, idx) => (
-              <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
-                <div className="text-2xl sm:text-3xl font-black text-emerald-800 font-mono tracking-tight mb-1">
-                  {st.value}
+              <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div className="text-2xl sm:text-3xl font-black text-emerald-800 font-mono tracking-tight mb-1">
+                    {st.value}
+                  </div>
+                  <div className="text-xs text-slate-600 leading-snug">
+                    {st.label}
+                  </div>
                 </div>
-                <div className="text-xs text-slate-600 leading-snug">
-                  {st.label}
+                <div className="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                  Quelle: {st.source}
                 </div>
               </div>
             ))}
@@ -309,7 +330,7 @@ export default function HomePage() {
                 Der Symptom-Navigator
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed mb-6">
-                Wählen Sie Ihre Beschwerden (z. B. Haarausfall, Müdigkeit, Lidzucken oder Frieren) aus unserer strukturierten Symptom-Matrix. Der Navigator berechnet live, welche Mikronährstoffdefizite am wahrscheinlichsten infrage kommen.
+                Wählen Sie Ihre Beschwerden (z. B. Haarausfall, Müdigkeit, Lidzucken oder Frieren) aus unserer strukturierten Symptom-Matrix. Der Navigator zeigt, mit welchen Nährstoffmängeln ausgewählte Symptome in der Fachliteratur in Verbindung gebracht werden – ohne diagnostische Wahrscheinlichkeiten vorzutäuschen.
               </p>
             </div>
             <Link

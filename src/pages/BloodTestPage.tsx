@@ -40,21 +40,21 @@ export default function BloodTestPage() {
       biomarker: 'Holotranscobalamin (Holo-TC)',
       purpose: 'Aktives Vitamin B12 (Zellebene)',
       goeCost: 'ca. 25 – 35 €',
-      cashPay: 'Fast immer IGeL-Leistung',
+      cashPay: 'Meist IGeL-Leistung (Selbstzahler)',
       homeTest: 'ca. 39 – 49 €'
     },
     {
-      biomarker: 'Magnesium im Vollblut',
-      purpose: 'Zelluläre Speicher (Erythrozyten)',
-      goeCost: 'ca. 8 – 15 €',
-      cashPay: 'IGeL-Leistung (Kasse zahlt nur ungenaues Serum)',
+      biomarker: 'Magnesium (Serum / ggf. Vollblut)',
+      purpose: 'Muskelfunktion, Nervensystem',
+      goeCost: 'ca. 5 – 15 €',
+      cashPay: 'Serum bei Indikation Kassenleistung; Vollblut meist IGeL',
       homeTest: 'Im Mineralstoff-Panel'
     },
     {
-      biomarker: 'Zink im Vollblut / Serum',
-      purpose: 'Abwehrkräfte, Wundheilung',
+      biomarker: 'Zink (Serum / ggf. Vollblut)',
+      purpose: 'Immunfunktion, Wundheilung',
       goeCost: 'ca. 10 – 18 €',
-      cashPay: 'Fast immer IGeL-Leistung',
+      cashPay: 'Meist Selbstzahlerleistung (IGeL), außer bei klinischer Indikation',
       homeTest: 'Im Mineralstoff-Panel'
     },
     {
@@ -69,7 +69,7 @@ export default function BloodTestPage() {
   const faqs = [
     {
       q: 'Warum erkennt das normale "große Blutbild" beim Hausarzt keinen Nährstoffmangel?',
-      a: 'Das ist einer der häufigsten Irrtümer: Ein "großes Blutbild" (Differenzialblutbild) zählt lediglich die verschiedenen Blutzellen (Erythrozyten, Leukozyten, Thrombozyten, Hämoglobin und Hämatokrit). Es misst KEINE Vitamine, Mineralstoffe oder Spurenelemente! Selbst bei dramatisch leeren Eisenspeichern kann das große Blutbild über Monate hinweg noch völlig "normal" aussehen, bis die Erythrozytenbildung schließlich zusammenbricht.'
+      a: 'Das ist einer der häufigsten Irrtümer: Ein "großes Blutbild" (Differenzialblutbild) zählt lediglich die verschiedenen Blutzellen (Erythrozyten, Leukozyten, Thrombozyten, Hämoglobin und Hämatokrit). Es misst KEINE Vitamine, Mineralstoffe oder Spurenelemente! Selbst bei leeren Eisenspeichern kann das große Blutbild über längere Zeit noch unauffällig aussehen, bis die Erythrozytenbildung schließlich messbar absinkt.'
     },
     {
       q: 'Zahlt die gesetzliche Krankenkasse (GKV) die Blutwerte für Vitamine?',
@@ -77,11 +77,11 @@ export default function BloodTestPage() {
     },
     {
       q: 'Wie genau und verlässlich sind Bluttests für Zuhause (Kapillarblut)?',
-      a: 'Zertifizierte Anbieter (wie Cerascreen, Lykon oder Verisana) arbeiten mit akkreditierten medizinischen Fachlaboren in Deutschland zusammen, die denselben DIN- und ISO-Qualitätsstandards unterliegen wie Arztpraxen. Das Blut wird über einen winzigen Stich in die Fingerkuppe (Kapillarblut) entnommen, auf Trockenblutkarten oder Röhrchen aufgefangen und per Post eingesandt. Bei korrekter Durchführung ist die Messgenauigkeit mit einer venösen Blutentnahme vergleichbar.'
+      a: 'Zertifizierte Anbieter arbeiten mit akkreditierten medizinischen Fachlaboren zusammen, die etablierte Analyseverfahren nutzen. Die Blutentnahme aus der Fingerkuppe (Kapillarblut) kann bei richtiger Durchführung Hinweise auf den Versorgungsstatus liefern. Ein Heimtest ist jedoch kein vollständiger Ersatz für eine umfassende ärztliche Diagnostik, bei der auch Begleiterkrankungen, Medikation und klinische Symptome einbezogen werden.'
     },
     {
       q: 'Was ist der Unterschied zwischen Serum- und Vollblutanalyse?',
-      a: 'Blutserum ist der flüssige, zellfreie Anteil des Blutes. Vollblut enthält hingegen auch alle Blutzellen (Erythrozyten). Für Nährstoffe, die sich zu über 95 % im Zellinneren befinden (wie Magnesium, Kalium oder Zink), ist eine Vollblutanalyse um ein Vielfaches aussagekräftiger als ein Serumtest, da der Körper den Serumspiegel auf Kosten der Zellen künstlich stabil hält.'
+      a: 'Blutserum ist der flüssige, zellfreie Überstand des geronnenen Blutes. Vollblut enthält zusätzlich alle Blutzellen (vor allem Erythrozyten). In der ärztlichen Routine und den medizinischen Leitlinien ist die Bestimmung im Serum der anerkannte Standard. Da manche Mineralstoffe wie Magnesium überwiegend intrazellulär vorliegen, wird in einigen Fachbereichen (z. B. Umwelt- oder Ernährungsmedizin) eine Vollblut- oder Erythrozytenanalyse diskutiert. Diese Methoden unterliegen jedoch laborspezifischen Referenzwerten und sind kein allgemeiner Leitlinienstandard.'
     }
   ];
 
@@ -104,7 +104,7 @@ export default function BloodTestPage() {
         <AdPageNotice />
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-          Nahrungsergänzungsmittel blind auf Verdacht zu schlucken, ist ineffizient und birgt Überdosierungsrisiken. Erfahren Sie hier, warum das normale Hausarzt-Blutbild Vitamine verschweigt, welche Spezialbiomarker Sie wirklich fordern müssen und wo die Unterschiede zwischen Praxis und Selbsttest liegen.
+          Nahrungsergänzungsmittel blind auf Verdacht einzunehmen, ist ineffizient und birgt Risiken für Wechselwirkungen oder Überdosierungen. Erfahren Sie hier, warum ein Standard-Blutbild zelluläre Blutwerte statt Vitamine untersucht, welche spezifischen Biomarker in der Mangeldiagnostik eingesetzt werden und wo die Grenzen von Selbsttests liegen.
         </p>
       </header>
 
@@ -112,60 +112,60 @@ export default function BloodTestPage() {
       <section className="bg-amber-50 border border-amber-300 rounded-2xl p-6 sm:p-7 space-y-3">
         <div className="flex items-center gap-2.5 text-amber-900 font-bold text-base sm:text-lg">
           <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
-          <span>Häufigster Patienten-Irrtum: „Mein Blutbild war doch unauffällig!“</span>
+          <span>Häufiger Patienten-Irrtum: „Mein Blutbild war doch unauffällig!“</span>
         </div>
         <p className="text-sm text-amber-950 leading-relaxed">
-          Wenn Ihr Hausarzt sagt: <em>„Wir haben ein großes Blutbild gemacht, alles in bester Ordnung“</em>, bedeutet das lediglich, dass die Zellanzahl Ihrer weißen und roten Blutkörperchen im Normbereich liegt. <strong>Weder Ferritin, noch Vitamin D, noch B12 oder Mineralstoffe sind im großen Blutbild enthalten!</strong> Ein schwerer Mangel kann also jahrelang unerkannt bleiben, obwohl regelmäßig Blut abgenommen wurde.
+          Wenn in der Arztpraxis gesagt wird: <em>„Wir haben ein großes Blutbild gemacht, alles in bester Ordnung“</em>, bedeutet das lediglich, dass die Zellanzahl und Differenzierung Ihrer weißen und roten Blutkörperchen sowie Thrombozyten im Normbereich liegt. <strong>Weder Ferritin, noch Vitamin D, B12 oder Mineralstoffe sind im kleinen oder großen Blutbild enthalten!</strong> Diese Mikronährstoffparameter müssen bei Verdacht gezielt als eigenständige Laborwerte angefordert werden.
         </p>
       </section>
 
       {/* Key Biomarkers: The Right Parameters */}
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-          Die entscheidenden Biomarker: Was muss gemessen werden?
+          Relevante Biomarker: Welche Laborwerte werden untersucht?
         </h2>
         <p className="text-sm text-slate-600">
-          Verlangen Sie beim Arzt oder im Selbsttest immer den korrekten Speicherwert statt des oberflächlichen Serumwerts:
+          Für eine aussagekräftige Beurteilung werden je nach Fragestellung spezifische Speicher- oder Funktionsmarker herangezogen:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
             <div className="flex items-center justify-between mb-2">
-              <span className="font-bold text-slate-900">Eisen: Ferritin statt Serum-Eisen</span>
-              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Goldstandard</span>
+              <span className="font-bold text-slate-900">Eisen: Ferritin &amp; CRP</span>
+              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Speichereisen</span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Freies Eisen im Serum schwankt nach jeder Mahlzeit massiv und ist diagnostisch wertlos. Nur <strong>Ferritin</strong> (Speichereisen) zeigt den wahren Füllstand der Knochenmark- und Leberspeicher.
+              Freies Eisen im Serum unterliegt starken tageszeitlichen Schwankungen und spiegelt vor allem die kurzfristige Zufuhr wider; zur Beurteilung der Körperspeicher ist es allein nicht geeignet. Primärer Marker ist <strong>Serum-Ferritin</strong> als zentraler Speicherwert. Da Ferritin als Akute-Phase-Protein bei Entzündungen reaktiv ansteigen kann, kann bei Verdacht auf Entzündungen die gleichzeitige Bestimmung von Entzündungsmarkern wie <strong>CRP</strong> für die Interpretation sinnvoll sein. Bei unklarem Befund wird ergänzend die Transferrinsättigung herangezogen.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
             <div className="flex items-center justify-between mb-2">
-              <span className="font-bold text-slate-900">B12: Holo-TC statt Gesamt-B12</span>
-              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Zellaktiv</span>
+              <span className="font-bold text-slate-900">Vitamin B12: Gesamt-B12, Holo-TC &amp; MMA</span>
+              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Stufendiagnostik</span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Gesamt-B12 misst zu 80 % inaktive Formen. <strong>Holotranscobalamin (Holo-TC)</strong> erfasst ausschließlich das biologisch verfügbare Vitamin B12, das den Körperzellen tatsächlich zur Verfügung steht.
+              Gesamt-B12 im Serum dient als gängiger Screening-Marker. Im Graubereich (ca. 150–300 pmol/l) kann die Bestimmung des aktiven <strong>Holotranscobalamins (Holo-TC)</strong> oder des funktionellen Stoffwechselmarkers <strong>Methylmalonsäure (MMA)</strong> zusätzliche differenzierende Hinweise liefern. Da MMA auch bei eingeschränkter Nierenfunktion ansteigt, sollte die Nierenfunktion (eGFR) bei der Interpretation berücksichtigt werden.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
             <div className="flex items-center justify-between mb-2">
-              <span className="font-bold text-slate-900">Vitamin D: 25(OH)D3 (Calcidiol)</span>
-              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Depot-Form</span>
+              <span className="font-bold text-slate-900">Vitamin D: 25(OH)D (Calcidiol)</span>
+              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Speicherform</span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Gemessen wird die Speicherform 25-Hydroxy-Vitamin-D3. Nicht das kurzlebige Hormon Calcitriol (1,25(OH)2D), welches selbst bei schwerem Mangel noch hochnormal sein kann.
+              Standardmarker ist 25-Hydroxy-Vitamin-D (25(OH)D im Serum). Das aktive Hormon 1,25(OH)2D (Calcitriol) hat eine sehr kurze Halbwertszeit und kann bei Mangel durch kompensatorisches Parathormon normal bleiben; es ist zur Mangeldiagnose nicht geeignet.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-2xs">
             <div className="flex items-center justify-between mb-2">
-              <span className="font-bold text-slate-900">Magnesium &amp; Zink: Vollblut</span>
-              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Intrazellulär</span>
+              <span className="font-bold text-slate-900">Magnesium &amp; Zink: Serum vs. Vollblut</span>
+              <span className="text-xs bg-slate-200 text-slate-800 font-bold px-2 py-0.5 rounded">Methodenvergleich</span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Mineralstoffe befinden sich zu 99 % in den Zellen. Ein Vollbluttest erfasst die zellulären Erythrozyten und deckt Defizite auf, lange bevor das Serum absinkt.
+              In der ärztlichen Routine und den Leitlinien ist die Messung im Serum etabliert. Da Mineralstoffe überwiegend intrazellulär vorkommen, werden in Teilen der komplementären oder Ernährungsmedizin Vollblut- oder Erythrozytenanalysen genutzt. Diese unterliegen jedoch methoden- und laborspezifischen Referenzbereichen und sind kein allgemeiner Leitlinienstandard. Zink sollte morgens nüchtern bestimmt werden.
             </p>
           </div>
         </div>
@@ -255,10 +255,20 @@ export default function BloodTestPage() {
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                 <span>Detaillierter digitaler Laborbericht mit Ampelsystem in wenigen Tagen</span>
               </li>
+              <li className="flex items-start gap-2 text-slate-500 pt-1">
+                <span className="text-amber-600 font-bold">Wichtige Grenze:</span>
+                <span>Ein Heimtest ersetzt keine ärztliche Untersuchung. Auffällige Werte sollten mit der Hausarztpraxis besprochen werden.</span>
+              </li>
             </ul>
           </div>
         </div>
+
         <ProductLinks ids={bloodTestPageProducts} title="Heimtests mit Laboranalyse – Beispiele" />
+
+        <div className="bg-white p-4 rounded-xl border border-slate-200 text-xs text-slate-600 leading-relaxed mt-4">
+          <strong className="text-slate-900 block mb-0.5">Diagnostischer Grundsatz:</strong>
+          Weder ein Heimtest noch eine isolierte IGeL-Laboranalyse ersetzen eine vollständige ärztliche Anamnese und klinische Untersuchung. Bei schweren oder unklaren Symptomen (z. B. Herzrasen, akute Atemnot, neurologische Ausfälle) ist stets die primärärztliche Versorgung aufzusuchen.
+        </div>
       </section>
 
       {/* Blood Test CTA Component */}

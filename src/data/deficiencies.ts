@@ -4,10 +4,10 @@ export const deficiencies: DeficiencyData[] = [
   {
     slug: 'eisenmangel',
     name: 'Eisenmangel',
-    subTitle: 'Häufigster Nährstoffmangel weltweit – besonders Frauen & Schwangere betroffen',
+    subTitle: 'Häufiger Mikronährstoffmangel weltweit – besonders Frauen im gebärfähigen Alter & Schwangere betroffen',
     metaTitle: 'Eisenmangel Symptome Frau: Müdigkeit, Haarausfall & Ferritin | nährstoffmangel.de',
-    metaDescription: 'Eisenmangel Symptome bei Frauen: Warum Ferritin unter 50 µg/l trotz "normalem Blutbild" Erschöpfung und Haarausfall verursacht – mit Laborwert-Erklärung und Ernährungstipps.',
-    seoH1: 'Eisenmangel Symptome bei Frauen: Müdigkeit, Haarausfall & was Ferritin wirklich aussagt',
+    metaDescription: 'Eisenmangel Symptome bei Frauen: Was Ferritin im Blutbild aussagt, warum CRP mitbestimmt werden sollte & wie Sie Ihre Eisenwerte über die Ernährung sichern.',
+    seoH1: 'Eisenmangel Symptome bei Frauen: Müdigkeit, Haarausfall & was die Ferritin-Diagnostik aussagt',
     longTailKeywords: [
       { keyword: 'Eisenmangel Symptome Frau', searchIntent: 'informational', monthlySearches: '5.000–12.000/Monat' },
       { keyword: 'Eisenmangel trotz normalem Blutbild', searchIntent: 'informational', monthlySearches: '1.000–3.000/Monat' },
@@ -19,142 +19,158 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Kann ich Eisenmangel haben, obwohl mein "Blutbild normal" war?',
-        answer: 'Ja – das ist der häufigste Irrtum. Das "große Blutbild" beim Hausarzt misst nur Hämoglobin und Blutzellanzahl, nicht Ferritin (Speichereisen). Hämoglobin fällt erst ganz am Ende ab, wenn die Eisenspeicher bereits seit Monaten leer sind. Ein Ferritin unter 50 µg/l bedeutet latenten Eisenmangel mit realen Symptomen – auch wenn das Blutbild "unauffällig" ist.'
+        question: 'Kann ein Eisenmangel vorliegen, obwohl das Standard-Blutbild unauffällig war?',
+        answer: 'Ja, das kommt in der Praxis häufig vor. Ein kleines oder großes Blutbild erfasst in erster Linie Hämoglobin und die Anzahl roter Blutkörperchen. Bei einem beginnenden oder latenten Eisenmangel sind zunächst die Gewebespeicher (Ferritin) entleert, während der Hämoglobinwert noch über Wochen oder Monate im Normbereich verbleiben kann. Erst wenn die Speicher weitgehend erschöpft sind, sinkt Hämoglobin ab (Eisenmangelanämie). Daher wird bei entsprechendem Verdacht gezielt Serum-Ferritin bestimmt.'
       },
       {
-        question: 'Was ist der ideale Ferritin-Wert für Frauen?',
-        answer: 'Labore geben als "Normalbereich" häufig 7–140 µg/l an – dieser Bereich ist medizinisch irreführend weit. Funktionelle Energiemedizin und aktuelle Hämatologie empfehlen für Frauen im gebärfähigen Alter Ferritin-Werte von mindestens 50 µg/l, idealerweise 70–100 µg/l, damit Haare, Mitochondrien und Kognition optimal versorgt sind.'
+        question: 'Welche Ferritin-Werte gelten als Orientierung bei Frauen?',
+        answer: 'Laut AWMF-Leitlinie und WHO weist ein Serum-Ferritin unter 15 µg/l (bei Abwesenheit von Entzündungen) auf entleerte Eisenspeicher hin. Bei Werten zwischen 15 und 30 µg/l liegt ein wahrscheinlicher Speichereisenmangel vor. In der klinischen Praxis wird für Frauen im gebärfähigen Alter bei anhaltender Fatigue oft ein Zielbereich von mindestens 50 µg/l angestrebt, sofern Begleiterkrankungen und Entzündungsaktivität (CRP) berücksichtigt werden.'
       },
       {
-        question: 'Wie lange dauert es, bis Eisenmangel-Symptome verschwinden?',
-        answer: 'Mit konsequenter oraler Supplementierung (z. B. Eisenbisglycinat 20–25 mg täglich nüchtern) verbessern sich Energielevel und Herzrasen meist nach 4–6 Wochen. Haarausfall normalisiert sich erst nach 3–5 Monaten, da Haarwachstumszyklen lang sind. Ferritin auf 70+ µg/l aufzufüllen dauert in der Regel 3 bis 6 Monate.'
+        question: 'Wie lange dauert es, bis sich Eisenwerte und Symptome normalisieren?',
+        answer: 'Unter fachgerechter oraler Einnahme eines geeigneten Eisenpräparats steigen Hämoglobin und Retikulozyten meist innerhalb von 2 bis 4 Wochen an. Das vollständige Auffüllen entleerter Speicher (Anstieg des Serum-Ferritins) erfordert in der Regel eine kontinuierliche Einnahme über 3 bis 6 Monate. Haarwachstumszyklen sind lang, weshalb sich diffuse Haarveränderungen oft erst nach mehreren Monaten stabilisieren.'
       }
     ],
     category: 'Spurenelement',
-    dailyRequirement: '10–15 mg (Frauen bis 15 mg, Schwangere bis 30 mg)',
-    dailyRequirementNote: 'Laut DGE-Referenzwert. Männer benötigen ca. 10 mg/Tag.',
-    testBiomarker: 'Ferritin (Speichereisen) + Transferrinsättigung',
-    optimalRange: '> 50 µg/l (Serum-Ferritin)',
-    intro: 'Eisen ist ein lebensnotwendiges Spurenelement und das zentrale Kernatom des Hämoglobins in den roten Blutkörperchen. Es transportiert Sauerstoff von der Lunge in jede Körperzelle und ist unverzichtbar für die zelluläre Energiegewinnung in den Mitochondrien sowie die Myoglobinspeicherung in den Muskeln.',
+    dailyRequirement: '11–16 mg (Erwachsene je nach Geschlecht und Menstruationsstatus)',
+    dailyRequirementNote: 'DGE-Referenzwerte für Erwachsene (Überarbeitung 2024): Männer 11 mg/Tag, menstruierende Frauen 16 mg/Tag, postmenopausale Frauen 14 mg/Tag, nicht menstruierende jüngere Frauen 11 mg/Tag, Schwangere 27 mg/Tag, Frauen nach Geburt (Stillzeit) 16 mg/Tag.',
+    dgeDetailedRequirements: [
+      { group: 'Männer (ab 19 Jahren)', value: '11 mg/Tag' },
+      { group: 'Menstruierende Frauen', value: '16 mg/Tag' },
+      { group: 'Postmenopausale Frauen', value: '14 mg/Tag' },
+      { group: 'Nicht menstruierende jüngere Frauen', value: '11 mg/Tag' },
+      { group: 'Schwangere', value: '27 mg/Tag' },
+      { group: 'Frauen nach Geburt (Stillzeit)', value: '16 mg/Tag' }
+    ],
+    testBiomarker: 'Serum-Ferritin (Eisenspeicher) sowie ggf. CRP (Entzündungsmarker) & Transferrinsättigung',
+    optimalRange: 'Labor-Referenzbereich methodenabhängig; sehr niedrige Werte (< 15–30 µg/l je nach Leitlinie) sprechen für entleerte Speicher (bei Abwesenheit von Entzündungen)',
+    diagnosticLimits: 'Ferritin ist ein zentraler Marker der körpereigenen Eisenspeicher, reagiert jedoch als Akute-Phase-Protein: Bei Infektionen, chronischen Entzündungen oder Lebererkrankungen kann der Wert reaktiv ansteigen und einen Mangel maskieren. Bei Verdacht auf Entzündung kann die gleichzeitige Bestimmung von Entzündungsmarkern wie CRP für die Interpretation sinnvoll sein. Grenzwerte können je nach Population und Leitlinie variieren. Ergänzend kann die Transferrinsättigung (< 20 % als Hinweis auf funktionellen Mangel) herangezogen werden. Freies Serumeisen unterliegt ausgeprägten tageszeitlichen Schwankungen und ist für die Speicherbeurteilung allein nicht geeignet.',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 6 mg Eisen pro Tag in Nahrungsergänzungsmitteln für die Allgemeinbevölkerung. Höher dosierte Eisenpräparate sind Arzneimittel und sollten ausschließlich nach labordiagnostisch nachgewiesenem Mangel und unter ärztlicher Aufsicht eingenommen werden (Gefahr der Eisenüberladung / Hämochromatose).',
+    intro: 'Eisen ist ein lebensnotwendiges Spurenelement und funktioneller Bestandteil des Hämoglobins in den Erythrozyten sowie des Myoglobins in den Muskelzellen. Es ist unerlässlich für den Sauerstofftransport im Blut, den zellulären Energiestoffwechsel in den Mitochondrien und zahlreiche enzymatische Reaktionen.',
     whatIsIt: [
-      'Eisen (Fe) kann vom menschlichen Körper nicht selbst gebildet werden und muss täglich über die Nahrung aufgenommen werden. Der Gesamtkörperbestand liegt beim gesunden Erwachsenen bei etwa 3 bis 5 Gramm.',
-      'Ungefähr 65–70 % des Eisens sind an das Hämoglobin gebunden, während 20–25 % als Ferritin in Leber, Milz und Knochenmark gespeichert werden.',
-      'Man unterscheidet zwischen zweiwertigem Häm-Eisen (Fe2+) aus tierischen Quellen, das eine Bioverfügbarkeit von 15–35 % besitzt, und dreiwertigem Nicht-Häm-Eisen (Fe3+) aus pflanzlichen Quellen, dessen Resorptionsquote bei lediglich 2–15 % liegt.'
+      'Eisen (Fe) kann vom menschlichen Organismus nicht selbst gebildet werden und muss kontinuierlich über die Nahrung zugeführt werden. Der Gesamtkörperbestand eines gesunden Erwachsenen beträgt etwa 3 bis 5 Gramm.',
+      'Rund zwei Drittel des Gesamtkörpereisens sind an Hämoglobin gebunden, während etwa 20 bis 25 % als Ferritin in Leber, Milz und Knochenmark gespeichert werden.',
+      'In der Ernährung unterscheidet man zweiwertiges Häm-Eisen (Fe2+) aus tierischen Lebensmitteln mit einer Resorptionsquote von etwa 15 bis 35 % und dreiwertiges Nicht-Häm-Eisen (Fe3+) aus pflanzlichen Quellen, dessen Bioverfügbarkeit meist zwischen 2 und 15 % liegt und stark von hemmenden bzw. fördernden Begleitstoffen abhängt.'
     ],
     symptoms: {
       primary: [
-        'Chronische Müdigkeit, Abgeschlagenheit und anhaltendes Energietief trotz ausreichendem Schlaf',
-        'Auffallende Blässe der Gesichtshaut und der inneren Augenlider (Konjunktiven)',
-        'Diffuser Haarausfall und auffälliges Dünnerwerden der Haare',
-        'Brüchige, rillige Fingernägel oder Hohlnägel (Koilonychie)',
-        'Eingerissene Mundwinkel (Mundwinkelrhagaden / Faule Ecken)',
-        'Schwindelgefühl, Benommenheit und morgendliche orthostatische Dysregulation'
+        'Chronische Müdigkeit, rasche Erschöpfbarkeit und verminderte Leistungsfähigkeit',
+        'Auffallende Blässe der Gesichtshaut und der Konjunktiven (Bindehäute der Augen)',
+        'Diffuser Haarausfall oder dünner werdendes Haar',
+        'Brüchige Fingernägel, Rillenbildung oder Hohlnägel (Koilonychie)',
+        'Schmerzhafte Einrisse in den Mundwinkeln (Mundwinkelrhagaden)',
+        'Schwindelgefühl und morgendliche orthostatische Kreislaufinstabilität'
       ],
       secondary: [
-        'Kurzatmigkeit und schneller Puls schon bei geringer körperlicher Anstrengung (z. B. Treppensteigen)',
-        'Erhöhte Kälteempfindlichkeit und ständig kalte Hände oder Füße',
-        'Konzentrationsstörungen, Brain Fog und verminderte mentale Leistungsfähigkeit',
-        'Kopfschmerzen und Ohrensausen / Tinnitus',
-        'Restless-Legs-Syndrom (unruhige Beine am Abend und in der Nacht)'
+        'Belastungsdyspnoe (Kurzatmigkeit) und erhöhte Herzfrequenz bei körperlicher Aktivität',
+        'Erhöhte Kälteempfindlichkeit und Neigung zu kalten Händen und Füßen',
+        'Konzentrationsschwierigkeiten und subjektives Gefühl von Brain Fog',
+        'Kopfschmerzen und Ohrensausen',
+        'Restless-Legs-Symptomatik (Missempfindungen und Bewegungsdrang in den Beinen in Ruhe)'
       ]
     },
     causes: {
-      title: 'Typische Ursachen für Eisenmangel',
-      description: 'Ein Eisenmangel entsteht, wenn der Eisenverlust oder -bedarf die intestinale Absorptionskapazität übersteigt.'
+      title: 'Mögliche Ursachen für einen Eisenmangel',
+      description: 'Ein Eisenmangel entsteht typischerweise, wenn die Verluste oder der physiologische Bedarf die intestinale Aufnahmekapazität übersteigen.'
     } as any,
     causesList: [
       {
-        title: 'Erhöhte Blutverluste',
-        description: 'Starke Regelblutungen (Hypermenorrhö) bei Frauen sind die häufigste Ursache in Industrieländern. Auch okkulte chronische Blutungen im Magen-Darm-Trakt (z. B. durch Magengeschwüre, Polypen, Hämorrhoiden oder chronisch-entzündliche Darmerkrankungen) führen schleichend zu einer Entleerung der Eisenspeicher.'
+        title: 'Physiologische Blutverluste (Menstruation)',
+        description: 'Starke oder verlängerte Regelblutungen (Hypermenorrhö) bei Frauen im gebärfähigen Alter sind die häufigste Ursache in Industrieländern. Mit jedem Milliliter Blutverlust verliert der Organismus rund 0,5 mg Eisen.'
       },
       {
         title: 'Erhöhter physiologischer Bedarf',
-        description: 'In der Schwangerschaft steigt das Blutvolumen um bis zu 40 %, weshalb der Eisenbedarf auf 30 mg/Tag verdoppelt wird. Auch in der Stillzeit, im rasanten Wachstumsalter bei Kindern und Jugendlichen sowie im Leistungssport ist der Verbrauch signifikant erhöht.'
+        description: 'In der Schwangerschaft steigt das Blutvolumen um bis zu 40 %, weshalb die DGE einen Zufuhrwert von 27 mg/Tag empfiehlt. Auch in der Stillzeit sowie in intensiven Wachstumsphasen im Jugendalter ist der Bedarf erhöht.'
       },
       {
-        title: 'Unzureichende Zufuhr & Resorptionshemmer',
-        description: 'Eine rein pflanzliche Ernährung ohne gezielte Optimierung der Bioverfügbarkeit liefert vor allem schwer resorbierbares Fe3+. Phytinsäure in Vollkorn, Gerbstoffe (Tannine) in Kaffee und schwarzem Tee sowie Calcium hemmen die Eisenaufnahme zusätzlich.'
+        title: 'Ernährungsbedingte Faktoren & Resorptionsinhibitoren',
+        description: 'Eine pflanzliche Ernährung liefert Nicht-Häm-Eisen, dessen Resorption durch Phytinsäure (in unfermentiertem Vollkorn), Tannine (Kaffee, schwarzer und grüner Tee) sowie Calcium gehemmt werden kann.'
       },
       {
-        title: 'Resorptionsstörungen im Darm',
-        description: 'Erkrankungen wie Zöliakie, Morbus Crohn, chronische Gastritis (Achlorhydrie) oder die Einnahme von Magensäureblockern (Protonenpumpeninhibitoren wie Pantoprazol) behindern die Aufnahme im oberen Dünndarm (Duodenum).'
+        title: 'Gastrointestinale Resorptionsstörungen & okkulte Blutungen',
+        description: 'Chronische Magen-Darm-Erkrankungen (z. B. Zöliakie, Morbus Crohn, chronische atrophische Gastritis), Dauertherapie mit Protonenpumpenhemmern (PPI) sowie unbemerkte chronische Blutungen (z. B. Ulzera, Polypen) können die Eisenaufnahme behindern oder zu kontinuierlichem Verlust führen.'
       }
     ],
     riskGroups: [
       {
-        group: 'Frauen im gebärfähigen Alter',
-        reason: 'Durch die monatliche Menstruation verlieren Frauen durchschnittlich 15 bis 40 ml Blut, was einem Eisenverlust von 15–30 mg entspricht.'
+        group: 'Menstruierende Frauen',
+        reason: 'Regelmäßiger Eisenverlust über das Menstruationsblut (ca. 15–30 mg Eisen pro Zyklus).'
       },
       {
-        group: 'Schwangere & Stillende',
-        reason: 'Plazenta, Fötus und die erhöhte mütterliche Erythrozytenmasse verlangen eine Zufuhr von bis zu 30 mg täglich.'
+        group: 'Schwangere und Stillende',
+        reason: 'Aufbau von Fötus, Plazenta und mütterlicher Erythrozytenmasse sowie Eisenabgabe über die Muttermilch.'
       },
       {
-        group: 'Veganer & Vegetarier',
-        reason: 'Pflanzliches Eisen (Fe3+) wird deutlich ineffizienter absorbiert und reagiert empfindlich auf pflanzliche Resorptionshemmer.'
+        group: 'Personen mit vegetarischer oder veganer Ernährung',
+        reason: 'Verzehr von pflanzlichem Nicht-Häm-Eisen mit niedrigerer Resorptionsquote bei gleichzeitigem Phytatkonsum.'
       },
       {
-        group: 'Ausdauersportler',
-        reason: 'Mikrotraumata im Fußbett (Sportleranämie), erhöhte Hämolyse und verstärkter Schweißverlust erhöhen den Eisenumsatz.'
+        group: 'Ausdauersportlerinnen und -sportler',
+        reason: 'Erhöhter Eisenumsatz durch Fußsohlenhämolyse, intestinale Mikrotraumata und Schweißverluste.'
       },
       {
-        group: 'Blutspender',
-        reason: 'Mit jeder Vollblutspende (500 ml) verliert der Organismus rund 200 bis 250 mg elementares Eisen.'
+        group: 'Regelmäßige Blutspender',
+        reason: 'Mit jeder Vollblutspende (500 ml) verliert der Körper etwa 200 bis 250 mg elementares Eisen.'
       }
     ],
     dietarySources: [
       { food: 'Kürbiskerne', amount: '12,5 mg / 100g', vegan: true },
-      { food: 'Sesam / Tahin', amount: '10,0 mg / 100g', vegan: true },
+      { food: 'Sesamsaat / Tahin', amount: '10,0 mg / 100g', vegan: true },
       { food: 'Schweineleber', amount: '18,0 mg / 100g', vegan: false },
-      { food: 'Rindfleisch (mager)', amount: '2,5 mg / 100g', vegan: false },
-      { food: 'Linsen & Kichererbsen', amount: '7,0 mg / 100g', vegan: true },
-      { food: 'Haferflocken', amount: '4,5 mg / 100g', vegan: true },
+      { food: 'Rote Linsen (trocken)', amount: '7,5 mg / 100g', vegan: true },
+      { food: 'Rindfleisch (mager, roh)', amount: '2,6 mg / 100g', vegan: false },
+      { food: 'Haferflocken', amount: '4,6 mg / 100g', vegan: true },
       { food: 'Pistazien', amount: '7,3 mg / 100g', vegan: true },
-      { food: 'Dunkle Schokolade (>70%)', amount: '6,7 mg / 100g', vegan: true }
+      { food: 'Dunkle Schokolade (> 70 %)', amount: '6,7 mg / 100g', vegan: true }
     ],
     treatmentInfo: {
       dietTips: [
-        'Kombinieren Sie pflanzliche Eisenquellen immer mit Vitamin C (z. B. ein Glas Orangensaft oder Paprika zum Haferbrei/Linsengericht). Vitamin C reduziert Fe3+ zu Fe2+ und steigert die Absorption um das Drei- bis Vierfache.',
-        'Vermeiden Sie Kaffee, Schwarztee, Grüntee, Rotwein und Milchprodukte 1 bis 2 Stunden vor und nach den Mahlzeiten, um Resorptionsblockaden zu verhindern.',
-        'Weichen Sie Hülsenfrüchte, Getreide und Nüsse vor dem Verzehr ein oder fermentieren Sie diese (z. B. Sauerteigbrot), um hemmende Phytinsäure abzubauen.'
+        'Kombinieren Sie pflanzliche Eisenquellen mit Vitamin-C-reichen Lebensmitteln (z. B. Paprika, Brokkoli, Zitrusfrüchte). Vitamin C reduziert dreiwertiges Nicht-Häm-Eisen zu besser löslichem zweiwertigem Eisen und steigert die Resorption signifikant [1].',
+        'Halten Sie einen zeitlichen Abstand von 1 bis 2 Stunden zwischen eisenreichen Mahlzeiten und hemmenden Getränken wie Kaffee, Schwarztee, Grüntee oder Milch ein [2].',
+        'Durch Einweichen, Keimen oder Sauerteiggärung von Getreide und Hülsenfrüchten wird Phytinsäure enzymatisch abgebaut, was die Bioverfügbarkeit von Spurenelementen verbessert [1].'
       ],
       supplementTips: [
-        'Präparate mit zweiwertigem Eisen (z. B. Eisenbisglycinat oder Eisensulfat) werden morgens nüchtern mit Wasser oder Zitrussaft eingenommen.',
-        'Eisenbisglycinat gilt als besonders magenschonend und verursacht deutlich seltener Obstipation (Verstopfung) oder Übelkeit.',
-        'Eisenpräparate sollten nie auf Verdacht hochdosiert eingenommen werden. Eine Überladung (Hämochromatose-Gefahr) muss zwingend labormedizinisch ausgeschlossen werden.'
+        'Orale Eisenpräparate (z. B. Eisenbisglycinat, Eisensulfat oder Eisenfumarat) werden bevorzugt nüchtern etwa 30 bis 60 Minuten vor dem Frühstück mit Wasser oder Vitamin-C-haltigem Saft eingenommen [2].',
+        'Bei Magenunverträglichkeiten (Übelkeit, Magendruck) kann organisch gebundenes Eisenbisglycinat oder eine Einnahme zu einer leichten Mahlzeit erwogen werden.',
+        'Eine hochdosierte Eisensupplementierung sollte nicht auf Verdacht erfolgen, sondern setzt einen labordiagnostisch gesicherten Befund und eine ärztliche Indikationsstellung voraus [3].'
       ],
       interactions: [
-        'Mindestens 2 Stunden Abstand zu Calcium, Magnesium, Schilddrüsenhormonen (L-Thyroxin) und Antazida einhalten.'
+        'Zwischen der Einnahme von Eisenpräparaten und Calcium-, Magnesium-Präparaten, Antazida sowie Schilddrüsenhormonen (L-Thyroxin) sollte ein Abstand von mindestens 2 Stunden eingehalten werden [2].'
       ]
     },
     faqs: [
       {
-        question: 'Welcher Blutwert ist bei Eisenmangel entscheidend?',
-        answer: 'Der wichtigste Parameter ist der Ferritin-Wert im Serum (Speichereisen). Das normale Hämoglobin (Hb) fällt erst ab, wenn die Eisenspeicher bereits vollständig erschöpft sind (Eisenmangelanämie). Als optimaler Richtwert für Ferritin gelten Werte über 50 µg/l, bei chronischen Entzündungen muss zusätzlich das C-reaktive Protein (CRP) bestimmt werden.'
+        question: 'Welcher Laborwert ist zur Beurteilung der Eisenversorgung am wichtigsten?',
+        answer: 'Serum-Ferritin gilt als zentraler Parameter zur Beurteilung der körpereigenen Eisenspeicher. Sehr niedrige Werte sprechen für entleerte Speicher. Da Ferritin jedoch als Akute-Phase-Protein bei entzündlichen Prozessen reaktiv ansteigen kann, kann bei Verdacht auf eine Entzündung die gleichzeitige Bestimmung von Entzündungsmarkern wie CRP für die Interpretation sinnvoll sein. Bei unklaren Befunden kann zudem die Transferrinsättigung herangezogen werden [2].'
       },
       {
         question: 'Wie schnell füllen sich leere Eisenspeicher wieder auf?',
-        answer: 'Das Auffüllen leerer Eisenspeicher mit oralen Eisenpräparaten erfordert Geduld: In der Regel sind 3 bis 6 Monate konsequente Einnahme erforderlich. Bei schweren Resorptionsstörungen oder Intoleranz kann eine ärztlich verabreichte intravenöse Eiseninfusion erwogen werden.'
+        answer: 'Das Wiederauffüllen entleerter Speicher über orale Präparate nimmt meist 3 bis 6 Monate in Anspruch. Ein Anstieg der Retikulozyten (junge Erythrozyten) ist oft schon nach 7 bis 10 Tagen nachweisbar, der Hämoglobinwert normalisiert sich typischerweise nach 4 bis 6 Wochen [2].'
       },
       {
-        question: 'Warum vertragen viele Menschen Eisentabletten schlecht?',
-        answer: 'Klassische anorganische Eisensalze (wie Eisensulfat) oxidieren im Magen-Darm-Trakt und können die Darmschleimhaut reizen, was zu Übelkeit, Magenschmerzen, Verstopfung oder dunklem Stuhl führt. Organisch gebundenes Eisenbisglycinat ist in Chelat-Form stabilisiert und meist signifikant besser verträglich.'
+        question: 'Warum verursachen herkömmliche Eisenpräparate häufig Magen-Darm-Beschwerden?',
+        answer: 'Unresorbiertes Eisen im Darmtrakt kann die Schleimhaut reizen und zu Übelkeit, Sodbrennen, Obstipation (Verstopfung) oder Diarrhö führen. Die Dunkelfärbung des Stuhls ist dabei eine harmlose Begleiterscheinung. Eine Dosisanpassung, Einnahme jeden zweiten Tag oder der Wechsel zu Chelatverbindungen wie Eisenbisglycinat kann die Verträglichkeit verbessern [2].'
       },
       {
         question: 'Können auch Männer an Eisenmangel leiden?',
-        answer: 'Ja, allerdings tritt Eisenmangel bei Männern deutlich seltener auf als bei Frauen. Da Männer keine Menstruationsblutungen haben, muss ein Eisenmangel bei erwachsenen Männern immer zwingend ärztlich auf okkulte Blutungsquellen im Magen-Darm-Trakt (z. B. Magen- oder Darmspiegelung) untersucht werden.'
+        answer: 'Eisenmangel kommt bei erwachsenen Männern deutlich seltener vor als bei Frauen vor der Menopause. Da Männer keine zyklischen Blutverluste aufweisen, sollte ein nachgewiesener Eisenmangel bei Männern (ebenso wie bei postmenopausalen Frauen) sorgfältig ärztlich auf okkulte gastrointestinale Blutungsquellen (z. B. Magen- oder Darmspiegelung) abgeklärt werden [2].'
       }
     ],
-    schemaCode: 'IronDeficiency'
+    schemaCode: 'IronDeficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Eisen (Stand 2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/eisen/' },
+      { citation: 'AWMF S3-Leitlinie 025/021: Diagnostik und Therapie der Eisenmangelanämie (DGHO / DGIM).', url: 'https://www.awmf.org/' },
+      { citation: 'World Health Organization (WHO): Serum ferritin concentrations for the assessment of iron status in individuals and populations (2020).', url: 'https://www.who.int/publications/i/item/9789240008526' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Aktualisierte Höchstmengenvorschläge für Vitamine und Mineralstoffe in Nahrungsergänzungsmitteln – Eisen (2021).', url: 'https://www.bfr.bund.de/' }
+    ]
   },
   {
     slug: 'vitamin-d-mangel',
     name: 'Vitamin-D-Mangel',
-    subTitle: 'Das Sonnenhormon – Deutschland-spezifisch im Winter weit verbreitet',
+    subTitle: 'Das Sonnenhormon – in Deutschland in den Wintermonaten bei über der Hälfte der Bevölkerung suboptimal',
     metaTitle: 'Vitamin D Mangel Symptome & Werte: Was 25(OH)D unter 50 nmol/l bedeutet | nährstoffmangel.de',
-    metaDescription: 'Vitamin D Mangel Symptome im Winter: Müdigkeit, Immunschwäche, Knochenschmerzen. Was Ihr 25(OH)D-Wert bedeutet, ab wann Sie supplementieren sollten & welche Dosierung sinnvoll ist.',
-    seoH1: 'Vitamin D Mangel Symptome: Was Ihr 25(OH)D-Wert wirklich bedeutet (und wann Sie supplementieren sollten)',
+    metaDescription: 'Vitamin D Mangel Symptome im Winter: Was der 25(OH)D-Wert aussagt, welche Kriterien RKI und DGE anlegen und wie eine bedarfsgerechte Versorgung aussieht.',
+    seoH1: 'Vitamin D Mangel Symptome: Was Ihr 25(OH)D-Wert bedeutet und wann eine Zufuhr sinnvoll ist',
     longTailKeywords: [
       { keyword: 'Vitamin D Mangel Symptome', searchIntent: 'informational', monthlySearches: '12.000–30.000/Monat' },
       { keyword: 'Vitamin D Mangel im Winter', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
@@ -166,128 +182,142 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Was sind typische Vitamin D Mangel Symptome im Winter?',
-        answer: 'Im Winter – besonders von Oktober bis März – kann die Haut in Deutschland durch den flachen Sonnenwinkel kaum Vitamin D synthetisieren. Typische Symptome eines Vitamin D Mangels sind dann: anhaltende Müdigkeit und Erschöpfung, erhöhte Infektanfälligkeit und schwächere Immunabwehr, dumpfe Knochen- oder Muskelschmerzen (besonders Rücken, Knie), gedrückte Stimmung bis hin zu saisonal affektiven Verstimmungen sowie Konzentrationsprobleme.'
+        question: 'Welche Symptome können bei einem Vitamin-D-Defizit im Winter auftreten?',
+        answer: 'Ein Vitamin-D-Mangel entwickelt sich meist schleichend und äußert sich oft durch unspezifische Symptome. Dazu zählen diffuse Müdigkeit, allgemeine Antriebsarmut, erhöhte Infektanfälligkeit der oberen Atemwege sowie dumpfe Knochen- und Muskelschmerzen. Bei ausgeprägtem, lang anhaltendem Mangel steigt das Risiko für Knochenentkalkung (Osteopenie / Osteoporose bei Erwachsenen, Rachitis bei Kindern) [1].'
       },
       {
-        question: 'Was bedeutet ein 25(OH)D-Wert unter 50 nmol/l?',
-        answer: 'Der 25-Hydroxyvitamin-D3-Wert (kurz: 25(OH)D oder Calcidiol) ist der zuverlässigste Marker für Ihren Vitamin-D-Status. Werte unter 50 nmol/l (= 20 ng/ml) gelten laut DGE als Mangel. Funktionelle Medizin und Endokrinologie empfehlen Werte zwischen 75 und 125 nmol/l als optimal. Unter 30 nmol/l (< 12 ng/ml) besteht ein schwerer Mangel mit Knochenrisiko.'
+        question: 'Wie definiert das Robert Koch-Institut (RKI) den 25(OH)D-Status?',
+        answer: 'Das RKI klassifiziert Serum-25(OH)D-Werte wie folgt: Unter 30 nmol/l (< 12 ng/ml) liegt eine mangelhafte Versorgung mit erhöhtem Risiko für Knochenerkrankungen vor. Werte von 30 bis unter 50 nmol/l (12 bis < 20 ng/ml) gelten als suboptimale Versorgung. Werte ab 50 nmol/l (>= 20 ng/ml) definieren eine ausreichende Versorgung bezüglich der Knochengesundheit für die Allgemeinbevölkerung [1, 2].'
       },
       {
-        question: 'Welche Vitamin D Dosierung brauche ich täglich?',
-        answer: 'Die DGE empfiehlt 800 I.E. (20 µg) täglich als Basisversorgung ohne Sonne. Bei einem gemessenen Mangel (< 50 nmol/l) empfehlen die meisten Endokrinologen 2.000–4.000 I.E. täglich für 3 Monate, dann Kontrollmessung. Vitamin D sollte idealerweise morgens mit einer fetthaltigen Mahlzeit eingenommen werden und oft mit Vitamin K2 kombiniert werden, um die Calciumeinlagerung in die Knochen (statt in Arterien) zu lenken.'
+        question: 'Welche Vitamin-D-Dosierung wird empfohlen?',
+        answer: 'Die DGE empfiehlt bei fehlender körpereigener Synthese einen Schätzwert von 20 µg (800 I.E.) pro Tag für Kinder ab 1 Jahr und Erwachsene. Das BfR empfiehlt für freiverkäufliche Nahrungsergänzungsmittel eine Tageshöchstmenge von 20 µg (800 I.E.). Die EFSA hat das Tolerable Upper Intake Level (UL) für Erwachsene auf 100 µg (4.000 I.E.) pro Tag festgelegt [3, 4].'
       }
     ],
     category: 'Vitamin',
     dailyRequirement: '20 µg (800 I.E.) bei fehlender Eigensynthese',
-    dailyRequirementNote: 'DGE-Schätzwert bei fehlender Sonnenexposition. Therapeuten empfehlen oft 1.000–2.000 I.E.',
-    testBiomarker: '25-Hydroxyvitamin D3 (25(OH)D / Calcidiol)',
-    optimalRange: '75–125 nmol/l (30–50 ng/ml)',
-    intro: 'Vitamin D (Cholecalciferol) ist streng genommen kein herkömmliches Vitamin, sondern eine hormonelle Vorstufe (Prohormon). Es steuert über 1.000 Gene im menschlichen Körper und ist essenziell für die Calcium-Resorption im Darm, die Mineralisierung von Knochen und Zähnen, die Funktion des angeborenen und erworbenen Immunsystems sowie für das psychische Wohlbefinden.',
+    dailyRequirementNote: 'DGE-Schätzwert bei fehlender Sonnenexposition. Säuglinge im 1. Lebensjahr: 10 µg (400 I.E.)/Tag zur Rachitisprophylaxe.',
+    dgeDetailedRequirements: [
+      { group: 'Erwachsene (bei fehlender Eigensynthese)', value: '20 µg (800 I.E.)/Tag' },
+      { group: 'Kinder & Jugendliche (ab 1 Jahr)', value: '20 µg (800 I.E.)/Tag' },
+      { group: 'Säuglinge (0 bis unter 12 Monate)', value: '10 µg (400 I.E.)/Tag' }
+    ],
+    testBiomarker: '25-Hydroxyvitamin D3 (25(OH)D / Calcidiol im Serum)',
+    optimalRange: '≥ 50 nmol/l (≥ 20 ng/ml) = ausreichende Versorgung laut RKI & DGE (bezogen auf Knochengesundheit); 30–< 50 nmol/l = suboptimal; < 30 nmol/l = mangelhaft',
+    diagnosticLimits: 'Gemessen wird die Speicherform 25(OH)D im Serum. Das aktive Hormon 1,25(OH)2D (Calcitriol) hat eine sehr kurze Plasmahalbwertszeit und kann selbst bei schwerem Mangel durch kompensatorisch erhöhtes Parathormon normal oder erhöht sein; es ist zur Mangeldiagnostik ungeeignet. 25(OH)D unterliegt einer deutlichen Saisonalität mit Nadir im Februar/März [1].',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 20 µg (800 I.E.) Vitamin D pro Tag in Nahrungsergänzungsmitteln. EFSA Tolerable Upper Intake Level (UL): 100 µg (4.000 I.E.)/Tag für Erwachsene. Eine unkontrollierte hochdosierte Zufuhr über Monate kann zu Hyperkalzämie, Nierensteinbildung und Gefäßverkalkung führen.',
+    intro: 'Vitamin D (Cholecalciferol) nimmt unter den Vitaminen eine Sonderstellung ein: Es fungiert biochemisch als Prohormon und kann unter dem Einfluss solarer UV-B-Strahlung in der Haut synthetisiert werden. Es reguliert die intestinale Calcium- und Phosphatresorption, die Knochenmineralisierung sowie immunologische und muskuläre Zellfunktionen.',
     whatIsIt: [
-      'Der Körper kann bis zu 80–90 % des benötigten Vitamin D in der Haut unter dem Einfluss von solarer UVB-Strahlung (Wellenlänge 290–315 nm) aus 7-Dehydrocholesterol selbst synthetisieren.',
-      'In Deutschland (geografische Breite 47° bis 55° N) steht die Sonne zwischen Oktober und Ende März in einem zu flachen Winkel (< 45° über dem Horizont). Die UVB-Strahlung wird in dieser Zeit fast vollständig von der Erdatmosphäre gefiltert, weshalb eine körpereigene Synthese in den Wintermonaten physikalisch unmöglich ist.',
-      'Über die gewöhnliche Ernährung können im Durchschnitt nur rund 10 bis 20 % des täglichen Bedarfs gedeckt werden, da nur sehr wenige Nahrungsmittel (wie fetter Seefisch und Lebertran) nennenswerte Mengen enthalten.'
+      'Der menschliche Körper kann bei ausreichender UV-B-Exposition der Haut (Wellenlänge 290–315 nm) bis zu 80–90 % des benötigten Vitamin D selbst bilden [1].',
+      'In Deutschland (geografische Breite 47° bis 55° N) steht die Sonne zwischen Oktober und Ende März in einem zu flachen Winkel (< 45° über dem Horizont). Die UV-B-Strahlung wird in dieser Zeit weitgehend von der Atmosphäre absorbiert, sodass eine kutane Eigensynthese im Winter physikalisch kaum möglich ist [1].',
+      'Über die herkömmliche Ernährung werden im Durchschnitt nur rund 2 bis 4 µg Vitamin D pro Tag aufgenommen, da nur wenige Lebensmittel (wie fetter Seefisch, Innereien und Eigelb) nennenswerte Mengen enthalten.'
     ],
     symptoms: {
       primary: [
-        'Anhaltende Müdigkeit, Lethargie und saisonale Winterdepression / Stimmungstiefs',
-        'Erhöhte Anfälligkeit für grippale Infekte und Atemwegserkrankungen',
-        'Diffuse Muskel- und Gliederschmerzen sowie Muskelschwäche',
-        'Knochenschmerzen und erhöhtes Risiko für Knochendichteverlust (Osteopenie / Osteoporose)',
-        'Verzögerte Wundheilung nach Verletzungen oder Operationen'
+        'Anhaltende Müdigkeit, Abgeschlagenheit und Antriebsschwäche',
+        'Erhöhte Anfälligkeit für Atemwegsinfekte in den Wintermonaten',
+        'Diffuse Muskelschwäche und muskuläre Ermüdbarkeit',
+        'Knochen- und Gliederschmerzen (besonders Becken- und Lendenbereich)',
+        'Verminderte Knochendichte (Osteopenie / Osteoporose im Alter, Rachitis im Kindesalter)'
       ],
       secondary: [
-        'Schlafstörungen und unruhiger, wenig erholsamer Schlaf',
-        'Diffuse Rückenschmerzen (besonders im Lendenwirbelbereich)',
-        'Haarausfall (vor allem kreisrunder Haarausfall / Alopecia areata)',
-        'Zahnprobleme und erhöhtes Kariesrisiko durch verminderte Schmelzremineralisierung'
+        'Schlafstörungen und verringerte subjektive Schlafqualität',
+        'Neigung zu depressiver Verstimmung in lichtarmen Monaten',
+        'Verlangsamte Wundheilung nach Gewebeverletzungen',
+        'Diffuse Rücken- und Gelenkbeschwerden'
       ]
     },
     causes: {
-      title: 'Ursachen für Vitamin-D-Mangel',
-      description: 'Die Hauptursache ist das moderne Alltagsleben in geschlossenen Räumen gepaart mit den Breitengraden Mitteleuropas.'
+      title: 'Mögliche Ursachen für einen Vitamin-D-Mangel',
+      description: 'Geografische Gegebenheiten in Mitteleuropa und moderne Innenraum-Lebensstile sind die Hauptursachen.'
     } as any,
     causesList: [
       {
-        title: 'Geografische Lage & Wintermonate',
-        description: 'In ganz Deutschland und Mitteleuropa reicht der UVB-Strahlungsindex von Oktober bis April nicht aus, um die Eigensynthese in den Keratinozyten der Haut anzuregen. Körpereigene Speicher im Fettgewebe leeren sich über den Winter kontinuierlich.'
+        title: 'Geografische Breite & Wintermonate',
+        description: 'Von Oktober bis April reicht der UV-B-Strahlungsindex in Deutschland nicht aus, um die Eigensynthese in den Keratinozyten der Haut anzuregen [1].'
       },
       {
-        title: 'Büroalltag & Indoor-Lebensstil',
-        description: 'Selbst im Sommer verbringen viele Menschen die sonnenreichsten Stunden (11 bis 15 Uhr) in geschlossenen Räumen, Büros oder Fahrzeugen. Fensterglas filtert UVB-Strahlung zu 100 % heraus.'
+        title: 'Geringe Sonnenexposition im Alltag',
+        description: 'Berufliche Tätigkeiten in geschlossenen Räumen, vollständige Körperbedeckung oder ständige Nutzung von Sonnenschutzmitteln mit hohem LSF reduzieren die kutane Synthese auch im Sommer.'
       },
       {
-        title: 'Sonnenschutzmittel & Kleidung',
-        description: 'Sonnencreme ab Lichtschutzfaktor 15 reduziert die kutane Vitamin-D-Synthese um mehr als 95 %. Vollständige Körperbedeckung verhindert die Synthese vollständig.'
+        title: 'Alterungsprozesse der Haut',
+        description: 'Im höheren Lebensalter nimmt die Synthesekapazität der Haut für 7-Dehydrocholesterol um mehr als die Hälfte ab [1].'
       },
       {
-        title: 'Hauttyp & Alterung',
-        description: 'Dunklere Hauttypen mit hohem Melaningehalt benötigen ein Vielfaches an Sonnenexposition. Zudem nimmt die Synthesekapazität der Haut ab dem 60. Lebensjahr um bis zu 50 % ab.'
+        title: 'Malabsorption & Medikamenteneinfluss',
+        description: 'Chronisch-entzündliche Darmerkrankungen, Zöliakie sowie die Einnahme bestimmter Antiepileptika können die intestinale Aufnahme oder den hepatischen Abbau beeinflussen.'
       }
     ],
     riskGroups: [
       {
-        group: 'Büroangestellte & Schichtarbeiter',
-        reason: 'Verbringen die Mittagssonne fast ausnahmslos in Innenräumen.'
+        group: 'Personen mit seltenem Aufenthalt im Freien',
+        reason: 'Immobilitätsbedingt, bei Pflegebedürftigkeit oder Schichtarbeit in Innenräumen.'
       },
       {
-        group: 'Senioren & Pflegeheimbewohner',
-        reason: 'Reduzierte Eigensynthese der alternden Haut und seltene Aufenthalte im Freien.'
+        group: 'Senioren über 65 Jahre',
+        reason: 'Physiologisch verringerte Syntheseleistung der Haut und verminderte Aufenthalte im Sonnenlicht.'
       },
       {
-        group: 'Menschen mit dunklerem Hauttyp',
-        reason: 'Melanin fungiert als natürlicher UV-Filter und erfordert längere Sonnenexposition.'
+        group: 'Personen mit dunklerem Hauttyp',
+        reason: 'Ein hoher Melaningehalt filtert UV-B-Strahlung und erfordert eine längere Sonnenexposition für vergleichbare Syntheseraten.'
       },
       {
-        group: 'Personen mit Übergewicht (BMI > 30)',
-        reason: 'Vitamin D ist lipophil und wird im viszeralen Fettgewebe sequestriert (eingelagert).'
+        group: 'Personen mit vollständiger Körperbedeckung',
+        reason: 'Kleidung schirmt UV-B-Strahlung ab und verhindert die Synthese an Armen, Beinen und Rumpf.'
       }
     ],
     dietarySources: [
-      { food: 'Hering (fettreich)', amount: '25 µg (1.000 I.E.) / 100g', vegan: false },
-      { food: 'Lachs (Wildfang)', amount: '16 µg (640 I.E.) / 100g', vegan: false },
+      { food: 'Hering (Matjes)', amount: '25,0 µg (1.000 I.E.) / 100g', vegan: false },
+      { food: 'Wildlachs', amount: '16,0 µg (640 I.E.) / 100g', vegan: false },
       { food: 'Sardinen in Öl', amount: '4,5 µg (180 I.E.) / 100g', vegan: false },
-      { food: 'Hühnereigelb', amount: '2,9 µg (116 I.E.) / 100g', vegan: false },
-      { food: 'Champignons & Pfifferlinge (UV-behandelt)', amount: '2–3 µg (80–120 I.E.) / 100g', vegan: true }
+      { food: 'Champignons (UV-behandelt)', amount: '3,0 µg (120 I.E.) / 100g', vegan: true },
+      { food: 'Hühnereigelb', amount: '2,9 µg (116 I.E.) / 100g', vegan: false }
     ],
     treatmentInfo: {
       dietTips: [
-        'Verlassen Sie sich nicht allein auf die Ernährung: Selbst mit fettem Seefisch ist eine vollständige Winter-Bedarfsdeckung kaum praktikabel.',
-        'Nutzen Sie im Sommer tägliche kurze Sonnenbäder (10–20 Minuten ohne Sonnenschutz, Gesicht, Arme und Beine) zur Synthese, stets unter Vermeidung von Sonnenbrand.'
+        'Eine bedarfsgerechte Vitamin-D-Versorgung lässt sich über herkömmliche Lebensmittel allein kaum sicherstellen, da typische Verzehrmengen nur einen kleinen Teil des Schätzwertes decken [1].',
+        'Im Sommer reichen bereits 10 bis 25 Minuten tägliche Sonnenexposition von Gesicht, Händen und Teilen von Armen und Beinen (ohne Sonnenbrand) aus, um körpereigene Speicher aufzubauen [1].'
       ],
       supplementTips: [
-        'Vitamin D3 (Cholecalciferol) ist dem pflanzlichen D2 (Ergocalciferol) in der biologischen Verwertbarkeit überlegen.',
-        'Da Vitamin D fettlöslich ist, sollte es immer mit einer fetthaltigen Mahlzeit eingenommen werden.',
-        'Die Kombination mit Vitamin K2 (Menachinon-7 / MK-7) ist sinnvoll, da K2 dafür sorgt, dass mobilisiertes Calcium in die Knochen eingebaut und nicht in den Arterienwänden abgelagert wird.'
+        'Vitamin D3 (Cholecalciferol) wird in Studien als biologisch effizienter zur Anhebung des Serum-25(OH)D-Spiegels eingestuft als Vitamin D2 (Ergocalciferol) [1].',
+        'Da Vitamin D fettlöslich ist, sollte die Einnahme zusammen mit einer fetthaltigen Mahlzeit erfolgen, um die Resorption über Gallensäuren und Mizellen zu unterstützen.',
+        'Vor Beginn einer hochdosierten Supplementierung sollte der Serum-25(OH)D-Wert laborchemisch bestimmt werden, um Überdosierungen zu vermeiden [1, 3].'
       ],
       interactions: [
-        'Eine ausreichende Magnesiumversorgung ist Grundvoraussetzung, da die Enzyme, die Vitamin D in seine aktive Form (Calcitriol) umwandeln, magnesiumabhängig sind.'
+        'Für die Umwandlung von Vitamin D in seine aktive Form sind magnesiumabhängige Enzyme beteiligt. Eine ausreichende Magnesiumversorgung über die Nahrung ist daher physiologisch sinnvoll.'
       ]
     },
     faqs: [
       {
-        question: 'Was ist der Unterschied zwischen ng/ml und nmol/l bei Vitamin D?',
-        answer: 'Laborwerte für 25(OH)D werden in zwei unterschiedlichen Einheiten angegeben. Umrechnungsformel: 1 ng/ml entspricht 2,5 nmol/l. Ein Zielwert von 30 ng/ml entspricht also 75 nmol/l. Werte unter 20 ng/ml (50 nmol/l) gelten laut medizinischen Leitlinien als manifester Mangel.'
+        question: 'Wie rechnet man zwischen nmol/l und ng/ml um?',
+        answer: 'Laborwerte für 25(OH)D werden in zwei Einheiten angegeben: 1 ng/ml entspricht 2,5 nmol/l. Umgekehrt entspricht 1 nmol/l 0,4 ng/ml. Der RKI-Schwellenwert für eine ausreichende Versorgung von 50 nmol/l entspricht somit 20 ng/ml [1].'
       },
       {
-        question: 'Kann man Vitamin D überdosieren?',
-        answer: 'Ja. Im Gegensatz zu wasserlöslichen Vitaminen wird überschüssiges Vitamin D nicht über den Urin ausgeschieden, sondern im Fettgewebe gespeichert. Extrem hohe, unkontrollierte Dosierungen über Monate können zu einer Hyperkalzämie (gefährliche Calciumüberladung im Blut mit Nierenschäden) führen. Eine laborbasierte Dosisanpassung wird empfohlen.'
+        question: 'Kann Vitamin D überdosiert werden?',
+        answer: 'Ja. Im Gegensatz zu wasserlöslichen Vitaminen wird überschüssiges Vitamin D im Fett- und Muskelgewebe gespeichert. Eine chronische Überdosierung (z. B. durch unkontrollierte Einnahme von mehreren zehntausend I.E. täglich über Wochen) kann zu Hyperkalzämie mit Übelkeit, Nierenschäden und Herzrhythmusstörungen führen. Die EFSA hat die sichere Obergrenze (UL) für Erwachsene auf 100 µg (4.000 I.E.)/Tag festgelegt [4].'
       },
       {
-        question: 'Reicht ein Platz am sonnigen Bürofenster für die Vitamin-D-Bildung?',
-        answer: 'Nein. Normales Fensterglas lässt zwar wärmende Infrarotstrahlung und UVA-Strahlen durch, absorbiert jedoch UVB-Strahlen vollständig. Ohne direkte Sonnenexposition im Freien findet keine Synthese statt.'
+        question: 'Reicht Sonnenlicht hinter Fensterglas zur Vitamin-D-Bildung aus?',
+        answer: 'Nein. Normales Fensterglas lässt zwar wärmende Infrarotstrahlung und sichtbares Licht durch, filtert jedoch die energiereichere UV-B-Strahlung nahezu vollständig heraus. Eine Eigensynthese erfordert direkten Aufenthalt im Freien [1].'
       }
     ],
-    schemaCode: 'VitaminDDeficiency'
+    schemaCode: 'VitaminDDeficiency',
+    sources: [
+      { citation: 'Robert Koch-Institut (RKI): Antworten auf häufig gestellte Fragen zu Vitamin D (Stand 2023).', url: 'https://www.rki.de/SharedDocs/FAQ/Vitamin_D/Vitamin_D_FAQ-Liste.html' },
+      { citation: 'Rabenberg, M., Mensink, G. B. (2016): Vitamin-D-Status in Deutschland. Journal of Health Monitoring, 1(2): 36–42 (DEGS1).', url: 'https://edoc.rki.de/' },
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte – Vitamin D (2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/vitamin-d/' },
+      { citation: 'European Food Safety Authority (EFSA): Scientific Opinion on the Tolerable Upper Intake Level for vitamin D (EFSA Journal 2012; 10(7):2813).', url: 'https://www.efsa.europa.eu/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Höchstmengenvorschläge für Vitamin D in Nahrungsergänzungsmitteln (2021).', url: 'https://www.bfr.bund.de/' }
+    ]
   },
   {
     slug: 'magnesiummangel',
     name: 'Magnesiummangel',
-    subTitle: 'Der Zündfunke für Muskeln, Nervensystem & zelluläre Energie',
+    subTitle: 'Essentieller Mineralstoff für Muskel- und Nervenfunktion sowie den Energiestoffwechsel',
     metaTitle: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlaf | nährstoffmangel.de',
-    metaDescription: 'Magnesiummangel Symptome: Wadenkrämpfe nachts, Lidzucken, innere Unruhe und Einschlafprobleme erkennen. Welche Magnesiumform (Bisglycinat vs. Citrat) am besten aufgenommen wird.',
-    seoH1: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlafprobleme – und wie Magnesiumform entscheidet',
+    metaDescription: 'Magnesiummangel Symptome erkennen: Wadenkrämpfe, Muskelzucken und innere Unruhe. Welche Ursachen infrage kommen, wie Laborwerte einzuordnen sind und was die DGE empfiehlt.',
+    seoH1: 'Magnesiummangel Symptome: Wadenkrämpfe, Lidzucken & Schlafprobleme differenziert betrachtet',
     longTailKeywords: [
       { keyword: 'Magnesiummangel Symptome Wadenkrämpfe', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
       { keyword: 'Magnesium Bisglycinat vs Citrat', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
@@ -298,126 +328,141 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Warum bekomme ich nachts Wadenkrämpfe – ist das Magnesiummangel?',
-        answer: 'Nächtliche Wadenkrämpfe sind eines der bekanntesten Zeichen eines funktionellen Magnesiummangels. Magnesium ist für die Muskelentspannung (Calcium-Antagonist) zuständig: Fehlt es, bleibt Calcium in der Muskelzelle und löst Dauerkontraktionen aus. Besonders häufig sind Krämpfe in der zweiten Nachthälfte, da Nierenfiltration und Stresshormone dann einen Magnesium-Tief erzeugen. Wichtig: Im Standard-Blutbild (Serum-Magnesium) wird nur ~1% des Körper-Magnesiums erfasst – die Muskel-Intrazellulärmessung ist aussagekräftiger.'
+        question: 'Sind nächtliche Wadenkrämpfe immer ein Zeichen von Magnesiummangel?',
+        answer: 'Nein, das ist eine vereinfachte Annahme. Nächtliche Muskelkrämpfe können mit einem funktionellen Magnesiummangel assoziiert sein, da Magnesium als physiologischer Calcium-Antagonist an der Muskelentspannung beteiligt ist. Krämpfe haben jedoch häufig andere Ursachen, darunter venöse Insuffizienz, Überlastung beim Sport, Elektrolytverschiebungen (Natrium, Kalium), Nervenkompressionen oder Medikamentennebenwirkungen [1, 2].'
       },
       {
-        question: 'Magnesium Bisglycinat oder Citrat – was ist besser für den Schlaf?',
-        answer: 'Magnesiumbisglycinat hat im Vergleich die höchste Bioverfügbarkeit (bis 40%) und gilt als magenfreundlichste Form. Die Glycin-Bindung hat zusätzlich eine leicht dämpfende Wirkung auf das ZNS, was den Einsatz speziell vor dem Schlafengehen sinnvoll macht. Magnesiumcitrat ist ebenfalls gut bioverfügbar (~30%) und oft günstiger, wirkt aber leicht abführend bei höheren Dosen. Magnesiumoxid (das günstigste Supplement) hat nur ~4% Bioverfügbarkeit – kaum wirksam.'
+        question: 'Worin unterscheiden sich Magnesiumbisglycinat und Magnesiumcitrat?',
+        answer: 'Organische Magnesiumverbindungen wie Magnesiumbisglycinat (an die Aminosäure Glycin gebunden) und Magnesiumcitrat (an Citronensäure gebunden) weisen in Studien eine höhere Bioverfügbarkeit auf als anorganisches Magnesiumoxid. Citrat wird rasch resorbiert, kann jedoch bei höheren Einzeldosen abführend wirken. Bisglycinat gilt als besonders magenschonend und wird bevorzugt abends eingenommen [2].'
       }
     ],
     category: 'Mineralstoff',
-    dailyRequirement: '300–350 mg (Männer 350 mg, Frauen 300 mg)',
-    dailyRequirementNote: 'DGE-Referenzwert. Sportler und Gestresste haben höheren Bedarf.',
-    testBiomarker: 'Magnesium im Vollblut (nicht reines Serum)',
-    optimalRange: '1,35–1,50 mmol/l (Vollblut) bzw. > 0,85 mmol/l (Serum)',
-    intro: 'Magnesium ist der wichtigste intrazelluläre Kationen-Mineralstoff nach Kalium. Als Co-Faktor von mehr als 600 enzymatischen Reaktionen aktiviert es die ATP-Synthese (zelluläre Energiewährung), stabilisiert die Zellmembranen und steuert das sensible Zusammenspiel zwischen Muskelanspannung und Muskelentspannung.',
+    dailyRequirement: '300–350 mg (Frauen 300 mg, Männer 350 mg)',
+    dailyRequirementNote: 'DGE-Referenzwert (2021). Bei 19 bis < 25 Jahren: Männer 400 mg/Tag, Frauen 350 mg/Tag. Schwangere: 310 mg/Tag, Stillende: 390 mg/Tag.',
+    dgeDetailedRequirements: [
+      { group: 'Männer (ab 25 Jahren)', value: '350 mg/Tag' },
+      { group: 'Frauen (ab 25 Jahren)', value: '300 mg/Tag' },
+      { group: 'Junge Erwachsene (19–<25 J.)', value: 'Männer 400 mg, Frauen 350 mg/Tag' },
+      { group: 'Schwangere', value: '310 mg/Tag' },
+      { group: 'Stillende', value: '390 mg/Tag' }
+    ],
+    testBiomarker: 'Serum-Magnesium (klinischer Standard) / Vollblut- bzw. Erythrozyten-Magnesium (komplementär)',
+    optimalRange: '0,75–1,05 mmol/l (Referenzbereich im Serum nach Richtlinien der klinischen Chemie)',
+    diagnosticLimits: 'Rund 99 % des Magnesiums befinden sich intrazellulär und im Skelettsystem, nur etwa 1 % zirkuliert im Serum. Der Körper reguliert den Serumspiegel streng durch Mobilisierung aus den Geweben. Ein erniedrigter Serumwert (< 0,75 mmol/l) spricht für ein relevantes Defizit; ein normaler Serumwert schließt ein leichtes intrazelluläres Defizit jedoch nicht völlig aus. Vollblut- und Erythrozytenanalysen werden in der Forschung genutzt, sind jedoch kein allgemeiner Leitlinienstandard für die ambulante Routine.',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 250 mg Magnesium pro Tag in Nahrungsergänzungsmitteln, aufgeteilt auf mindestens zwei Einzeldosen, um osmotisch bedingte Durchfälle zu vermeiden.',
+    intro: 'Magnesium ist ein quantitativ bedeutender intrazellulärer Mineralstoff. Als Kofaktor von mehr als 300 bis 600 enzymatischen Reaktionen ist es unverzichtbar für die ATP-Synthese (zelluläre Energiewährung), die Reizübertragung im Nervensystem sowie das kontrollierte Zusammenspiel von Muskelkontraktion und -relaxation.',
     whatIsIt: [
-      'Etwa 60 % des Gesamtkörpermagniums befinden sich im Knochenskelett, rund 39 % in den Zellen (insbesondere in Muskel- und Herzmuskelzellen) und lediglich 1 % zirkuliert frei im Blutserum.',
-      'Weil der Körper bei einem Defizit sofort Magnesium aus den Knochen ins Blut mobilisiert, zeigt ein herkömmlicher Standard-Serum-Bluttest einen Mangel oft erst an, wenn die Gewebespeicher bereits massiv verarmt sind.',
-      'Magnesium fungiert als natürlicher Gegenspieler (Antagonist) von Calcium: Calcium bewirkt die Muskelkontraktion, Magnesium die anschließende Entspannung.'
+      'Etwa 60 % des Gesamtkörpermagnesiums lagern im Knochenskelett, rund 39 % in den Zellen (insbesondere in Skelett- und Herzmuskelzellen) und nur rund 1 % zirkuliert frei im Blutserum [1].',
+      'Der Körper reguliert den Serumspiegel über die renale Ausscheidung und Rückresorption sowie über die Freisetzung aus dem Knochengewebe.',
+      'Magnesium agiert physiologisch als Gegenspieler von Calcium: Während Calcium den Einstrom in die Muskelzelle und die Kontraktion steuert, ermöglicht Magnesium die darauffolgende Repolarisation und Entspannung.'
     ],
     symptoms: {
       primary: [
-        'Nächtliche Wadenkrämpfe und plötzliche Muskelverspannungen im Nacken- und Schulterbereich',
-        'Faszikulationen wie nervöses Augenzucken (Lidzucken) oder Muskelzucken im Ruhebereich',
-        'Innere Unruhe, Nervosität, Reizbarkeit und verminderte Stresstoleranz',
-        'Einschlafprobleme und oberflächlicher, fragmentierter Schlaf',
-        'Spannungskopfschmerzen und erhöhte Anfälligkeit für Migräneattacken'
+        'Muskelverspannungen, Wadenkrämpfe und Faszikulationen (z. B. Lidzucken)',
+        'Innere Unruhe, Nervosität und herabgesetzte subjektive Stresstoleranz',
+        'Einschlaf- und Durchschlafprobleme',
+        'Spannungskopfschmerzen und muskuläre Nackenverspannungen',
+        'Rasche muskuläre Ermüdbarkeit bei körperlicher Anstrengung'
       ],
       secondary: [
-        'Herzstolpern, Palpitationen oder funktionelle Herzrhythmusstörungen ohne organischen Befund',
-        'Chronische Müdigkeit und rasche muskuläre Erschöpfung beim Sport',
-        'Taubheitsgefühle oder Kribbeln in Armen und Beinen (Parästhesien)',
-        'Magen-Darm-Krämpfe und Neigung zu funktionellen Verstopfungen'
+        'Funktionelles Herzstolpern oder Palpitationen (nach ärztlichem Ausschluss organischer Herzkrankheiten)',
+        'Neigung zu Magen-Darm-Krämpfen oder funktioneller Obstipation',
+        'Parästhesien (Kribbeln oder Taubheitsgefühle in den Extremitäten)',
+        'Diffuse Abgeschlagenheit und allgemeines Energietief'
       ]
     },
     causes: {
-      title: 'Ursachen für Magnesiummangel',
-      description: 'Moderne Ernährungsgewohnheiten und chronischer Stress sind die Haupttreiber.'
+      title: 'Mögliche Ursachen für einen Magnesiummangel',
+      description: 'Zufuhrdefizite, erhöhte renale Verluste und Malabsorption sind die häufigsten Auslöser.'
     } as any,
     causesList: [
       {
-        title: 'Chronischer Stress & Cortisol-Ausschüttung',
-        description: 'Unter Stress schüttet der Körper vermehrt Adrenalin und Cortisol aus. Diese Stresshormone bewirken eine stark beschleunigte Ausscheidung von Magnesium über die Nieren.'
+        title: 'Chronischer Stress & hormonelle Ausscheidung',
+        description: 'Unter langanhaltender Stressbelastung stimulieren Catecholamine und Cortisol die Ausscheidung von Magnesium über die Nieren [1].'
       },
       {
-        title: 'Hoher Schweißverlust im Sport',
-        description: 'Intensives Ausdauer- und Krafttraining führt über den Schweiß und die erhöhte Stoffwechselaktivität zu einem massiven Magnesiumverlust.'
+        title: 'Verstärkte Schweißverluste & Leistungssport',
+        description: 'Intensives Ausdauertraining führt über Schweiß und den gesteigerten Energiestoffwechsel zu einem erhöhten Magnesiumbedarf.'
       },
       {
-        title: 'Verarbeitete Lebensmittel & raffinierter Zucker',
-        description: 'Beim industriellen Raffinieren von Getreide (Weißmehl) gehen über 80 % des Magnesiums verloren. Zudem verbraucht der Abbau von raffiniertem Zucker große Mengen Magnesium.'
+        title: 'Ernährung mit hohem Anteil hochverarbeiteter Produkte',
+        description: 'Beim Raffinieren von Getreide (Weißmehl) gehen erhebliche Teile des Magnesiums verloren. Eine geringe Zufuhr von Vollkorn, Nüssen und Hülsenfrüchten mindert die Aufnahme.'
       },
       {
-        title: 'Medikamente & Diuretika',
-        description: 'Entwässerungstabletten (Diuretika), Protonenpumpenhemmer (PPI) und bestimmte Antibiotika behindern die renale Rückresorption oder die intestinale Aufnahme.'
+        title: 'Medikamenteneinfluss & Diuretika',
+        description: 'Schleifen- und Thiaziddiuretika, Protonenpumpeninhibitoren (PPI) bei Dauereinnahme sowie bestimmte Zytostatika können die renale Rückresorption oder Darmaufnahme beeinträchtigen.'
       }
     ],
     riskGroups: [
       {
-        group: 'Sportler & körperlich schwer Arbeitende',
-        reason: 'Verstärkte Schweißverluste und erhöhter zellulärer ATP-Umsatz.'
+        group: 'Sportlerinnen und Sportler',
+        reason: 'Erhöhter zellulärer ATP-Umsatz und Verluste über den Schweiß.'
       },
       {
-        group: 'Dauergestresste Berufstätige',
-        reason: 'Ständige Sympathikusaktivierung treibt die renale Magnesiumausscheidung.'
+        group: 'Personen unter chronischer Stressbelastung',
+        reason: 'Verstärkte renale Ausscheidung durch sympathiko-adrenale Aktivierung.'
       },
       {
-        group: 'Menschen mit Diabetes Typ 2',
-        reason: 'Glukosurie im Urin führt zu osmotischer Magnesiumausschwemmung.'
+        group: 'Patienten mit Diabetes mellitus Typ 2',
+        reason: 'Glukosurie kann zu einer vermehrten osmotischen Magnesiumausscheidung über die Nieren führen.'
       },
       {
-        group: 'Schwangere',
-        reason: 'Der wachsende Fötus und erhöhtes Verteilungsvolumen verlangen mehr Magnesium.'
+        group: 'Daueranwender von Säureblockern (PPI)',
+        reason: 'Langzeiteinnahme von Protonenpumpenhemmern kann die intestinale Resorption von Magnesium hemmen.'
       }
     ],
     dietarySources: [
       { food: 'Kürbiskerne', amount: '535 mg / 100g', vegan: true },
       { food: 'Sonnenblumenkerne', amount: '395 mg / 100g', vegan: true },
-      { food: 'Dunkle Schokolade (85%)', amount: '230 mg / 100g', vegan: true },
-      { food: 'Mandeln & Cashewkerne', amount: '260 mg / 100g', vegan: true },
-      { food: 'Vollkornhaferflocken', amount: '140 mg / 100g', vegan: true },
-      { food: 'Bananen', amount: '36 mg / 100g', vegan: true },
-      { food: 'Spinat (gedünstet)', amount: '79 mg / 100g', vegan: true }
+      { food: 'Cashewkerne', amount: '260 mg / 100g', vegan: true },
+      { food: 'Dunkle Schokolade (85 %)', amount: '230 mg / 100g', vegan: true },
+      { food: 'Haferflocken', amount: '140 mg / 100g', vegan: true },
+      { food: 'Spinat (frisch)', amount: '79 mg / 100g', vegan: true },
+      { food: 'Bananen', amount: '36 mg / 100g', vegan: true }
     ],
     treatmentInfo: {
       dietTips: [
-        'Trinken Sie magnesiumreiches Mineralwasser mit einem Gehalt von mindestens 50–100 mg Magnesium pro Liter.',
-        'Integrieren Sie täglich eine Handvoll ungesalzene Kerne (Kürbis- oder Sonnenblumenkerne) in Ihr Frühstück.'
+        'Integrieren Sie regelmäßig Vollkornprodukte, Nüsse, Saaten (z. B. Kürbis- und Sonnenblumenkerne) sowie Hülsenfrüchte in den Speiseplan [1].',
+        'Magnesiumreiches Mineralwasser mit mindestens 50 bis 100 mg Magnesium pro Liter kann einen wertvollen Beitrag zur täglichen Zufuhr leisten.'
       ],
       supplementTips: [
-        'Achten Sie auf die organische Verbindung: Magnesiumbisglycinat ist cheliert, bindet an Glycin, wirkt beruhigend und ist extrem darmfreundlich (kein Durchfall).',
-        'Magnesiumcitrat wird rasch resorbiert und eignet sich besonders für Sportler und bei Neigung zu Verstopfung.',
-        'Meiden Sie billiges anorganisches Magnesiumoxid, da es eine geringe Bioverfügbarkeit besitzt und abführend wirkt.'
+        'Organische Verbindungen (wie Magnesiumbisglycinat oder Magnesiumcitrat) zeichnen sich durch eine gute Wasserlöslichkeit und Bioverfügbarkeit aus [2].',
+        'Verteilen Sie Tagesdosen auf zwei Gaben (z. B. morgens und abends), da Einzeldosen über 250–300 mg die Resorptionsquote senken und abführend wirken können [2].',
+        'Bei empfindlichem Magen-Darm-Trakt ist Magnesiumbisglycinat oft besser verträglich als Citrat oder anorganisches Magnesiumoxid.'
       ],
       interactions: [
-        'Nicht zeitgleich mit hochdosiertem Zink, Eisen oder Calcium einnehmen, da dieselben Transporter im Darm genutzt werden.'
+        'Halten Sie bei gleichzeitiger Zufuhr von hochdosiertem Zink, Eisen oder Calcium einen zeitlichen Abstand von 2 bis 3 Stunden ein, um kompetitive Hemmungen der Darmtransporter zu vermeiden.'
       ]
     },
     faqs: [
       {
-        question: 'Warum reicht ein normales Blutbild oft nicht aus, um Magnesiummangel zu erkennen?',
-        answer: 'Im Blutserum befindet sich lediglich 1 % des gesamten Körperbestandes. Bei einem Defizit schüttet der Organismus sofort Magnesium aus Knochen und Geweben ins Blut aus, um den Serumspiegel konstant zu halten. Erst ein Vollblut-Mineralstofftest (inklusive der roten Blutkörperchen) liefert ein realistisches Bild der zellulären Versorgung.'
+        question: 'Reicht ein Standard-Blutbild zur Abklärung eines Magnesiummangels aus?',
+        answer: 'Im Blutserum zirkuliert nur ca. 1 % des Körperbestands. Ein erniedrigter Serumwert spricht für ein relevantes Defizit; ein normaler Serumwert schließt jedoch ein leichtes intrazelluläres Defizit nicht mit letzter Sicherheit aus, da der Körper Magnesium bei Bedarf aus Knochen und Geweben mobilisiert. In wissenschaftlichen Studien wird gelegentlich die Erythrozyten-Konzentration oder ein Belastungstest herangezogen; diese Verfahren sind jedoch kein allgemeiner klinischer Standard [1, 2].'
       },
       {
         question: 'Wann sollte Magnesium am besten eingenommen werden?',
-        answer: 'Magnesiumbisglycinat wird vorzugsweise abends vor dem Schlafen eingenommen, da es die neuronale Erregbarkeit dämpft und die Schlafarchitektur unterstützt. Sportler nehmen Magnesiumcitrat gerne nach Belastungen oder über den Tag verteilt in Einzeldosen ein.'
+        answer: 'Magnesiumbisglycinat wird häufig abends vor dem Schlafen eingenommen. Bei sportlicher Belastung kann Magnesiumcitrat über den Tag verteilt oder nach dem Training eingenommen werden. Wichtig ist vor allem die Regelmäßigkeit und die Aufteilung auf kleinere Einzeldosen [2].'
       },
       {
-        question: 'Warum verursacht Magnesium manchmal weichen Stuhl oder Durchfall?',
-        answer: 'Unresorbiertes Magnesium im Dickdarm zieht osmotisch Wasser an. Werden zu große Einzeldosen (über 300 mg auf einmal) eingenommen, reagiert der Darm mit Durchfall. Die Aufteilung in zwei kleinere Tagesdosen oder der Wechsel zu Magnesiumbisglycinat löst dieses Problem in den meisten Fällen.'
+        question: 'Warum führt Magnesium bei manchen Menschen zu weichem Stuhl?',
+        answer: 'Unresorbiertes Magnesium im Dünn- und Dickdarm bindet osmotisch Wasser. Bei zu hoher Einzeldosis (über 250 mg auf einmal) reagiert der Darm mit weichem Stuhl oder Durchfall. Eine Dosisreduktion, die Aufteilung auf zwei Tagesportionen oder der Wechsel zu Bisglycinat löst dies meist rasch [2].'
       }
     ],
-    schemaCode: 'MagnesiumDeficiency'
+    schemaCode: 'MagnesiumDeficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Magnesium (2021).', url: 'https://www.dge.de/wissenschaft/referenzwerte/magnesium/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Aktualisierte Höchstmengenvorschläge für Magnesium in Nahrungsergänzungsmitteln (2021).', url: 'https://www.bfr.bund.de/' },
+      { citation: 'European Food Safety Authority (EFSA): Tolerable Upper Intake Level for magnesium (dissoziierbare Salze).', url: 'https://www.efsa.europa.eu/' },
+      { citation: 'Classen, H. G. et al. (2012): Magnesium status: assessment and clinical relevance. Journal of Clinical Medicine.', url: 'https://www.ncbi.nlm.nih.gov/' }
+    ]
   },
   {
     slug: 'vitamin-b12-mangel',
     name: 'Vitamin-B12-Mangel',
-    subTitle: 'Lebenswichtig für Nervensystem & Zellteilung – Pflichtthema für Veganer',
-    metaTitle: 'Vitamin B12 Mangel Symptome vegan: Taubheit, Brain Fog & Holotranscobalamin | nährstoffmangel.de',
-    metaDescription: 'Vitamin B12 Mangel Symptome: Warum Veganer und ältere Menschen besonders gefährdet sind, was Holotranscobalamin (Holo-TC) vs. Gesamt-B12 bedeutet & welche Supplementform wirklich ins Blut geht.',
-    seoH1: 'Vitamin B12 Mangel Symptome: Taubheit, Brain Fog & warum das "normale" Blutbild täuscht (besonders bei Veganern)',
+    subTitle: 'Essentiell für Nervensystem, Blutbildung und DNA-Synthese – zentrales Thema bei pflanzlicher Ernährung',
+    metaTitle: 'Vitamin B12 Mangel Symptome: Kribbeln, Fatigue & Holo-TC | nährstoffmangel.de',
+    metaDescription: 'Vitamin B12 Mangel Symptome: Warum Veganer und Senioren gefährdet sind, wie Holotranscobalamin (Holo-TC) und MMA interpretiert werden und welche Zufuhrformen wirken.',
+    seoH1: 'Vitamin B12 Mangel Symptome: Taubheitsgefühle, Fatigue & Diagnostik bei pflanzlicher Ernährung',
     longTailKeywords: [
       { keyword: 'Vitamin B12 Mangel Symptome vegan', searchIntent: 'informational', monthlySearches: '4.000–9.000/Monat' },
       { keyword: 'Holotranscobalamin Normalwert', searchIntent: 'informational', monthlySearches: '1.500–3.500/Monat' },
@@ -428,125 +473,139 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Warum zeigt der Bluttest "normales B12", obwohl ich Symptome habe?',
-        answer: 'Standard-B12-Bluttests messen das Gesamt-Cobalamin im Serum – dazu zählen auch inaktive Transportformen, die biologisch wertlos sind. Holotranscobalamin (Holo-TC oder "aktives B12") ist der einzige Marker, der anzeigt, ob B12 tatsächlich in die Zellen gelangt. Holo-TC unter 35 pmol/l gilt als Mangel, zwischen 35–70 pmol/l als latenter Mangel – auch wenn Gesamt-B12 "normal" erscheint. Veganer, Ältere >60 Jahre und Menschen mit Metformin- oder Pantoprazol-Dauertherapie haben erhöhtes Risiko.'
+        question: 'Warum kann ein normales Gesamt-B12 im Serum einen Mangel verschleiern?',
+        answer: 'Das Gesamt-Vitamin-B12 im Serum erfasst sowohl das biologisch aktive, an Transcobalamin II gebundene B12 (Holo-TC, ca. 20–30 %) als auch das inaktive, an Haptocorrin gebundene B12 (ca. 70–80 %). Bei Werten im intermediären Bereich (150–300 pmol/l bzw. 200–400 pg/ml) kann bereits ein zelluläres Defizit vorliegen. Die Bestimmung von Holo-TC oder Methylmalonsäure (MMA) kann als funktioneller Marker wertvolle differenzierende Hinweise liefern; die Interpretation von MMA wird unter anderem durch die Nierenfunktion beeinflusst [1, 2].'
       },
       {
-        question: 'Methylcobalamin oder Cyanocobalamin – was ist besser für Veganer?',
-        answer: 'Methylcobalamin ist die körpereigene, biologisch aktive Form, die ohne Umwandlung direkt genutzt werden kann. Cyanocobalamin muss erst zu Methylcobalamin umgewandelt werden und enthält eine geringe Menge Cyanid (toxikologisch unbedenklich bei normaler Dosierung). Für Veganer ist Methylcobalamin unter der Zunge (sublingual, 1.000 µg täglich) die empfohlene Form, da es auch bei schwacher Intrinsic-Factor-Produktion noch ausreichend resorbiert wird. Bei schwerem Mangel: ärztliche B12-Injektion (Hydroxocobalamin).'
+        question: 'Worin liegt der Unterschied zwischen Methylcobalamin und Cyanocobalamin?',
+        answer: 'Methylcobalamin ist eine bioaktive Coenzymform, die direkt im zellulären Stoffwechsel (Homocystein-Remethylierung) eingesetzt werden kann. Cyanocobalamin ist eine synthetische, sehr lagerstabile Form, die im Körper über enzymatische Zwischenschritte in aktive Formen umgewandelt wird. Beide Formen sind in Studien zur Mangelbehebung wirksam; bei Rauchern oder Nierenpatienten wird Hydroxocobalamin oder Methylcobalamin bevorzugt [2].'
       }
     ],
     category: 'Vitamin',
     dailyRequirement: '4,0 µg (Schwangere 4,5 µg, Stillende 5,5 µg)',
-    dailyRequirementNote: 'Aktualisierter DGE-Referenzwert (früher 3,0 µg).',
-    testBiomarker: 'Holotranscobalamin (Holo-TC, aktives B12) + Methylmalonsäure (MMA)',
-    optimalRange: '> 50 pmol/l (Holo-TC)',
-    intro: 'Vitamin B12 (Cobalamin) ist ein hochkomplexes, cobalthaltiges wasserlösliches Vitamin. Es ist unverzichtbar für die Myelinscheiden-Bildung (die schützende Isolierschicht unserer Nervenbahnen), die Synthese von Neurotransmittern, die DNS-Replikation aller sich teilenden Zellen und die Reifung der Erythrozyten im Knochenmark.',
+    dailyRequirementNote: 'DGE-Referenzwert (aktualisiert 2019/2024). Jugendliche ab 15 Jahren und Erwachsene: 4,0 µg/Tag.',
+    dgeDetailedRequirements: [
+      { group: 'Jugendliche (ab 15 J.) & Erwachsene', value: '4,0 µg/Tag' },
+      { group: 'Schwangere', value: '4,5 µg/Tag' },
+      { group: 'Stillende', value: '5,5 µg/Tag' },
+      { group: 'Kinder (10–<15 J.)', value: '3,5 µg/Tag' }
+    ],
+    testBiomarker: 'Gesamt-Vitamin-B12 im Serum (Screening) + Holotranscobalamin (Holo-TC) & Methylmalonsäure (MMA)',
+    optimalRange: 'Holo-TC > 50 pmol/l; Gesamt-B12 > 300 pmol/l (> 400 pg/ml); Serum-MMA < 271 nmol/l',
+    diagnosticLimits: 'Gesamt-B12 im Serum erfasst auch inaktive Bindungsformen; Werte im intermediären Graubereich (150–300 pmol/l) bedürfen oft ergänzender Parameter. MMA kann als funktioneller Stoffwechselmarker Hinweise auf einen Vitamin-B12-Mangel liefern; die Interpretation wird unter anderem durch die Nierenfunktion (eGFR) beeinflusst [2].',
+    bfrRecommendation: 'BfR (2021): Für Vitamin B12 wurde kein Tolerable Upper Intake Level (UL) festgelegt, da selbst hohe orale Dosen (z. B. 500–1.000 µg) keine toxischen Wirkungen zeigen; die passive Diffusionsaufnahme im Darm ist bei gesunder Schleimhaut auf ca. 1–2 % begrenzt.',
+    intro: 'Vitamin B12 (Cobalamin) ist ein komplexes, cobalthaltiges wasserlösliches Vitamin. Es ist unersetzlich für die Bildung der Myelinscheiden im Nervensystem, die Reifung roter Blutkörperchen im Knochenmark, die DNA-Synthese aller sich teilenden Zellen sowie den Abbau von Homocystein.',
     whatIsIt: [
-      'Vitamin B12 wird ausschließlich von Mikroorganismen (Bakterien) synthetisiert. Weder Pflanzen noch Tiere können es selbst herstellen. Tiere nehmen es über bakterielle Symbiosen im Verdauungstrakt oder über angereicherte Nahrung auf.',
-      'Der menschliche Körper besitzt in der Leber erstaunlich große B12-Depots (ca. 2 bis 5 mg), die den Bedarf über mehrere Jahre decken können. Ein Mangel entwickelt sich daher oft schleichend über 2 bis 5 Jahre hinweg.',
-      'Die Aufnahme im Magen-Darm-Trakt erfordert Magensäure (zur Freisetzung aus Proteinen) und den Intrinsic Factor (ein Transportprotein der Magenschleimhaut), der im terminalen Ileum die Resorption vermittelt.'
+      'Vitamin B12 wird in der Natur ausschließlich von Mikroorganismen (Bakterien und Archaeen) gebildet. Weder Pflanzen noch Tiere können es selbst synthetisieren.',
+      'Die menschliche Leber speichert beachtliche B12-Depots (ca. 2 bis 5 mg), die den Minimalbedarf über 3 bis 5 Jahre decken können. Ein Zufuhrdefizit manifestiert sich daher meist erst nach mehrjähriger Latenzzeit [1, 3].',
+      'Die aktive Aufnahme im Dünndarm erfordert Magensäure (zur Freisetzung aus Nahrungsproteinen) sowie den Intrinsic Factor (ein Glykoprotein der Belegzellen des Magens). Bei Mangel an Intrinsic Factor kann B12 nur über passive Diffusion in sehr geringem Umfang (ca. 1 %) aufgenommen werden.'
     ],
     symptoms: {
       primary: [
-        'Neurologische Störungen: Kribbeln, Einschlafen der Hände und Füße (Ameisenlaufen)',
-        'Gangunsicherheit, Taubheitsgefühle und Störung des Vibrationssinns (Funikuläre Myelose)',
-        'Ausgeprägte Erschöpfung, Antriebslosigkeit und chronische Fatigue',
-        'Konzentrationsstörungen, Gedächtnislücken und depressiv veränderte Gemütslage',
-        'Brennende, glatte und gerötete Zunge (Hunter-Glossitis)'
+        'Neurologische Reiz- und Ausfallerscheinungen: Kribbeln, Ameisenlaufen oder Taubheit in Händen und Füßen',
+        'Störungen des Vibrationsempfindens, Gangunsicherheit und Ataxie (funikuläre Myelose)',
+        'Chronische Fatigue, Antriebsmangel und ausgeprägte Erschöpfung',
+        'Konzentrationsstörungen, Vergesslichkeit und depressive Verstimmungen',
+        'Glossitis: brennende, glatte und rötlich veränderte Zunge (Hunter-Glossitis)'
       ],
       secondary: [
-        'Megaloblastäre makrozytäre Anämie (auffällig vergrößerte rote Blutkörperchen mit MCV > 98 fl)',
-        'Schwindel und Kreislaufschwäche',
-        'Erhöhte Homocystein-Werte im Blut (Risikofaktor für Gefäßerkrankungen)',
-        'Magen-Darm-Beschwerden und Appetitlosigkeit'
+        'Makrozytäre, hyperchrome Anämie (vergrößerte Erythrozyten mit erhöhtem MCV > 98 fl)',
+        'Schwindel, Belastungsdyspnoe und orthostatische Schwäche',
+        'Hyperhomocysteinämie (Gefäßrisikofaktor bei chronischem Mangel)',
+        'Gastrointestinale Beschwerden wie Appetitlosigkeit und Schleimhautirritationen'
       ]
     },
     causes: {
-      title: 'Ursachen für Vitamin-B12-Mangel',
-      description: 'Zufuhrdefizite und Resorptionsstörungen sind gleichermaßen häufig.'
+      title: 'Mögliche Ursachen für einen Vitamin-B12-Mangel',
+      description: 'Zufuhrdefizite und Malabsorption sind gleichermaßen bedeutsam.'
     } as any,
     causesList: [
       {
-        title: 'Rein pflanzliche Ernährung (Veganismus)',
-        description: 'Da unverarbeitete pflanzliche Lebensmittel kein bioverfügbares B12 enthalten, ist eine Supplementierung bei veganer Ernährung absolute Pflicht.'
+        title: 'Rein pflanzliche Ernährungsweise (Veganismus)',
+        description: 'Unverarbeitete pflanzliche Lebensmittel enthalten kein bioverfügbares B12. Bei veganer Ernährung ist eine zuverlässige Supplementierung laut DGE obligatorisch [1].'
       },
       {
-        title: 'Mangel an Intrinsic Factor (Autoimmun-Gastritis)',
-        description: 'Bei der perniziösen Anämie zerstören Autoantikörper die Belegzellen des Magens, sodass kein Intrinsic Factor gebildet wird. B12 kann dann nur noch passiv in Mini-Mengen resorbiert werden.'
+        title: 'Autoimmun-Gastritis (Perniziöse Anämie)',
+        description: 'Autoantikörper gegen Belegzellen des Magens oder gegen den Intrinsic Factor verhindern die rezeptorvermittelte Aufnahme im terminalen Ileum [2].'
       },
       {
-        title: 'Magensäureblocker & Metformin',
-        description: 'Dauereinnahme von Magensäureblockern (Pantoprazol, Omeprazol) verhindert das Ablösen von B12 aus der Nahrung. Auch das Antidiabetikum Metformin hemmt nachweislich die Aufnahme.'
+        title: 'Atrophische Gastritis & hohes Lebensalter',
+        description: 'Im höheren Lebensalter nimmt die Magensäuresekretion häufig ab, sodass proteingebundenes B12 aus der Nahrung unzureichend freigesetzt wird.'
       },
       {
-        title: 'Chronisch entzündliche Darmerkrankungen',
-        description: 'Entzündungen im terminalen Ileum (Morbus Crohn) oder Operationen am Magen/Darm zerstören den spezifischen Resorptionsort.'
+        title: 'Dauermedikation mit PPI oder Metformin',
+        description: 'Protonenpumpeninhibitoren (PPI) reduzieren die zur Freisetzung nötige Magensäure. Das Antidiabetikum Metformin behindert die calciumabhängige B12-Resorption im Darm [2].'
       }
     ],
     riskGroups: [
       {
-        group: 'Veganer & langjährige Vegetarier',
-        reason: 'Verzicht auf Fleisch, Fisch, Eier und Milchprodukte ohne adäquate Supplementierung.'
+        group: 'Vegan lebende Personen & streng vegetarisch Essende',
+        reason: 'Fehlende Aufnahme tierischer Lebensmittel ohne adäquate Nahrungsergänzung.'
       },
       {
         group: 'Senioren über 65 Jahre',
-        reason: 'Häufig atrophische Gastritis mit verminderter Magensäure- und Intrinsic-Factor-Sekretion.'
+        reason: 'Häufigere atrophische Gastritis mit verminderter Säure- und Intrinsic-Factor-Bildung.'
       },
       {
-        group: 'Daueranwender von Säureblockern (PPI)',
-        reason: 'Fehlender Magensaft blockiert die proteolytische Freisetzung des Vitamins.'
+        group: 'Daueranwender von Magensäureblockern (PPI) oder Metformin',
+        reason: 'Pharmakologische Hemmung der Freisetzung bzw. der intestinalen Membranpassage.'
       },
       {
-        group: 'Typ-2-Diabetiker unter Metformin',
-        reason: 'Metformin stört den calciumabhängigen Aufnahmemechanismus im Dünndarm.'
+        group: 'Patienten mit chronisch-entzündlichen Darmerkrankungen',
+        reason: 'Entzündungen oder Resektionen im terminalen Ileum (z. B. bei Morbus Crohn).'
       }
     ],
     dietarySources: [
-      { food: 'Rinderleber', amount: '65 µg / 100g', vegan: false },
-      { food: 'Makrele / Hering', amount: '9–10 µg / 100g', vegan: false },
-      { food: 'Lachs', amount: '3,0 µg / 100g', vegan: false },
+      { food: 'Rinderleber', amount: '65,0 µg / 100g', vegan: false },
+      { food: 'Makrele', amount: '9,0 µg / 100g', vegan: false },
+      { food: 'Hering', amount: '8,5 µg / 100g', vegan: false },
+      { food: 'Lachs (Wildfang)', amount: '3,0 µg / 100g', vegan: false },
       { food: 'Emmentaler Käse', amount: '3,1 µg / 100g', vegan: false },
       { food: 'Hühnerei (ganz)', amount: '1,9 µg / 100g', vegan: false },
-      { food: 'Speisequark (Magerstufe)', amount: '0,9 µg / 100g', vegan: false },
       { food: 'Pflanzliche Lebensmittel (naturbelassen)', amount: '0,0 µg / 100g', vegan: true }
     ],
     treatmentInfo: {
       dietTips: [
-        'Vegan lebende Menschen müssen Vitamin B12 verbindlich über Nahrungsergänzungsmittel oder angereicherte Zahnpasta zuführen. Mythen über Spirulina, Nori oder Chlorella sind gefährlich: Sie enthalten meist wirkungslose B12-Analoga (Pseudovitamin B12), die sogar die echten Rezeptoren blockieren können.',
-        'Vegetarier sollten auf regelmäßigen Verzehr von Eiern und Käse achten.'
+        'Personen mit veganer Ernährungsweise müssen Vitamin B12 dauerhaft über Nahrungsergänzungsmittel oder angereicherte Produkte zuführen. Pflanzliche Algen (z. B. Spirulina) enthalten überwiegend unwirksame B12-Analoga (Pseudovitamin B12) [1].',
+        'Ovo-Lacto-Vegetarier können über regelmäßigen Verzehr von Käse, Eiern und Milchprodukten zur Bedarfsdeckung beitragen, sollten ihren Status jedoch regelmäßig überprüfen.'
       ],
       supplementTips: [
-        'Zur oralen Einnahme stehen Methylcobalamin, Adenosylcobalamin (bioaktive Coenzym-Formen) sowie Hydroxocobalamin (hohe Speicherwirkung) zur Verfügung.',
-        'Bei Mangel an Intrinsic Factor reichen normale Dosen (z. B. 5 µg) nicht aus. Es müssen hochdosierte Präparate (1.000 µg täglich) gewählt werden, da etwa 1 % des Vitamins über passive Diffusion unabhängig vom Intrinsic Factor aufgenommen wird.'
+        'Orale Präparate stehen als Methylcobalamin, Adenosylcobalamin, Hydroxocobalamin oder Cyanocobalamin zur Verfügung [2].',
+        'Bei gestörter Intrinsic-Factor-Resorption werden hochdosierte orale Präparate (z. B. 1.000 µg täglich) genutzt, da ca. 1 % über passive Diffusion aufgenommen wird, oder intramuskuläre Injektionen durch die ärztliche Praxis verabreicht [2].'
       ],
       interactions: [
-        'Abstand zu hochdosiertem Vitamin C halten, da Ascorbinsäure freies B12 im Magen zersetzen kann.'
+        'Eine hochdosierte Zufuhr von Folsäure kann die Blutarmut eines B12-Mangels kaschieren, während neurologische Schäden fortschreiten. Beide Vitamine sollten daher stets gemeinsam beurteilt werden [2].'
       ]
     },
     faqs: [
       {
-        question: 'Warum ist der normale Gesamt-B12-Wert im Serum unzuverlässig?',
-        answer: 'Das Gesamt-Vitamin-B12 im Serum misst zu 80 % inaktives B12, das an Haptocorrin gebunden ist. Erst der Holo-TC-Wert (Holotranscobalamin) erfasst das tatsächlich biologisch aktive Vitamin, das an Transcobalamin gebunden und für die Körperzellen verfügbar ist. Ein Mangel kann bei normalem Gesamt-B12 bereits vorliegen.'
+        question: 'Warum reicht ein Gesamt-B12-Test oft nicht aus?',
+        answer: 'Das Gesamt-B12 im Serum erfasst auch inaktives Cobalamin. Holotranscobalamin (Holo-TC) misst ausschließlich den an Transcobalamin gebundenen, zellverfügbaren Anteil und gilt als sensitiverer Frühmarker für ein beginnendes Defizit [1, 2].'
       },
       {
-        question: 'Was ist der MMA-Urin- bzw. Bluttest?',
-        answer: 'Methylmalonsäure (MMA) ist ein funktioneller Stoffwechselmarker: Fehlt Vitamin B12 in den Zellen, kann MMA nicht enzymatisch abgebaut werden und reichert sich im Blut und Urin an. Erhöhte MMA-Werte beweisen einen funktionellen B12-Mangel auf Zellebene zweifelsfrei.'
+        question: 'Was bedeutet ein erhöhter MMA-Wert (Methylmalonsäure)?',
+        answer: 'MMA kann als funktioneller Stoffwechselmarker wertvolle Hinweise auf einen Vitamin-B12-Mangel liefern: Steht den Enzymen zu wenig aktives B12 zur Verfügung, reichert sich Methylmalonsäure an. Eine eingeschränkte Nierenfunktion kann den Wert jedoch ebenfalls erhöhen, weshalb Serum-Kreatinin und eGFR bei der Beurteilung berücksichtigt werden sollten [2].'
       },
       {
-        question: 'Sind Nervenschäden durch B12-Mangel reversibel?',
-        answer: 'Wird der Mangel frühzeitig erkannt und therapiert, bilden sich neurologische Symptome wie Kribbeln oder Gangunsicherheit meist vollständig zurück. Bleibt ein schwerer Mangel über viele Monate oder Jahre unbehandelt, können dauerhafte Schäden an den Nervenbahnen (Myelinscheiden) zurückbleiben.'
+        question: 'Sind neurologische Symptome eines B12-Mangels reversibel?',
+        answer: 'Wird ein Mangel frühzeitig erkannt und therapiert, bilden sich neurologische Beschwerden (wie Kribbeln oder Gangunsicherheit) häufig weitgehend zurück. Bei über viele Monate oder Jahre bestehender, unbehandelter funikulärer Myelose können jedoch dauerhafte Restschäden an den Nervenbahnen verbleiben [2].'
       }
     ],
-    schemaCode: 'VitaminB12Deficiency'
+    schemaCode: 'VitaminB12Deficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Vitamin B12 (Stand 2019/2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/vitamin-b12/' },
+      { citation: 'DGHO Deutsche Gesellschaft für Hämatologie und Medizinische Onkologie: Onkopedia-Leitlinie Vitamin-B12-Mangel (Stand 2021).', url: 'https://www.onkopedia.com/' },
+      { citation: 'Herrmann, W., Obeid, R. (2012): Ursachen und frühzeitige Diagnostik von Vitamin-B12-Mangel. Deutsches Ärzteblatt International, 105(40): 680–685.', url: 'https://www.aerzteblatt.de/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Höchstmengenvorschläge für Vitamin B12 in Nahrungsergänzungsmitteln (2021).', url: 'https://www.bfr.bund.de/' }
+    ]
   },
   {
     slug: 'zinkmangel',
     name: 'Zinkmangel',
-    subTitle: 'Schlüsselelement für Abwehrkräfte, Wundheilung, Haut & Hormone',
-    metaTitle: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & Testosteron | nährstoffmangel.de',
-    metaDescription: 'Zinkmangel Symptome: Warum häufige Erkältungen, Haarausfall und schlechte Wundheilung auf Zinkmangel hindeuten. Phytinsäure-Problem bei Veganern & beste Zinkform im Vergleich.',
-    seoH1: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & warum Veganer doppelt so viel Zink brauchen',
+    subTitle: 'Spurenelement für Immunfunktion, Wundheilung, Eiweißsynthese und antioxidativen Zellschutz',
+    metaTitle: 'Zinkmangel Symptome: Infektanfälligkeit, Wundheilung & Werte | nährstoffmangel.de',
+    metaDescription: 'Zinkmangel Symptome erkennen: Warum Infektanfälligkeit und Hautveränderungen auftreten können, welchen Einfluss Phytinsäure hat und was die DGE empfiehlt.',
+    seoH1: 'Zinkmangel Symptome: Haarausfall, Infektanfälligkeit & die Bedeutung der Phytatzufuhr',
     longTailKeywords: [
       { keyword: 'Zinkmangel Symptome Haarausfall', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
       { keyword: 'Zinkmangel Immunsystem Infekte', searchIntent: 'informational', monthlySearches: '2.000–5.000/Monat' },
@@ -557,125 +616,144 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Warum haben Veganer häufiger Zinkmangel als Fleischesser?',
-        answer: 'Pflanzliche Zinkquellen enthalten Phytinsäure (Phytate), die Zink im Darm bindet und dessen Aufnahme um bis zu 50% hemmt. Fleisch enthält kein Phytat und liefert Zink in hoch bioverfügbarer Form. Die DGE empfiehlt Veganern daher eine um 50% höhere Zinkzufuhr (bis 16 mg/Tag statt 10 mg). Einweichen und Keimen von Hülsenfrüchten, Saaten und Nüssen reduziert den Phytatgehalt erheblich. Sauerteiggärung von Getreide erhöht die Zink-Bioverfügbarkeit spürbar.'
+        question: 'Warum unterscheidet die DGE den Zinkbedarf nach der Phytatzufuhr?',
+        answer: 'Phytinsäure (in unfermentiertem Vollkorngetreide, Hülsenfrüchten und Saaten) bildet im Magen-Darm-Trakt unlösliche Komplexe mit Zink und hemmt dessen Resorption um bis zu 45 %. Daher empfiehlt die DGE bei hoher Phytatzufuhr (z. B. bei vollwerternährten Vegetariern oder Veganern) Zufuhrwerte von bis zu 10 mg/Tag für Frauen und 16 mg/Tag für Männer, verglichen mit 7 bzw. 11 mg/Tag bei niedriger Phytatzufuhr [1].'
       },
       {
-        question: 'Kann Zinkmangel wirklich Haarausfall verursachen?',
-        answer: 'Ja – Zink ist essenziell für die Keratinozyten-Proliferation und den Aufbau von Haarprotein (Keratin). Zink hemmt außerdem das Enzym 5-alpha-Reduktase, das Testosteron in das haarschädigende DHT umwandelt. Niedrige Zinkwerte (< 70 µg/dl im Serum) korrelieren klinisch mit diffusem Haarausfall, langsamer Haarwachstumsphase und brüchigem Haar. Wichtig: Erst Zink spiegeln lassen, denn zu viel Zink hemmt die Kupferaufnahme und verursacht sekundäre Mängel.'
+        question: 'Kann Zinkmangel diffusen Haarausfall begünstigen?',
+        answer: 'Zink ist ein essenzieller Kofaktor zahlreicher Enzyme, die an der Proteinsynthese, der Keratinbildung und der Zellteilung im Haarfollikel beteiligt sind. Ein klinisches Defizit kann mit vermehrtem Haarausfall und brüchigen Nägeln einhergehen. Vor einer hochdosierten Supplementierung sollte jedoch eine laborchemische Diagnostik erfolgen, da auch andere Faktoren (wie Eisenmangel oder Schilddrüsenstörungen) ursächlich sein können [1, 2].'
       }
     ],
     category: 'Spurenelement',
-    dailyRequirement: '7–16 mg (abhängig von der Phytatzufuhr)',
-    dailyRequirementNote: 'DGE stuft den Bedarf nach Phytatgehalt der Nahrung ein (niedrig/mittel/hoch).',
-    testBiomarker: 'Zink im Vollblut oder Serum',
-    optimalRange: '11–18 µmol/l (Serum) bzw. 5,0–7,5 mg/l (Vollblut)',
-    intro: 'Zink ist nach Eisen das zweithäufigste essenzielle Spurenelement im menschlichen Organismus. Es ist integraler Bestandteil von über 300 Enzymen und an tausenden Zinkfinger-Transkriptionsfaktoren beteiligt. Zink reguliert die zelluläre Abwehr, kontrolliert Entzündungsprozesse, fördert die Kollagensynthese und ist unabdingbar für die Bildung von Sexualhormonen (Testosteron) und Schilddrüsenhormonen.',
+    dailyRequirement: '7–16 mg (geschlechts- und phytatabhängig)',
+    dailyRequirementNote: 'DGE-Referenzwert (2019/2024). Frauen: 7 / 8 / 10 mg/Tag; Männer: 11 / 14 / 16 mg/Tag je nach Phytatgehalt der Nahrung.',
+    dgeDetailedRequirements: [
+      { group: 'Frauen (niedrige Phytatzufuhr: 330 mg/Tag)', value: '7 mg/Tag' },
+      { group: 'Frauen (mittlere Phytatzufuhr: 660 mg/Tag)', value: '8 mg/Tag' },
+      { group: 'Frauen (hohe Phytatzufuhr: 990 mg/Tag)', value: '10 mg/Tag' },
+      { group: 'Männer (niedrige Phytatzufuhr: 330 mg/Tag)', value: '11 mg/Tag' },
+      { group: 'Männer (mittlere Phytatzufuhr: 660 mg/Tag)', value: '14 mg/Tag' },
+      { group: 'Männer (hohe Phytatzufuhr: 990 mg/Tag)', value: '16 mg/Tag' },
+      { group: 'Schwangere (ab 2. Trimester)', value: '9–14 mg/Tag (je nach Phytat)' },
+      { group: 'Stillende', value: '11–17 mg/Tag (je nach Phytat)' }
+    ],
+    testBiomarker: 'Serum-Zink (morgens nüchtern entnommen)',
+    optimalRange: '10,7–18,4 µmol/l (ca. 70–120 µg/dl im Serum)',
+    diagnosticLimits: 'Serum-Zink unterliegt einer zirkadianen Rhythmik (morgens höher als abends) und fällt nach Mahlzeiten ab. Bei akuten Entzündungsreaktionen (erhöhtes CRP) wandert Zink in Lebergewebe ab, sodass der Serumspiegel vorübergehend sinkt, ohne dass ein echter Gesamtkörperverlust vorliegt [1].',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 6,5 mg Zink pro Tag in Nahrungsergänzungsmitteln. EFSA Tolerable Upper Intake Level (UL): 25 mg/Tag für Erwachsene. Eine chronische Zinkzufuhr über dem Bedarf kann die intestinale Kupferaufnahme hemmen und zu sekundärem Kupfermangel und Anämie führen.',
+    intro: 'Zink ist nach Eisen das zweithäufigste essenzielle Spurenelement im menschlichen Körper. Es fungiert als katalytischer, struktureller und regulatorischer Bestandteil von mehr als 300 Enzymen und tausenden Zinkfinger-Transkriptionsfaktoren. Zink ist unverzichtbar für die humorale und zelluläre Immunantwort, die Epithelregeneration, Wundheilung und hormonelle Signalwege.',
     whatIsIt: [
-      'Der menschliche Körper enthält etwa 2 bis 3 Gramm Zink. Da es keine spezifischen Zink-Speicherorgane gibt (wie Ferritin bei Eisen), ist der Körper auf eine kontinuierliche Zufuhr über die Nahrung angewiesen.',
-      'Rund 60 % des Zinks befinden sich in der Skelettmuskulatur, 30 % in den Knochen und der Rest in Haut, Haaren, Nägeln, Augen und Prostata.',
-      'Die Zink-Resorption im Dünndarm wird massiv durch Phytate (Phytinsäure) gehemmt, die vor allem in unfermentiertem Vollkorngetreide und Hülsenfrüchten vorkommen.'
+      'Der Gesamtkörperbestand an Zink liegt beim Erwachsenen bei etwa 2 bis 3 Gramm. Da der Körper über keine spezialisierten Zinkspeicherorgane verfügt, ist er auf eine regelmäßige Zufuhr angewiesen [1].',
+      'Etwa 60 % des Zinks befinden sich in der Skelettmuskulatur, 30 % in den Knochen und der Rest in Haut, Haaren, Nägeln und inneren Organen.',
+      'Die intestinale Zinkaufnahme im Dünndarm wird stark durch Phytate in pflanzlichen Lebensmitteln gehemmt, während organische Säuren (z. B. Citrat) und tierische Proteine die Bioverfügbarkeit begünstigen.'
     ],
     symptoms: {
       primary: [
-        'Erhöhte Infektanfälligkeit: Häufige Erkältungen, Bronchitis und langwierige Verläufe',
-        'Verzögerte Wundheilung und Neigung zu entzündlichen Hautunreinheiten / Akne',
-        'Brüchige Nägel mit weißen Querstreifen oder Flecken (Leukonychie)',
-        'Diffuser Haarausfall und Schuppenbildung der Kopfhaut',
+        'Erhöhte Anfälligkeit für grippale Infekte und langwierige Infektverläufe',
+        'Verzögerte Wundheilung und Neigung zu entzündlichen Hautveränderungen',
+        'Brüchige Fingernägel mit weißen Flecken oder Querstreifen (Leukonychie)',
+        'Diffuser Haarausfall und Schuppenbildung',
         'Geschmacks- und Geruchsstörungen (Hypogeusie / Hyposmie)'
       ],
       secondary: [
-        'Trockene, schuppige Haut und entzündliche Ekzeme an Mund- und Augenwinkeln',
-        'Erhöhte Blendempfindlichkeit und Nachtblindheit (Zink aktiviert Vitamin-A-Metabolismus)',
-        'Appetitlosigkeit und ungewollter Gewichtsverlust',
-        'Verminderte Fruchtbarkeit und niedriger Testosteronspiegel bei Männern'
+        'Trockene, schuppende Haut und entzündliche Rhagaden an Mund- und Augenwinkeln',
+        'Appetitmangel und ungewollter Gewichtsverlust',
+        'Beeinträchtigung der Dunkeladaptation der Augen (Zink interagiert mit Vitamin A)',
+        'Verminderte Testosteronsynthese bei Männern bei ausgeprägtem Defizit'
       ]
     },
     causes: {
-      title: 'Ursachen für Zinkmangel',
-      description: 'Ernährungsfaktoren und Malabsorption dominieren.'
+      title: 'Mögliche Ursachen für einen Zinkmangel',
+      description: 'Zufuhrdefizite, hohe Phytatzufuhr und Malabsorption stehen im Vordergrund.'
     } as any,
     causesList: [
       {
-        title: 'Hohe Phytatzufuhr (Hemmung der Absorption)',
-        description: 'Phytinsäure bildet im Dünndarm unlösliche Chelatkomplexe mit Zink, die nicht resorbiert werden können. Bei vollwertiger, pflanzlicher Ernährung ohne Keimung oder Fermentation steigt der Zinkbedarf um bis zu 50 %.'
+        title: 'Hohe Phytatzufuhr bei pflanzlicher Kost',
+        description: 'Phytinsäure bindet Zink im Dünndarm zu unlöslichen Komplexen. Ohne küchentechnische Vorbehandlung (Einweichen, Fermentation) ist die Resorptionsquote deutlich gemindert [1].'
       },
       {
         title: 'Chronische Darmerkrankungen',
-        description: 'Zöliakie, chronische Diarrhöen, Morbus Crohn und Colitis ulcerosa behindern die enterale Aufnahme und erhöhen die fäkale Zinkausscheidung.'
+        description: 'Zöliakie, Morbus Crohn, Colitis ulcerosa und chronische Diarrhöen behindern die enterale Zinkaufnahme und erhöhen fäkale Verluste.'
       },
       {
-        title: 'Hoher Alkoholkonsum',
-        description: 'Alkohol hemmt die intestinale Zinkaufnahme und fördert gleichzeitig die Ausscheidung über die Nieren durch renale tubuläre Dysfunktion.'
+        title: 'Erhöhter chronischer Alkoholkonsum',
+        description: 'Alkohol vermindert die intestinale Zinkresorption und steigert gleichzeitig die renale Ausscheidung durch tubuläre Veränderungen.'
       },
       {
         title: 'Schwangerschaft & Stillzeit',
-        description: 'Für das fötale Wachstum und die Muttermilch-Produktion benötigt der weibliche Körper deutlich höhere Zinkmengen.'
+        description: 'Durch das fötale Gewebewachstum und den Zinktransfer in die Muttermilch steigt der physiologische Bedarf [1].'
       }
     ],
     riskGroups: [
       {
-        group: 'Vegetarier & Veganer mit hohem Phytatkonsum',
-        reason: 'Verzicht auf zinkreiches rotes Fleisch und hohe Aufnahme phytinsäurereicher Pflanzenkost.'
+        group: 'Personen mit rein pflanzlicher Kost und hohem Phytatanteil',
+        reason: 'Verzicht auf hoch bioverfügbare tierische Zinkquellen bei gleichzeitig hemmenden Pflanzenstoffen.'
+      },
+      {
+        group: 'Patienten mit chronisch-entzündlichen Darmerkrankungen',
+        reason: 'Einschränkung der resorptiven Schleimhautfläche im oberen Dünndarm.'
       },
       {
         group: 'Senioren',
-        reason: 'Verminderte Nahrungsaufnahme und physiologisch nachlassende Absorptionskapazität.'
+        reason: 'Oft verminderte Nahrungsaufnahme und physiologisch nachlassende Absorptionskapazität.'
       },
       {
-        group: 'Patienten mit chronischen Darmentzündungen',
-        reason: 'Schleimhautschäden im Jejunum vermindern die Carrier-vermittelte Zinkaufnahme.'
-      },
-      {
-        group: 'Leistungssportler',
-        reason: 'Zinkverluste über starken Schweiß und erhöhte Stoffwechselregeneration.'
+        group: 'Chronisch Leber- oder Nierenkranke',
+        reason: 'Veränderter Proteinstoffwechsel und gesteigerte renale Ausscheidung.'
       }
     ],
     dietarySources: [
-      { food: 'Austern (Spitzenreiter)', amount: '39–60 mg / 100g', vegan: false },
+      { food: 'Austern', amount: '45,0 mg / 100g', vegan: false },
       { food: 'Kürbiskerne', amount: '7,5 mg / 100g', vegan: true },
-      { food: 'Rindfleisch (mager)', amount: '4,5 mg / 100g', vegan: false },
-      { food: 'Haferflocken', amount: '4,0 mg / 100g', vegan: true },
-      { food: 'Linsen & Kichererbsen', amount: '3,5 mg / 100g', vegan: true },
+      { food: 'Rindfleisch (Gulasch)', amount: '4,5 mg / 100g', vegan: false },
+      { food: 'Haferflocken', amount: '4,1 mg / 100g', vegan: true },
       { food: 'Cashewkerne', amount: '5,8 mg / 100g', vegan: true },
+      { food: 'Linsen (trocken)', amount: '3,5 mg / 100g', vegan: true },
       { food: 'Emmentaler Käse', amount: '4,6 mg / 100g', vegan: false }
     ],
     treatmentInfo: {
       dietTips: [
-        'Bauen Sie Phytate in pflanzlichen Lebensmitteln gezielt ab: Hülsenfrüchte vor dem Kochen 12–24 Stunden einweichen und das Einweichwasser wegschütten. Bevorzugen Sie traditionelles Sauerteigbrot statt Backfermentbrot.',
-        'Zitronensäure und tierische Proteine fördern die Zinkresorption.'
+        'Bauen Sie Phytinsäure in Getreide und Hülsenfrüchten gezielt ab: Hülsenfrüchte vor dem Kochen 12 bis 24 Stunden einweichen (Einweichwasser wegschütten) und traditionelle Sauerteigbrote bevorzugen [1].',
+        'Zitronensäure und Proteine in Mahlzeiten fördern die Zinkresorption.'
       ],
       supplementTips: [
-        'Wählen Sie organische Zinkverbindungen wie Zinkbisglycinat, Zinkhistidin oder Zinkgluconat. Diese weisen eine bis zu 40 % höhere Bioverfügbarkeit auf als Zinkoxid oder Zinksulfat.',
-        'Nehmen Sie Zinkpräparate am besten abends mit etwas Wasser und nicht direkt zu einer phytatreichen Hauptmahlzeit ein.'
+        'Organische Zinkverbindungen wie Zinkbisglycinat, Zinkgluconat oder Zinkhistidin weisen in Untersuchungen eine günstigere Bioverfügbarkeit auf als anorganisches Zinkoxid [2].',
+        'Zinkpräparate werden bevorzugt zwischen den Mahlzeiten mit etwas Wasser eingenommen, um Interaktionen mit Phytaten oder Calcium zu minimieren.',
+        'Beachten Sie den BfR-Höchstmengenvorschlag von maximal 6,5 mg Zink pro Tag in Nahrungsergänzungsmitteln [2].'
       ],
       interactions: [
-        'Dauerhafte Zinkdosierungen über 25–30 mg täglich können einen Kupfermangel auslösen, da Zink die Synthese von Metallothionein im Darm induziert, welches Kupfer abfängt.'
+        'Dauerhafte hochdosierte Zinkeinnahmen (> 25 mg/Tag) können einen sekundären Kupfermangel auslösen, da Zink die Expression von Metallothionein in Enterozyten induziert, welches Kupfer mit hoher Affinität bindet [2, 3].'
       ]
     },
     faqs: [
       {
-        question: 'Welcher Test ist bei Verdacht auf Zinkmangel am aussagekräftigsten?',
-        answer: 'Da der größte Teil des Zinks intrazellulär in den Blutzellen gebunden ist, ist eine Bestimmung im Vollblut sensitiver als im reinen Serum. Ein niedriger Serumspiegel bestätigt den Mangel zwar, ein normaler Serumspiegel schließt ein intrazelluläres Defizit jedoch nicht sicher aus.'
+        question: 'Wie wird ein Zinkmangel labormedizinisch diagnostiziert?',
+        answer: 'Die gebräuchlichste Methode ist die Bestimmung von Zink im Blutserum oder -plasma. Die Blutentnahme sollte morgens nüchtern erfolgen, da die Zinkkonzentration im Tagesverlauf absinkt. Bei Vorliegen von Entzündungen (erhöhtes CRP) ist der Serumwert nur eingeschränkt beurteilbar [1].'
       },
       {
-        question: 'Hilft Zink wirklich bei akuten Erkältungen?',
-        answer: 'Meta-Analysen klinischer Studien zeigen, dass hochdosierte Zink-Lutschtabletten (z. B. Zinkgluconat oder Zinkacetat), die innerhalb der ersten 24 Stunden nach Symptombeginn eingenommen werden, die Dauer einer Erkältung um durchschnittlich 1 bis 3 Tage verkürzen können, da Zink die Anheftung von Rhinoviren an die Rachenschleimhaut hemmt.'
+        question: 'Verkürzt Zink die Dauer von Erkältungen?',
+        answer: 'Klinische Studien und systematische Reviews zeigen, dass Zink-Lutschtabletten (z. B. Zinkacetat oder Zinkgluconat), wenn sie innerhalb der ersten 24 Stunden nach Auftreten von Erkältungssymptomen eingenommen werden, die Krankheitsdauer moderat verkürzen können. Dies beruht vermutlich auf einer lokalen Hemmung der Virusreplikation im Rachenraum [2, 3].'
       },
       {
-        question: 'Kann man zu viel Zink einnehmen?',
-        answer: 'Ja. Die Europäische Behörde für Lebensmittelsicherheit (EFSA) empfiehlt eine maximale tägliche Aufnahmemenge (Tolerable Upper Intake Level) von 25 mg Zink pro Tag für Erwachsene. Chronische Überdosierung kann zu Kupfermangel, Übelkeit und Beeinträchtigung des Fettstoffwechsels führen.'
+        question: 'Welche Risiken birgt eine chronische Überdosierung von Zink?',
+        answer: 'Die EFSA hat die tolerierbare Höchstaufnahmemenge (UL) für Erwachsene auf 25 mg Zink pro Tag festgelegt. Eine chronische Überdosierung kann zu Übelkeit, Störungen des Fettstoffwechsels (Senkung von HDL-Cholesterin) und insbesondere zu einem Kupfermangel mit Anämie und Neutropenie führen [2, 3].'
       }
     ],
-    schemaCode: 'ZincDeficiency'
+    schemaCode: 'ZincDeficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Zink (2019/2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/zink/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Aktualisierte Höchstmengenvorschläge für Zink in Nahrungsergänzungsmitteln (2021).', url: 'https://www.bfr.bund.de/' },
+      { citation: 'European Food Safety Authority (EFSA): Scientific Opinion on Dietary Reference Values for zinc (EFSA Journal 2014; 12(10):3844).', url: 'https://www.efsa.europa.eu/' },
+      { citation: 'Max Rubner-Institut (MRI): Nationale Verzehrsstudie II – Ergebnisbericht Teil 2 (2008).', url: 'https://www.mri.bund.de/' }
+    ]
   },
   {
     slug: 'folsaeuremangel',
     name: 'Folsäuremangel',
-    subTitle: 'Unverzichtbar für Zellteilung, DNS-Bildung & gesunde Schwangerschaft',
-    metaTitle: 'Folsäure Schwangerschaft: Wann anfangen & Folat vs. Folsäure erklärt | nährstoffmangel.de',
-    metaDescription: 'Folsäure in der Schwangerschaft: Wann anfangen, welche Dosierung und warum Methylfolat (Folat) für MTHFR-Mutationsträger besser ist als synthetische Folsäure. Laborwerte & Symptome.',
-    seoH1: 'Folsäure in der Schwangerschaft: Wann anfangen, Dosierung & der Unterschied zu Methylfolat',
+    subTitle: 'Unverzichtbar für Zellteilung, Blutbildung und die embryonale Entwicklung in der Frühschwangerschaft',
+    metaTitle: 'Folsäure Schwangerschaft: Beginn, Dosierung & Laborwerte | nährstoffmangel.de',
+    metaDescription: 'Folsäure in der Schwangerschaft: Warum der Einnahmebeginn vor der Empfängnis entscheidend ist, welche Dosen DGE & BfR empfehlen und was Laborwerte aussagen.',
+    seoH1: 'Folsäure in der Schwangerschaft: Empfohlener Beginn, Dosierung & Folat-Formen im Überblick',
     longTailKeywords: [
       { keyword: 'Folsäure Schwangerschaft wann anfangen', searchIntent: 'informational', monthlySearches: '8.000–18.000/Monat' },
       { keyword: 'Folat vs Folsäure Unterschied', searchIntent: 'informational', monthlySearches: '2.500–6.000/Monat' },
@@ -686,124 +764,139 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Wann soll ich mit der Einnahme von Folsäure beginnen, wenn ich schwanger werden möchte?',
-        answer: 'Die Empfehlung von DGE und BfR ist eindeutig: Mindestens 4 Wochen vor der geplanten Empfängnis mit 400 µg Folsäure täglich beginnen und die Einnahme bis zum Ende des ersten Trimesters (12. SSW) fortsetzen. Der Neuralrohrverschluss des Embryos passiert bereits zwischen dem 22. und 28. Tag nach Befruchtung – zu einem Zeitpunkt, an dem viele Frauen noch nicht wissen, dass sie schwanger sind. Frühzeitige Supplementierung ist daher entscheidend für die Prävention von Neuralrohrdefekten (Spina bifida).'
+        question: 'Wann sollte mit der Folsäureeinnahme bei Kinderwunsch begonnen werden?',
+        answer: 'DGE, BfR und gynäkologische Fachgesellschaften raten einheitlich: Frauen mit Kinderwunsch sollten mindestens 4 Wochen vor der Konzeption mit der täglichen Einnahme von 400 µg synthetischer Folsäure (oder äquivalenten Folatdosen) beginnen und diese bis zum Ende des ersten Schwangerschaftstrimenons fortführen. Der Verschluss des embryonalen Neuralrohrs erfolgt bereits zwischen dem 22. und 28. Tag nach der Befruchtung – zu einem Zeitpunkt, an dem eine Schwangerschaft oft noch unbemerkt ist [1, 2].'
       },
       {
-        question: 'Was ist der Unterschied zwischen Folsäure und Folat (Methylfolat)?',
-        answer: 'Folsäure ist die synthetische, oxidierte Form, die im Körper in mehreren Schritten zu aktiver 5-Methyltetrahydrofolsäure (5-MTHF) umgewandelt werden muss. Ca. 10–15% der Bevölkerung tragen eine MTHFR-Genmutation (C677T oder A1298C), die diese Umwandlung reduziert. Diese Personen profitieren von direkt aktivem Methylfolat (5-MTHF) als Supplement, da es den Umwandlungsschritt überspringt. Natürliche Folatquellen in Lebensmitteln (Hülsenfrüchte, Blattgemüse, Hefe) enthalten Folat in halbaktiver Form mit mittlerer Bioverfügbarkeit.'
+        question: 'Worin liegt der Unterschied zwischen natürlichem Folat und synthetischer Folsäure?',
+        answer: 'Folat bezeichnet die Gesamtheit der natürlichen, in Lebensmitteln (z. B. Blattgemüse, Hülsenfrüchten) vorkommenden Pteroylpolyglutamate. Folsäure (Pteroylmonoglutaminsäure) ist die synthetisch hergestellte, oxidierte und stabilere Form, die in Nahrungsergänzungsmitteln verwendet wird. Im Körper wird sie in biologisch aktive Tetrahydrofolat-Formen (wie 5-MTHF) umgewandelt [1].'
       }
     ],
     category: 'Vitamin',
-    dailyRequirement: '300 µg (Schwangere 550 µg, Frauen mit Kinderwunsch 400 µg zusätzlich)',
-    dailyRequirementNote: 'DGE-Empfehlung für Folat-Äquivalente.',
-    testBiomarker: 'Folsäure in den Erythrozyten (RBC-Folat) oder Serum-Folat',
-    optimalRange: '> 15 nmol/l (Serum) bzw. > 680 nmol/l (Erythrozyten)',
-    intro: 'Folsäure (Vitamin B9 oder Folat) ist das Schlüsselvitamin für sämtliche Zellteilungs- und Wachstumsprozesse im menschlichen Körper. Als Coenzym im Ein-Kohlenstoff-Körperstoffwechsel ist es unverzichtbar für die Synthese von DNS-Bausteinen (Purine und Pyrimidine), die Reifung der Blutkörperchen und die Methylierung von Genen.',
+    dailyRequirement: '300 µg Folat-Äquivalente (Schwangere 550 µg, Frauen mit Kinderwunsch +400 µg synthetische Folsäure)',
+    dailyRequirementNote: 'DGE-Referenzwert (2024). Stillende: 450 µg Folat-Äquivalente/Tag. 1 µg Folat-Äquivalent = 1 µg Nahrungsfolat = 0,5 µg synthetische Folsäure (auf nüchternen Magen).',
+    dgeDetailedRequirements: [
+      { group: 'Jugendliche & Erwachsene', value: '300 µg Folat-Äquivalente/Tag' },
+      { group: 'Frauen mit Kinderwunsch / Konzeption', value: 'Zusätzlich 400 µg synthetische Folsäure/Tag' },
+      { group: 'Schwangere', value: '550 µg Folat-Äquivalente/Tag' },
+      { group: 'Stillende', value: '450 µg Folat-Äquivalente/Tag' }
+    ],
+    testBiomarker: 'Serum-Folat (Kurzzeitzufuhr) & Erythrozyten-Folat (Langzeitstatus)',
+    optimalRange: 'Serum-Folat > 10 nmol/l (> 4,4 ng/ml); Erythrozyten-Folat > 340 nmol/l (zur Prävention von Neuralrohrdefekten präkonzeptionell > 906 nmol/l laut WHO)',
+    diagnosticLimits: 'Serum-Folat spiegelt vor allem die Nahrungsaufnahme der letzten Tage wider. Erythrozyten-Folat (RBC-Folat) ist unempfindlich gegenüber kurzfristigen Ernährungsschwankungen und repräsentiert die Versorgung über die 120-tägige Lebensdauer der roten Blutzellen. Vor einer hochdosierten Folsäuregabe muss ein Vitamin-B12-Mangel ausgeschlossen werden, da Folsäure eine B12-bedingte Blutarmut maskieren kann, während Nervenschäden fortschreiten [1, 3].',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 200 µg synthetische Folsäure pro Tag in Nahrungsergänzungsmitteln für die Allgemeinbevölkerung; 400 µg für Frauen mit Kinderwunsch. EFSA Tolerable Upper Intake Level (UL): 1.000 µg (1 mg) synthetische Folsäure/Tag für Erwachsene.',
+    intro: 'Folat (Vitamin B9) ist ein essentielles wasserlösliches Vitamin und zentraler Kofaktor im zellulären C1-Stoffwechsel. Es ist unverzichtbar für die Synthese von Purin- und Pyrimidinbasen (DNA-Bausteine), die Zellteilung, die Erythropoese sowie Methylierungsreaktionen im Genom.',
     whatIsIt: [
-      'Der Begriff Folat bezeichnet die natürlichen, in Nahrungsmitteln vorkommenden Vitaminverbindungen (aus dem Lateinischen folium = Blatt). Folsäure hingegen ist die synthetisch hergestellte, stabilere Form, die in Anreicherungen und Medikamenten verwendet wird.',
-      'Natürliche Nahrungsfolate sind äußerst hitze-, licht- und sauerstoffempfindlich: Durch langes Kochen oder Warmhalten von Speisen gehen bis zu 70–90 % des Vitamins verloren.',
-      'Ein Folsäuremangel in den ersten 4 bis 6 Wochen der Schwangerschaft ist die Hauptursache für fatale Neuralrohrdefekte (Spina bifida / offener Rücken oder Anenzephalie) beim ungeborenen Kind.'
+      'Natürliche Nahrungsfolate sind oxidationsempfindlich und hitzelabil: Durch langes Kochen oder Warmhalten von Speisen können erhebliche Zubereitungsverluste (bis zu 70 %) auftreten [1].',
+      'Die Nationale Verzehrsstudie II (NVS II) zeigte, dass ein großer Teil der deutschen Bevölkerung die empfohlenen Referenzwerte für Folat über die Ernährung allein nicht erreicht [1].',
+      'Ein Folatdefizit in den ersten vier Schwangerschaftswochen erhöht das Risiko für schwerwiegende Fehlbildungen des zentralen Nervensystems (Neuralrohrdefekte wie Spina bifida und Anenzephalie) [2, 3].'
     ],
     symptoms: {
       primary: [
-        'Hyperchrome, makrozytäre Anämie: Chronische Erschöpfung, Schwächegefühl und Blässe',
-        'Entzündete, brennende Zunge (Glossitis) und Aphthenbildung an der Mundschleimhaut',
-        'Magen-Darm-Beschwerden, Neigung zu Durchfällen und Malabsorption',
-        'Reizbarkeit, Konzentrationsschwäche, depressive Verstimmungen und Schlafprobleme',
-        'Erhöhte Anfälligkeit für Schleimhautentzündungen'
+        'Megaloblastäre makrozytäre Anämie mit Fatigue, Blässe und rascher Erschöpfung',
+        'Schleimhautveränderungen: Glossitis (brennende Zunge) und Aphthen im Mundraum',
+        'Gastrointestinale Beschwerden und Neigung zu Malabsorption',
+        'Konzentrationsschwäche, depressive Verstimmungen und Reizbarkeit',
+        'Erhöhte Anfälligkeit für Infekte durch Beeinträchtigung der Zellneubildung'
       ],
       secondary: [
-        'Erhöhter Homocysteinspiegel (Gefäßschädigung und Thromboserisiko)',
-        'Verminderte Abwehrkräfte durch reduzierte Leukozytenneubildung',
-        'Graue Haare und diffuse Hautpigmentierungsstörungen'
+        'Hyperhomocysteinämie (erhöhtes Risiko für Gefäßveränderungen bei chronischem Mangel)',
+        'Verminderte Thrombozyten- und Leukozytenwerte bei schwerem Mangel (Panzytopenie)',
+        'Diffuse Pigmentierungsveränderungen von Haut und Haaren'
       ]
     },
     causes: {
-      title: 'Ursachen für Folsäuremangel',
-      description: 'Zufuhrdefizite bei gemüsearmer Ernährung und erhöhter Bedarf.'
+      title: 'Mögliche Ursachen für einen Folsäuremangel',
+      description: 'Geringe Aufnahme von frischem Gemüse, erhöhter Bedarf und Medikamenteninteraktionen.'
     } as any,
     causesList: [
       {
-        title: 'Mangelhafte Zufuhr frischer Blattgemüse',
-        description: 'Die Nationale Verzehrsstudie II zeigt, dass über 85 % der Frauen und Männer in Deutschland die empfohlene tägliche Folatzufuhr über die normale Ernährung nicht erreichen.'
+        title: 'Geringer Verzehr von Blattgemüse und Hülsenfrüchten',
+        description: 'Frische, schonend zubereitete Folatquellen werden im Alltag oft zu selten verzehrt.'
       },
       {
         title: 'Schwangerschaft & Stillzeit',
-        description: 'Durch das rasante fötale Zellwachstum, die Uterusvergrößerung und die Zunahme des mütterlichen Blutvolumens verdoppelt sich der Folatbedarf fast.'
+        description: 'Rasantes fötales und plazentares Zellwachstum verdoppelt den physiologischen Bedarf nahezu [1].'
       },
       {
-        title: 'Alkoholkonsum & Medikamente',
-        description: 'Alkohol stört den enterohepatischen Folatkreislauf. Medikamente wie Methotrexat (MTX), Antiepileptika oder Sulfamethoxazol wirken als direkte Folsäure-Antagonisten.'
+        title: 'Medikamenteninteraktionen & Antagonisten',
+        description: 'Arzneistoffe wie Methotrexat (MTX), Antiepileptika (z. B. Carbamazepin, Valproat) oder Trimethoprim hemmen die Dihydrofolat-Reduktase oder die Resorption.'
       },
       {
-        title: 'Genetische Polymorphismen (MTHFR-Mutation)',
-        description: 'Mutationen im MTHFR-Gen (Methylentetrahydrofolat-Reduktase) schränken die körpereigene Umwandlung von Folsäure in die biologisch aktive Form 5-MTHF um bis zu 70 % ein.'
+        title: 'Chronischer Alkoholkonsum & Darmerkrankungen',
+        description: 'Alkohol stört den enterohepatischen Folatkreislauf; Malabsorptionssyndrome (z. B. Zöliakie) behindern die Aufnahme im oberen Dünndarm.'
       }
     ],
     riskGroups: [
       {
         group: 'Frauen im gebärfähigen Alter mit Kinderwunsch',
-        reason: 'Das Neuralrohr schließt sich bereits zwischen dem 22. und 28. Tag nach der Empfängnis – meist bevor die Schwangerschaft bemerkt wird.'
+        reason: 'Das Neuralrohr schließt sich zwischen dem 22. und 28. Entwicklungstag – oft vor Erkennen der Schwangerschaft [1, 2].'
       },
       {
-        group: 'Menschen mit einseitiger Ernährung',
-        reason: 'Wenig grünes Gemüse, kaum Hülsenfrüchte, hoher Fast-Food-Konsum.'
+        group: 'Personen mit gemüsearmer Kost',
+        reason: 'Geringe Zufuhr von dunkelgrünem Blattgemüse, Kohl und Hülsenfrüchten.'
       },
       {
-        group: 'Chronisch Kranke unter MTX-Therapie',
-        reason: 'Methotrexat hemmt die Dihydrofolat-Reduktase gezielt.'
+        group: 'Patienten unter Therapie mit Folsäure-Antagonisten',
+        reason: 'Pharmakologische Hemmung der enzymatischen Folataktivierung (z. B. bei Methotrexat).'
       },
       {
-        group: 'Träger von MTHFR-Polymorphismen',
-        reason: 'Eingeschränkte enzymatische Bioaktivierung von Folsäure.'
+        group: 'Personen mit MTHFR-Genpolymorphismen',
+        reason: 'Verminderte Aktivität der Methylentetrahydrofolat-Reduktase, die die Bildung von 5-MTHF beeinflussen kann.'
       }
     ],
     dietarySources: [
-      { food: 'Kichererbsen & Bohnen', amount: '200–340 µg / 100g', vegan: true },
-      { food: 'Spinat (roh / kurz gedämpft)', amount: '145 µg / 100g', vegan: true },
-      { food: 'Feldsalat & Rucola', amount: '110–140 µg / 100g', vegan: true },
-      { food: 'Grüner Spargel', amount: '110 µg / 100g', vegan: true },
-      { food: 'Brokkoli (schonend gegart)', amount: '90 µg / 100g', vegan: true },
+      { food: 'Kichererbsen (getrocknet)', amount: '340 µg / 100g', vegan: true },
       { food: 'Rinderleber', amount: '590 µg / 100g', vegan: false },
-      { food: 'Eigelb', amount: '150 µg / 100g', vegan: false }
+      { food: 'Blattspinat (frisch)', amount: '145 µg / 100g', vegan: true },
+      { food: 'Feldsalat', amount: '140 µg / 100g', vegan: true },
+      { food: 'Grüner Spargel', amount: '110 µg / 100g', vegan: true },
+      { food: 'Brokkoli (gedämpft)', amount: '90 µg / 100g', vegan: true },
+      { food: 'Hühnerei (Eigelb)', amount: '150 µg / 100g', vegan: false }
     ],
     treatmentInfo: {
       dietTips: [
-        'Gemüse schonend dünsten oder dämpfen statt kochen, da Folat wasserlöslich und hitzeempfindlich ist.',
-        'Verzehren Sie Salate und Blattgemüse so frisch wie möglich nach dem Einkauf.'
+        'Bereiten Sie folatreiches Gemüse schonend zu (Dünsten oder Dämpfen mit wenig Wasser), da Folate wasserlöslich und hitzeempfindlich sind [1].',
+        'Verzehren Sie Salate und Rohkost möglichst frisch nach dem Einkauf, da der Vitamingehalt bei Lagerung rasch abnimmt.'
       ],
       supplementTips: [
-        'Frauen mit Kinderwunsch sollten mindestens 4 Wochen vor der Empfängnis und bis zum Ende des ersten Trimenons täglich 400 µg synthetische Folsäure oder 5-MTHF einnehmen.',
-        'Präparate mit bioaktivem Folat (z. B. 5-MTHF / Metafolin) umgehen eventuelle Enzymdefekte (MTHFR-Polymorphismen) und sind sofort biologisch aktiv.'
+        'Frauen mit Kinderwunsch sollten mindestens 4 Wochen vor Beginn einer Schwangerschaft täglich 400 µg synthetische Folsäure (oder äquivalentes Folat wie 5-MTHF) supplementieren [1, 2].',
+        'Präparate mit Calcium-L-Methylfolat (5-MTHF) stellen die biologisch aktive Folatform dar und müssen im Körper nicht erst durch das MTHFR-Enzym aktiviert werden.',
+        'Beachten Sie das EFSA Tolerable Upper Intake Level von 1.000 µg synthetischer Folsäure pro Tag [2].'
       ],
       interactions: [
-        'Ein Folsäuremangel muss immer zusammen mit Vitamin B12 abgeklärt werden: Hochdosierte Folsäure kann die Blutarmut eines B12-Mangels maskieren, während die irreversiblen Nervenschäden fortschreiten.'
+        'Vor einer hochdosierten Folsäuretherapie sollte der Vitamin-B12-Status abgeklärt werden, um die Maskierung einer perniziösen Anämie zu vermeiden [2].'
       ]
     },
     faqs: [
       {
-        question: 'Wann sollte mit der Folsäure-Einnahme vor einer Schwangerschaft begonnen werden?',
-        answer: 'Gynäkologische Fachgesellschaften und die DGE raten dringend dazu, bereits bei Kinderwunsch – idealerweise mindestens 4 bis 8 Wochen vor dem Absetzen der Verhütung – mit der täglichen Einnahme von 400 µg Folsäure zu beginnen, da sich das kindliche Neuralrohr bereits in der vierten Schwangerschaftswoche schließt.'
+        question: 'Wann sollte mit der Folsäureeinnahme bei Kinderwunsch begonnen werden?',
+        answer: 'Die DGE und Fachgesellschaften raten dringend dazu, mindestens 4 Wochen vor einer geplanten Schwangerschaft mit der Einnahme von 400 µg Folsäure täglich zu beginnen und diese bis zum Ende des 1. Trimenons fortzusetzen [1, 2].'
       },
       {
-        question: 'Was ist der Unterschied zwischen Folsäure und Folat?',
-        answer: 'Folat ist der Überbegriff für alle natürlichen, in Lebensmitteln vorkommenden Folatverbindungen. Folsäure ist die synthetische, oxidierte Form, die in Laboren hergestellt wird. Sie wird im Körper über mehrere enzymatische Schritte in Tetrahydrofolat (THF) und 5-MTHF umgewandelt.'
+        question: 'Welcher Laborwert ist zur Beurteilung genauer: Serum-Folat oder Erythrozyten-Folat?',
+        answer: 'Serum-Folat schwankt stark nahrungsabhängig und spiegelt die kurzfristige Zufuhr wider. Das intraerythrozytäre Folat (Erythrozyten-Folat / RBC-Folat) spiegelt die durchschnittliche Versorgung der vorangegangenen 2 bis 3 Monate wider und ist der stabilere Langzeitmarker [1, 3].'
       },
       {
-        question: 'Welcher Laborwert ist genauer: Serum-Folat oder Erythrozyten-Folat?',
-        answer: 'Das Serum-Folat schwankt sehr stark abhängig von den Mahlzeiten der letzten Tage und spiegelt nur die kurzfristige Zufuhr wider. Das intraerythrozytäre Folat (Erythrozyten-Folat / RBC-Folat) zeigt hingegen den durchschnittlichen Versorgungszustand der vergangenen 3 bis 4 Monate an und ist der verlässlichere Diagnostik-Marker.'
+        question: 'Was ist die MTHFR-Genvariante?',
+        answer: 'Polymorphismen im MTHFR-Gen (z. B. C677T) können die enzymatische Umwandlung von Folsäure in die aktive Form 5-MTHF vermindern. Bei heterozygoten oder homozygoten Trägern kann die direkte Einnahme von bioaktivem Folat (5-MTHF / Methylfolat) von Vorteil sein, wenngleich synthetische Folsäure bei ausreichender Dosis ebenfalls wirksam ist [2].'
       }
     ],
-    schemaCode: 'FolateDeficiency'
+    schemaCode: 'FolateDeficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Folat (2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/folat/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Folsäureversorgung der deutschen Bevölkerung und Höchstmengen in Nahrungsergänzungsmitteln (2021).', url: 'https://www.bfr.bund.de/' },
+      { citation: 'World Health Organization (WHO): Guideline: Optimal serum and red blood cell folate concentrations in women of reproductive age for prevention of neural tube defects (2015).', url: 'https://www.who.int/publications/i/item/9789241549042' },
+      { citation: 'AWMF S2k-Leitlinie 015/058: Präkonzeptionelle Folsäuresupplementierung zur Prävention von Neuralrohrdefekten.', url: 'https://www.awmf.org/' }
+    ]
   },
   {
     slug: 'jodmangel',
     name: 'Jodmangel',
-    subTitle: 'Deutschland ist Jodmangel-Gebiet – Schilddrüse & Gehirnentwicklung gefährdet',
-    metaTitle: 'Jodmangel Schilddrüse Symptome: Struma, Hashimoto & warum Deutschland Jodmangel-Gebiet ist | nährstoffmangel.de',
-    metaDescription: 'Jodmangel Symptome: Müdigkeit, Frieren, Gewichtszunahme und Schliddrüsenvergrößerung (Struma). Warum Deutschland Jodmangelgebiet ist und was bei Hashimoto-Thyreoiditis gilt.',
-    seoH1: 'Jodmangel & Schilddrüse: Symptome einer Unterfunktion, Struma & was bei Hashimoto zu beachten ist',
+    subTitle: 'Mitteleuropa ist Jodmangel-Risikogebiet – Schlüsselbaustein für Schilddrüsenhormone und kognitive Entwicklung',
+    metaTitle: 'Jodmangel Schilddrüse Symptome: Kropf, Hashimoto & Werte | nährstoffmangel.de',
+    metaDescription: 'Jodmangel Symptome: Was die Schilddrüse benötigt, warum Deutschland Risikoland ist, wie Jod im Urin bestimmt wird und was bei Hashimoto-Thyreoiditis gilt.',
+    seoH1: 'Jodmangel & Schilddrüse: Symptome, Struma-Risiko & Orientierung bei Hashimoto-Thyreoiditis',
     longTailKeywords: [
       { keyword: 'Jodmangel Schilddrüse Symptome', searchIntent: 'informational', monthlySearches: '3.000–7.000/Monat' },
       { keyword: 'Jodmangel Deutschland Verbreitung', searchIntent: 'informational', monthlySearches: '1.000–2.500/Monat' },
@@ -814,117 +907,131 @@ export const deficiencies: DeficiencyData[] = [
     ],
     faqLongTail: [
       {
-        question: 'Sollte ich bei Hashimoto-Thyreoiditis kein Jod supplementieren?',
-        answer: 'Das ist eine wichtige und häufige Frage. Bei Hashimoto-Thyreoiditis (autoimmuner Schilddrüsenentzündung) ist Vorsicht geboten: Hohe Joddosen (> 500 µg/Tag) können theoretisch die autoimmune Entzündungsaktivität verstärken. Die DGE-Empfehlung von 200 µg/Tag über Jodsalz und jodhaltiges Mineralwasser gilt jedoch auch für Menschen mit Hashimoto als sicher. Mega-Dosen über Algenprodukte (bis zu 3.000 µg/Tag möglich) sollten vermieden werden. Vor einer Supplementierung immer erst TSH, fT3, fT4 und TPO-Antikörper bestimmen lassen.'
+        question: 'Darf man bei Hashimoto-Thyreoiditis Jod aufnehmen?',
+        answer: 'Bei einer autoimmunen Schilddrüsenentzündung (Hashimoto-Thyreoiditis) sollte auf unkontrollierte, hochdosierte Jodpräparate sowie getrocknete Algen mit extrem schwankendem Jodgehalt verzichtet werden, da exzessives Jod Entzündungsschübe triggern kann. Die normale ernährungsphysiologische Jodzufuhr über die Nahrung und maßvoll jodiertes Speisesalz (im Rahmen der DGE-Empfehlung von ca. 150–200 µg/Tag) ist jedoch in der Regel unbedenklich und für den Organismus notwendig. Eine therapeutische Supplementierung sollte mit der behandelnden Fachpraxis abgestimmt werden [1, 2].'
       },
       {
-        question: 'Warum ist Deutschland ein Jodmangel-Gebiet?',
-        answer: 'Der Boden in Deutschland – wie in den meisten mitteleuropäischen Binnenstaaten – ist geologisch arm an Jod, da durch Eiszeit-Gletscherverschiebungen und Auswaschung durch Regenwasser über Jahrtausende das Jod aus dem Boden gespült wurde. Pflanzen, die auf jodarmen Böden wachsen, enthalten entsprechend wenig Jod. Meeresbewohner (Fisch, Meeresfrüchte, Algen) sind die einzigen natürlichen Jodquellen. Die Deutsche Schilddrüsenstudie (Papillon) zeigt, dass 30–40% der Deutschen unzureichend mit Jod versorgt sind.'
+        question: 'Warum gilt Deutschland als Jodmangel-Gebiet?',
+        answer: 'Die Ackerböden in Deutschland und weiten Teilen Mitteleuropas sind geologisch arm an Jod, da Niederschläge und Gletscher über Jahrtausende das Spurenelement in die Meere ausgewaschen haben. Einheimische pflanzliche und tierische Lebensmittel enthalten daher von Natur aus geringe Jodmengen. Laut dem RKI-Jodmonitoring (DEGS1) weisen rund 32 % der Erwachsenen und bis zu 44 % der Kinder eine Urin-Jodausscheidung unter 100 µg/l auf [2, 3].'
       }
     ],
     category: 'Spurenelement',
-    dailyRequirement: '180–200 µg (Schwangere 230 µg, Stillende 260 µg)',
-    dailyRequirementNote: 'DGE-Referenzwert für Jugendliche und Erwachsene.',
-    testBiomarker: 'Jodausscheidung im 24h-Sammelurin bzw. Spontanurin',
-    optimalRange: '100–200 µg/l (Urin-Jod-Konzentration)',
-    intro: 'Jod ist ein lebensnotwendiges Spurenelement, das fast ausschließlich für die Synthese der beiden Schilddrüsenhormone Trijodthyronin (T3) und Thyroxin (T4) benötigt wird. Diese Hormone steuern den Grundumsatz des Stoffwechsels, die Körpertemperatur, das Herz-Kreislauf-System sowie die Gehirnreifung und neuronale Entwicklung von Föten und Kleinkindern.',
+    dailyRequirement: '180–200 µg (Erwachsene bis 51 J.: 200 µg, ab 51 J.: 180 µg)',
+    dailyRequirementNote: 'DGE-Referenzwert (2024). Schwangere: 230 µg/Tag, Stillende: 260 µg/Tag.',
+    dgeDetailedRequirements: [
+      { group: 'Erwachsene (19 bis unter 51 Jahre)', value: '200 µg/Tag' },
+      { group: 'Erwachsene (ab 51 Jahre)', value: '180 µg/Tag' },
+      { group: 'Schwangere', value: '230 µg/Tag' },
+      { group: 'Stillende', value: '260 µg/Tag' }
+    ],
+    testBiomarker: 'Jodausscheidung im Urin (bevorzugt 24-Stunden-Sammelurin oder Spontanurin-Monitoring)',
+    optimalRange: '100–199 µg/l (WHO-Kollektivstandard für adäquate Versorgung im Urin)',
+    diagnosticLimits: 'Die Jodausscheidung im Spontanurin unterliegt erheblichen tageszeitlichen und ernährungsbedingten Schwankungen. Ein Einzelwert erlaubt keine gesicherte Individualdiagnose. Zur differentialdiagnostischen Abklärung von Schilddrüsenerkrankungen werden in der Regel sonografische Befunde (Volumen, Knotenstruktur) sowie laborchemische Parameter (TSH, fT3, fT4 und ggf. Antikörper wie TPO-Ak) herangezogen [1, 4].',
+    bfrRecommendation: 'BfR-Höchstmengenvorschlag (2021): Maximal 100 µg Jod pro Tag in Nahrungsergänzungsmitteln. EFSA Tolerable Upper Intake Level (UL): 600 µg Jod/Tag für Erwachsene. Bei Schilddrüsenerkrankungen (Autoimmunthyreoiditis Hashimoto, Schilddrüsenautonomie) wird von unkontrollierten hochdosierten Jodgaben abgeraten; die ernährungsübliche Jodzufuhr über die normale Ernährung und maßvolles Jodsalz gilt hingegen als unbedenklich.',
+    intro: 'Jod ist ein unentbehrliches Spurenelement, das fast ausschließlich für die Biosynthese der Schilddrüsenhormone Thyroxin (T4) und Trijodthyronin (T3) benötigt wird. Diese Hormone steuern den Grundumsatz des Energiestoffwechsels, die Thermogenese, die Herzfunktion sowie die neurologische Entwicklung und Gehirnreifung im Mutterleib und in der Kindheit.',
     whatIsIt: [
-      'Deutschland und weite Teile Mitteleuropas gehören historisch zu den Jodmangelgebieten, da eiszeitliche Gletscher und Niederschläge das Jod vor Jahrtausenden aus den Ackerböden in die Weltmeere gewaschen haben.',
-      'Trotz der Einführung von jodiertem Speisesalz in den 1980er Jahren zeigen aktuelle Erhebungen des Robert Koch-Instituts (RKI), dass mehr als 30 % der Erwachsenen und bis zu 44 % der Kinder und Jugendlichen in Deutschland ein moderates bis manifestes Joddefizit aufweisen.',
-      'Bei anhaltendem Jodmangel vergrößert sich das Schilddrüsengewebe unter dem Einfluss des Hypophysenhormons TSH kompensatorisch, um das wenige verfügbare Jod effektiver abzufangen – es entsteht ein Kropf (Struma) und später Schilddrüsenknoten.'
+      'In Deutschland und weiten Teilen Mitteleuropas sind die landwirtschaftlichen Böden arm an Jod. Ohne Jodanreicherung von Speisesalz und Nutztierfutter ist eine ausreichende Bedarfsdeckung über heimische Lebensmittel schwierig [1, 3].',
+      'Erhebungen des Robert Koch-Instituts (RKI) und des Bundesinstituts für Risikobewertung (BfR) belegen, dass die Jodversorgung in Deutschland nach zwischenzeitlichen Verbesserungen in den letzten Jahren wieder rückläufig ist [2, 3].',
+      'Bei chronischem Jodmangel reagiert die Schilddrüse unter TSH-Stimulation mit kompensatorischer Zellvermehrung: Es entsteht eine Vergrößerung des Organs (Kropf / Struma) und das Risiko für autonome Knotenbildung steigt [1].'
     ],
     symptoms: {
       primary: [
-        'Sicht- oder tastbare Vergrößerung der Schilddrüse am Hals (Kropf / Struma)',
-        'Kloß-, Enge- oder Druckgefühl im Hals, Räusperzwang und Schluckbeschwerden',
-        'Chronische Müdigkeit, Antriebsarmut und verlangsamte geistige Reaktionsfähigkeit',
-        'Extreme Kälteempfindlichkeit und ständiges Frieren',
+        'Sichtbare oder tastbare Vergrößerung der Schilddrüse (Struma / Kropf)',
+        'Druck- oder Engegefühl im Halsbereich, Räusperzwang und Schluckbeschwerden',
+        'Chronische Müdigkeit, Antriebsarmut und verlangsamte kognitive Reaktionsfähigkeit',
+        'Ausgeprägte Kälteempfindlichkeit und ständiges Frieren',
         'Gewichtszunahme trotz unveränderter Ernährungsgewohnheiten'
       ],
       secondary: [
-        'Trockene, teigige Haut und brüchige Nägel',
-        'Verlangsamter Herzschlag (Bradykardie) und Neigung zu Verstopfung',
-        'Heisere, belegte Stimme durch Druck auf den Kehlkopfnerv',
-        'Bei Kindern: irreversible Entwicklungs- und Intelligenzstörungen (Kretinismus bei schwerstem angeborenem Mangel)'
+        'Trockene, schuppige Haut und sprödes, glanzloses Haar',
+        'Neigung zu Verstopfung und verlangsamter Darmperistaltik',
+        'Heisere oder belegte Stimme bei Druck auf den Nervus laryngeus recurrens',
+        'Schwere irreversible Entwicklungs- und Intelligenzstörungen bei kongenitalem Mangel (Kretinismus)'
       ]
     },
     causes: {
-      title: 'Ursachen für Jodmangel',
-      description: 'Geologische Gegebenheiten und rückläufige Salzjodierung.'
+      title: 'Mögliche Ursachen für einen Jodmangel',
+      description: 'Geologische Gegebenheiten und rückläufige Salzjodierung in Haushalt und Lebensmittelhandwerk.'
     } as any,
     causesList: [
       {
-        title: 'Jodarmer mitteleuropäischer Boden',
-        description: 'Einheimische landwirtschaftliche Erzeugnisse (Getreide, Gemüse, Obst) enthalten aufgrund der jodarmen Böden in Deutschland nur minimale Spuren an Jod.'
+        title: 'Jodarme mitteleuropäische Böden',
+        description: 'Heimische pflanzliche Erzeugnisse (Getreide, Gemüse) enthalten aufgrund eiszeitlicher Bodenauswaschungen nur Spuren von Jod [3].'
       },
       {
-        title: 'Rückläufiger Einsatz von Jodsalz in der Industrie',
-        description: 'Immer mehr Bäckereien, Fleischereien und Lebensmittelhersteller verzichten aus Kostengründen oder vermeintlichem Clean-Labeling auf Jodsalz und nutzen Meersalz ohne Jod.'
+        title: 'Rückläufige Verwendung von Jodsalz in Fertignahrung',
+        description: 'Viele Großbäckereien, Metzgereien und Lebensmittelproduzenten verzichten aus Kostengründen oder Exportüberlegungen wieder auf Jodsalz [3].'
       },
       {
-        title: 'Trend zu unjodiertem Trend-Salz',
-        description: 'Verbraucher greifen vermehrt zu rosa Himalayasalz, Fleur de Sel oder reinem Meersalz, die praktisch kein bioverfügbares Jod liefern.'
+        title: 'Trend zu unjodierten Spezialsalzen',
+        description: 'Die Verwendung von Meersalz, Steinsalz oder Himalayasalz ohne Jodierung liefert praktisch kein physiologisch relevantes Jod [3].'
       },
       {
-        title: 'Geringer Konsum von Seefisch & Meeresfrüchten',
-        description: 'Meeresfisch ist die einzige nennenswerte natürliche Jodquelle, wird in Deutschland jedoch von vielen Menschen zu selten gegessen.'
+        title: 'Geringer Verzehr von Seefisch und Meeresfrüchten',
+        description: 'Meeresfische sind die reichhaltigste natürliche Jodquelle, werden jedoch in Deutschland von vielen Menschen seltener als empfohlen verzehrt.'
       }
     ],
     riskGroups: [
       {
-        group: 'Schwangere & Stillende',
-        reason: 'Erhöhte mütterliche renale Jodausscheidung und Jodversorgung des Fötus/Säuglings (Gefahr mentaler Retardierung).'
+        group: 'Schwangere und Stillende',
+        reason: 'Erhöhter mütterlicher Bedarf und renale Jodverluste; entscheidend für die kindliche Gehirnentwicklung [1].'
       },
       {
-        group: 'Veganer & Personen mit Milcheiweißallergie',
-        reason: 'Vollständiger Verzicht auf Seefisch, Eier und Milch (Milch enthält Jod durch Tierfutteranreicherung).'
+        group: 'Veganer und Menschen mit Milcheiweißunverträglichkeit',
+        reason: 'Verzicht auf Seefisch, Eier und Milchprodukte (Milch enthält Jod über jodiertes Mineralfutter).'
       },
       {
-        group: 'Verfechter von Steinsalz / Himalayasalz',
-        reason: 'Völliger Verzicht auf angereichertes Jodsalz.'
+        group: 'Haushalte mit ausschließlicher Nutzung unjodierter Salze',
+        reason: 'Fehlende Jodbasisversorgung über den Salzkonsum.'
       },
       {
-        group: 'Personen mit natriumarmer Diät',
-        reason: 'Kardiologische Einschränkung des Speisesalzkonsums ohne kompensatorische Jodquellen.'
+        group: 'Personen mit natriumreduzierter Diät',
+        reason: 'Einschränkung des Speisesalzkonsums ohne alternative Jodquellen.'
       }
     ],
     dietarySources: [
-      { food: 'Kabeljau / Dorsch', amount: '140–230 µg / 100g', vegan: false },
-      { food: 'Seelachs / Schellfisch', amount: '120–200 µg / 100g', vegan: false },
-      { food: 'Jodiertes Speisesalz', amount: '20 µg / 1g (Messerspitze)', vegan: true },
-      { food: 'Garnelen / Meerestiere', amount: '100–130 µg / 100g', vegan: false },
+      { food: 'Kabeljau / Dorsch', amount: '230 µg / 100g', vegan: false },
+      { food: 'Seelachs (Köhler)', amount: '170 µg / 100g', vegan: false },
+      { food: 'Jodiertes Speisesalz', amount: '2.000 µg / 100g (ca. 20 µg / 1g Prise)', vegan: true },
+      { food: 'Garnelen / Nordseekrabben', amount: '130 µg / 100g', vegan: false },
       { food: 'Kuhmilch (Vollmilch)', amount: '10–15 µg / 100g', vegan: false },
-      { food: 'Hühnerei (Größe M)', amount: '12 µg / Stück', vegan: false },
-      { food: 'Nori-Algen (standardisiert)', amount: 'variiert stark (bis zu 500 µg)', vegan: true }
+      { food: 'Hühnerei (Größe M)', amount: '12 µg / Stück', vegan: false }
     ],
     treatmentInfo: {
       dietTips: [
-        'Achten Sie im Haushalt konsequent auf den Kauf von jodiertem Speisesalz (am besten mit Fluorid und Folsäure).',
-        'Bauen Sie 1 bis 2 Portionen Meeresfisch (z. B. Kabeljau, Seelachs, Scholle) pro Woche in Ihren Speiseplan ein.',
-        'Seien Sie vorsichtig mit unkontrollierten Algenprodukten (wie Kombu oder Kelp): Diese können extrem toxische Jodmengen enthalten, die eine Schilddrüsenüberfunktion auslösen können.'
+        'Verwenden Sie im Haushalt konsequent jodiertes Speisesalz (bevorzugt mit Fluorid und Folsäure) [1, 3].',
+        'Integrieren Sie nach Möglichkeit 1 bis 2 Portionen Meeresfisch (z. B. Kabeljau, Seelachs, Scholle) pro Woche in den Speiseplan.',
+        'Vorsicht bei unkontrollierten Algenprodukten (wie getrocknetem Kelp oder Kombu): Diese können extrem schwankende, potentiell toxische Jodmengen enthalten, die Schilddrüsenfunktionsstörungen auslösen können [3].'
       ],
       supplementTips: [
-        'Schwangere und Stillende sollten nach Rücksprache mit der Frauenarztpraxis täglich 100 bis 150 µg Jodid als Tablette einnehmen.',
-        'Kaliumjodid-Tabletten bieten eine exakt dosierbare und standardisierte Versorgung.'
+        'Schwangere und Stillende sollten nach gynäkologischer Beratung täglich 100 bis 150 µg Jod als Tablette supplementieren [1].',
+        'Kaliumjodid-Tabletten ermöglichen eine standardisierte, exakt dosierbare Zufuhr.',
+        'Beachten Sie den BfR-Höchstmengenvorschlag von maximal 100 µg Jod pro Tag in Nahrungsergänzungsmitteln für die Allgemeinbevölkerung [3].'
       ],
       interactions: [
-        'Vorsicht bei Autoimmunerkrankungen der Schilddrüse: Bei Hashimoto-Thyreoiditis oder Morbus Basedow kann eine plötzliche hohe Jodzufuhr akute Entzündungsschübe triggern.'
+        'Während eine bedarfsdeckende ernährungsphysiologische Jodzufuhr (z. B. über normale Ernährung und maßvoll jodiertes Speisesalz) auch bei Hashimoto-Thyreoiditis als sicher gilt, sollte bei bestehenden Schilddrüsenautonomien oder aktiven Autoimmunerkrankungen vor einer zusätzlichen Einnahme jodhaltiger Nahrungsergänzungsmittel eine ärztliche Rücksprache erfolgen [1].'
       ]
     },
     faqs: [
       {
-        question: 'Wie wird ein Jodmangel labormedizinisch nachgewiesen?',
-        answer: 'Da der Serum-Jodwert stark tageszeitabhängig schwankt, ist der medizinische Goldstandard die Messung der Jodausscheidung im Urin (bevorzugt im Morgen- oder 24-Stunden-Sammelurin). Werte unter 100 µg/l Urin zeigen ein Versorgungsdefizit an.'
+        question: 'Wie wird die Jodversorgung in der Medizin beurteilt?',
+        answer: 'Zur Beurteilung der Jodversorgung in Bevölkerungsgruppen ist die Messung der Jodausscheidung im Urin (bevorzugt 24-h-Sammelurin oder Spontanurin) der etablierte WHO-Standard. Werte unter 100 µg/l Urin zeigen im Kollektiv ein Defizit an. Für den einzelnen Patienten sind Schilddrüsensonografie und Schilddrüsenhormonwerte maßgeblich [2, 4].'
       },
       {
-        question: 'Enthält Meersalz oder Himalayasalz von Natur aus genug Jod?',
-        answer: 'Nein, das ist ein weit verbreiteter Irrtum. Natürliches Meersalz oder Himalayasalz enthält nach der Trocknung und Reinigung nur winzige Spuren Jod (unter 2 µg pro Gramm). Um den Tagesbedarf von 200 µg zu decken, müsste man 100 Gramm Salz essen – eine tödliche Dosis. Nur jodiertes Speisesalz ist für die Bedarfsdeckung geeignet.'
+        question: 'Enthält Meersalz oder Himalayasalz von Natur aus ausreichend Jod?',
+        answer: 'Nein, das ist ein weit verbreiteter Irrtum. Naturbelassenes Meersalz, Steinsalz oder rosa Himalayasalz enthält nach dem Trocknen nur minimale Spuren an Jod (meist unter 2 µg pro Gramm). Um den Tagesbedarf von 200 µg darüber zu decken, müsste man gesundheitsschädliche Salzmengen konsumieren. Nur angereichertes Jodsalz leistet einen nennenswerten Versorgungsbeitrag [3].'
       },
       {
-        question: 'Darf man bei Hashimoto-Thyreoiditis Jod zu sich nehmen?',
-        answer: 'Bei der chronischen Autoimmun-Thyreoiditis (Hashimoto) sollte auf hochdosierte Jodpräparate und Algen verzichtet werden, da Jod das Immunsystem stimulieren kann. Eine normale, moderate Zufuhr über normale Lebensmittel und mäßig jodiertes Speisesalz (bis zu 150 µg/Tag) ist jedoch auch für Hashimoto-Patienten meist unbedenklich und für den Reststoffwechsel notwendig.'
+        question: 'Darf man bei Hashimoto-Thyreoiditis Jodsalz verwenden?',
+        answer: 'Eine normale, maßvolle Verwendung von Jodsalz im Haushalt und die Jodaufnahme über herkömmliche Lebensmittel gelten auch bei Hashimoto-Thyreoiditis als sicher. Vermieden werden sollten jedoch hochdosierte Jodtabletten und algenbasierte Nahrungsergänzungsmittel ohne ärztliche Indikation [1, 3].'
       }
     ],
-    schemaCode: 'IodineDeficiency'
+    schemaCode: 'IodineDeficiency',
+    sources: [
+      { citation: 'Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr – Jod (2024).', url: 'https://www.dge.de/wissenschaft/referenzwerte/jod/' },
+      { citation: 'Robert Koch-Institut (RKI): Jodmonitoring in Deutschland – Ergebnisse aus DEGS1 und KiGGS (2016/2020).', url: 'https://www.rki.de/' },
+      { citation: 'Bundesinstitut für Risikobewertung (BfR): Jodversorgung in Deutschland wieder rückläufig – Stellungnahme Nr. 005/2020.', url: 'https://www.bfr.bund.de/' },
+      { citation: 'World Health Organization (WHO), UNICEF, IGN: Assessment of iodine deficiency disorders and monitoring their elimination (3rd edition, 2007).', url: 'https://www.who.int/' }
+    ]
   }
 ];

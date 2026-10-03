@@ -31,7 +31,7 @@ export default function MedicalDisclaimer({ compact = false }: MedicalDisclaimer
             Die auf <strong className="text-slate-900">nährstoffmangel.de</strong> bereitgestellten Inhalte wurden sorgfältig nach wissenschaftlichen Leitlinien und Veröffentlichungen der DGE, des RKI und internationaler Fachgesellschaften recherchiert. Sie dienen jedoch ausschließlich der neutralen Information und allgemeinen Orientierung.
           </p>
           <p className="mt-2 font-medium text-slate-900">
-            Diese Seite ersetzt keine ärztliche Beratung. Bei Verdacht auf einen Mangel oder bei unklaren körperlichen Beschwerden wenden Sie sich bitte immer an eine qualifizierte Ärztin oder einen Arzt. Nehmen Sie hochdosierte Nährstoffpräparate niemals ohne vorherige labordiagnostische Bestätigung ein.
+            Diese Seite ersetzt keine ärztliche Beratung. Bei Verdacht auf einen Mangel oder bei unklaren körperlichen Beschwerden wenden Sie sich bitte an eine qualifizierte Ärztin oder einen Arzt. Nehmen Sie hochdosierte Nährstoffpräparate nicht ohne vorherige labordiagnostische Bestätigung und ärztliche Rücksprache ein.
           </p>
         </div>
       </div>

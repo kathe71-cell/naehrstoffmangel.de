@@ -41,7 +41,7 @@ export default function VitaminHubPage() {
     },
     {
       question: 'Kann man einen Vitaminmangel durch ein normales Blutbild erkennen?',
-      answer: 'In der Regel nein. Das sogenannte kleine oder große Blutbild misst vorrangig die Anzahl und Morphologie der Blutkörperchen (z. B. Hämoglobin, Leukozyten, Thrombozyten). Vitamine wie Vitamin D (25-OH-D), Vitamin B12 (Holo-TC) oder Folsäure werden dabei nicht routinemäßig erfasst und müssen als spezielle Serum- oder Vollblutparameter explizit angefordert werden.'
+      answer: 'In der Regel nein. Das sogenannte kleine oder große Blutbild misst vorrangig die Anzahl und Morphologie der Blutkörperchen (z. B. Hämoglobin, Leukozyten, Thrombozyten). Vitamine wie Vitamin D (25-OH-D), Vitamin B12 (Holo-TC) oder Folsäure werden dabei nicht routinemäßig erfasst und müssen als spezifische Laborparameter (in der Regel im Serum) gezielt angefordert werden.'
     },
     {
       question: 'Welche Vitamine fehlen Menschen in Deutschland am häufigsten?',
@@ -148,7 +148,7 @@ export default function VitaminHubPage() {
               <span>Fettlösliche Vitamine (A, D, E, K)</span>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Fettlösliche Vitamine benötigen Nahrungsfett für eine optimale Aufnahme im Darm. Überschüsse können im Fettgewebe und in der Leber über längere Zeiträume gespeichert werden. Dies schützt zwar kurzfristig vor Mangelsituationen, birgt bei unkontrollierter hochdosierter Zufuhr jedoch das Risiko einer Anreicherung (Hypervitaminose).
+              Fettlösliche Vitamine benötigen Nahrungsfett für eine effektive Resorption im Darm. Überschüsse können im Fettgewebe und in der Leber über längere Zeiträume gespeichert werden. Dies schützt zwar kurzfristig vor Mangelsituationen, birgt bei unkontrollierter hochdosierter Zufuhr jedoch das Risiko einer Anreicherung (Hypervitaminose).
             </p>
           </div>
         </div>
@@ -221,7 +221,7 @@ export default function VitaminHubPage() {
               </div>
               <h3 className="text-xl font-black text-slate-900">Vitamin D (Calciferol)</h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Nimmt unter den Vitaminen eine Sonderstellung ein, da es bei UV-B-Einstrahlung auf die Haut selbst gebildet werden kann. Im Winter leidet laut RKI über die Hälfte der Bevölkerung an suboptimalen Werten. Wichtig für Knochen, Muskeln und Immunsystem.
+                Nimmt unter den Vitaminen eine Sonderstellung ein, da es bei UV-B-Einstrahlung auf die Haut selbst gebildet werden kann. Im RKI-Gesundheitssurvey DEGS1 wiesen 56 % der untersuchten Erwachsenen Werte unter 50 nmol/l auf (mangelhaft oder suboptimal). Wichtig für Knochen, Muskeln und Immunsystem.
               </p>
             </div>
             <Link
@@ -462,17 +462,17 @@ export default function VitaminHubPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
               <span className="font-bold text-slate-900 block">Vitamin D: 25-OH-Vitamin D3 (Serum)</span>
-              <p className="text-slate-600 text-xs">Spiegelt die körpereigenen Vorräte am stabilsten wider. Werte unter 50 nmol/l (20 ng/ml) weisen auf ein Defizit hin.</p>
+              <p className="text-slate-600 text-xs">Spiegelt die körpereigenen Vorräte wider. Gemäß RKI: &lt;30 nmol/l (&lt;12 ng/ml) mangelhaft, 30–&lt;50 nmol/l suboptimal, ≥50 nmol/l (≥20 ng/ml) ausreichend für Knochengesundheit.</p>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
               <span className="font-bold text-slate-900 block">Vitamin B12: Holo-TC & MMA</span>
-              <p className="text-slate-600 text-xs">Holotranscobalamin (Holo-TC) misst das biologisch aktive B12. Ergänzend zeigt die Methylmalonsäure (MMA) im Urin/Serum einen funktionellen Gewebemangel.</p>
+              <p className="text-slate-600 text-xs">Holo-TC misst das biologisch verfügbare B12. Ergänzend zeigt MMA im Urin/Serum funktionelle Gewebedefizite (nur aussagekräftig bei intakter Nierenfunktion / eGFR).</p>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
               <span className="font-bold text-slate-900 block">Folsäure: Serum-Folat / Erythrozyten-Folat</span>
-              <p className="text-slate-600 text-xs">Serum-Folat zeigt die aktuelle Zufuhr. Erythrozyten-Folat spiegelt die Versorgung der letzten Wochen wider.</p>
+              <p className="text-slate-600 text-xs">Serum-Folat zeigt die kurzfristige Zufuhr der letzten Tage. Erythrozyten-Folat spiegelt die Gewebespeicher der vergangenen 2–3 Monate wider.</p>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">

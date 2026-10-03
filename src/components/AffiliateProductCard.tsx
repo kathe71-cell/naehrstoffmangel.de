@@ -17,13 +17,13 @@ interface AffiliateProductCardProps {
 
 const defaultProductsByNutrient: Record<string, ProductItem[]> = {
   Eisen: [
-    { name: 'Eisenbisglycinat Chelat 20mg', brand: 'Sunday Natural', dosage: '20 mg elementares Fe', form: 'Kapseln (magenschonend)', vegan: true, highlight: 'Mit bioaktivem Vitamin C für maximale Absorption' },
+    { name: 'Eisenbisglycinat Chelat 20mg', brand: 'Sunday Natural', dosage: '20 mg elementares Fe', form: 'Kapseln (magenschonend)', vegan: true, highlight: 'Kombiniert mit Vitamin C zur Unterstützung der Eisenaufnahme' },
     { name: 'Eisen Komplex Forte', brand: 'nu3', dosage: '14 mg Fe + Folsäure & B12', form: 'Reinsubstanz-Kapseln', vegan: true, highlight: 'Ohne künstliche Trennmittel, zertifizierte Reinstoffe' },
     { name: 'Iron Bisglycinate Gentle Iron', brand: 'iHerb', dosage: '25 mg', form: 'Vegetarische Kapseln', vegan: true, highlight: 'International bewährte Formulierung ohne Obstipation' }
   ],
   'Vitamin D': [
     { name: 'Vitamin D3 & K2 MK7 Tropfen 1.000 I.E.', brand: 'Sunday Natural', dosage: '1.000 I.E. D3 + 20µg K2', form: 'Tropfen in MCT-Öl', vegan: true, highlight: '100% all-trans K2 (K2VITAL®), laborgeprüft' },
-    { name: 'Premium Vitamin D3 2000 I.E.', brand: 'nu3', dosage: '2.000 I.E. pro Tropfen', form: 'Öl-Tropfen', vegan: true, highlight: 'Aus Flechten gewonnen, optimal fettlöslich' }
+    { name: 'Premium Vitamin D3 2000 I.E.', brand: 'nu3', dosage: '2.000 I.E. pro Tropfen', form: 'Öl-Tropfen', vegan: true, highlight: 'Aus Flechten gewonnen, pflanzliche Ölbasis' }
   ],
   Magnesium: [
     { name: 'Magnesiumbisglycinat Pur', brand: 'Sunday Natural', dosage: '100 mg elementares Mg', form: 'Chelat-Kapseln', vegan: true, highlight: 'Hoch bioverfügbar, keine Magen-Darm-Reizung' },

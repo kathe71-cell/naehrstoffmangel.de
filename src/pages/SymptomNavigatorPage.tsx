@@ -87,16 +87,30 @@ export default function SymptomNavigatorPage() {
       <header className="space-y-4 border-b border-slate-200 pb-6">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
           <Activity className="w-3.5 h-3.5" />
-          <span>Interaktiver Selbsttest &amp; Orientierung</span>
+          <span>Interaktive Orientierungshilfe</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-          Symptom-Navigator: Welcher Nährstoffmangel steckt dahinter?
+          Symptom-Navigator: Fachliteratur-Zuordnung von Beschwerden
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Wählen Sie Ihre aktuellen Beschwerden aus. Unser Analyse-Algorithmus gleicht Ihre Angaben mit typischen Leitsymptomen der 7 wichtigsten Mikronährstoffmängel in Deutschland ab.
+          Der Navigator zeigt, mit welchen Nährstoffmängeln ausgewählte Symptome in der Fachliteratur in Verbindung gebracht werden. Die Ergebnisse sind keine Diagnose und erlauben keine Aussage darüber, wie wahrscheinlich ein bestimmter Mangel vorliegt.
         </p>
+
+        {/* Warning signs & Differential diagnosis note */}
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 text-xs sm:text-sm text-amber-950 space-y-2 mt-4">
+          <div className="flex items-center gap-2 font-bold text-amber-900">
+            <AlertCircle className="w-4 h-4 text-amber-700 shrink-0" />
+            <span>Wichtiger medizinischer Hinweis zu unspezifischen Symptomen</span>
+          </div>
+          <p className="leading-relaxed text-slate-700">
+            Symptome wie Müdigkeit, Kopfschmerzen, Schlafstörungen oder diffuse Missempfindungen sind unspezifisch und können Begleiterscheinungen vielfältiger anderer Ursachen sein (z. B. Infektionen, chronischer Schlafmangel, Schilddrüsenfunktionsstörungen, Herz-Kreislauf-Erkrankungen oder seelische Belastungen).
+          </p>
+          <p className="leading-relaxed font-semibold text-amber-950">
+            Warnsymptome wie akute Atemnot, neu aufgetretene Brustschmerzen, plötzliche Lähmungs- oder Sprachstörungen, anhaltendes Fieber, schwarzer Stuhl oder rapider Gewichtsverlust erfordern eine umgehende ärztliche Untersuchung.
+          </p>
+        </div>
       </header>
 
       {/* Step 1: Category Filter & Symptoms Selection */}
@@ -180,10 +194,10 @@ export default function SymptomNavigatorPage() {
       <section className="space-y-6">
         <div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-            2. Analyseergebnis &amp; Wahrscheinliche Mängel
+            2. Thematische Zuordnung &amp; Fachliteratur-Relevanz
           </h2>
           <p className="text-sm text-slate-600">
-            Basierend auf {selectedSymptoms.length} ausgewählten Symptomen:
+            Basierend auf {selectedSymptoms.length} ausgewählten Symptomen (Reihenfolge nach redaktioneller Häufigkeit in der Fachliteratur – keine diagnostische Wahrscheinlichkeitsaussage):
           </p>
         </div>
 
@@ -226,13 +240,8 @@ export default function SymptomNavigatorPage() {
                     </div>
 
                     <div className="flex items-center gap-2">
-                      {isTopMatch && (
-                        <span className="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-                          Höchste Übereinstimmung
-                        </span>
-                      )}
-                      <span className="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">
-                        Score: {score}
+                      <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-100 text-slate-700">
+                        Relevanz-Rang #{idx + 1}
                       </span>
                     </div>
                   </div>
@@ -259,7 +268,7 @@ export default function SymptomNavigatorPage() {
 
                   <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-2 border-t border-slate-100">
                     <span className="text-xs text-slate-500">
-                      Zielbereich: <strong className="text-slate-800">{def.optimalRange}</strong>
+                      Referenz-/Zielbereich: <strong className="text-slate-800">{def.optimalRange}</strong>
                     </span>
 
                     <Link

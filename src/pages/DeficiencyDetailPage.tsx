@@ -14,7 +14,9 @@ import {
   ArrowRight,
   BookOpen,
   Calendar,
-  UserCheck
+  UserCheck,
+  ShieldCheck,
+  ExternalLink
 } from 'lucide-react';
 import { deficiencies } from '../data/deficiencies';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -160,24 +162,65 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </p>
 
         {/* Lab Benchmark Panel */}
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <span className="text-xs text-slate-500 uppercase font-bold tracking-wider block mb-1">
-              Entscheidender Labormarker
-            </span>
-            <span className="text-base sm:text-lg font-bold text-slate-900">
-              {data.testBiomarker}
-            </span>
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6 space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider block mb-1">
+                Relevante Labormarker (Routine &amp; Diagnostik)
+              </span>
+              <span className="text-base sm:text-lg font-bold text-slate-900">
+                {data.testBiomarker}
+              </span>
+            </div>
+            <div>
+              <span className="text-xs text-slate-500 uppercase font-bold tracking-wider block mb-1">
+                Referenz- &amp; Zielbereich (mit Quellenkontext)
+              </span>
+              <span className="text-base sm:text-lg font-bold text-emerald-800">
+                {data.optimalRange}
+              </span>
+            </div>
           </div>
-          <div>
-            <span className="text-xs text-slate-500 uppercase font-bold tracking-wider block mb-1">
-              Angestrebter Zielbereich
-            </span>
-            <span className="text-base sm:text-lg font-bold text-emerald-800">
-              {data.optimalRange}
-            </span>
-          </div>
+
+          {data.diagnosticLimits && (
+            <div className="pt-3 border-t border-slate-200 text-xs text-slate-600 leading-relaxed bg-white/70 p-3 rounded-xl border border-slate-200/60">
+              <strong className="text-slate-800 font-semibold block mb-0.5">Diagnostische Grenzen &amp; Störfaktoren:</strong>
+              {data.diagnosticLimits}
+            </div>
+          )}
         </div>
+
+        {/* DGE Reference Values Table */}
+        {data.dgeDetailedRequirements && data.dgeDetailedRequirements.length > 0 && (
+          <div className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-2xs space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
+                <span>DGE-Referenzwerte für die Nährstoffzufuhr</span>
+              </h3>
+              <span className="text-xs text-slate-500">
+                {data.dailyRequirementNote}
+              </span>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr className="bg-slate-50 text-slate-600 font-bold border-b border-slate-200">
+                    <th className="p-2.5">Personengruppe / Lebensphase</th>
+                    <th className="p-2.5">Empfohlene tägliche Zufuhr</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {data.dgeDetailedRequirements.map((req, rIdx) => (
+                    <tr key={rIdx} className="hover:bg-slate-50/60">
+                      <td className="p-2.5 font-medium text-slate-800">{req.group}</td>
+                      <td className="p-2.5 font-bold text-emerald-800 font-mono">{req.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Was ist [Name]? */}
@@ -206,7 +249,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         <div className="bg-white border border-emerald-200 rounded-2xl p-5 sm:p-6 shadow-xs">
           <h3 className="text-sm font-bold uppercase tracking-wider text-emerald-800 mb-3 flex items-center gap-2">
             <Activity className="w-4 h-4 text-emerald-600" />
-            <span>Klassische Leitsymptome (Frühphase &amp; Manifestation)</span>
+            <span>Häufig assoziierte Symptome (Frühphase &amp; Manifestation)</span>
           </h3>
           <ul className="space-y-2.5">
             {data.symptoms.primary.map((sym, idx) => (
@@ -284,10 +327,10 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
       {/* Blood Test CTA Box */}
       <BloodTestCta nutrientName={data.name} productId={bloodTestProduct[data.slug]} />
 
-      {/* Was hilft? (Ernährung + Nahrungsergänzung) */}
+      {/* Prävention & Ausgleich (Ernährung + Nahrungsergänzung) */}
       <section aria-labelledby="treatment-heading" className="space-y-6">
         <h2 id="treatment-heading" className="text-2xl font-bold text-slate-900 tracking-tight">
-          Was hilft gegen {data.name}?
+          Prävention & Ausgleich bei {data.name}
         </h2>
 
         {/* Dietary Sources Table */}
@@ -332,7 +375,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-4">
           <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
             <UtensilsCrossed className="w-4 h-4 text-emerald-700" />
-            <span>Ernährungstipps zur optimalen Bioverfügbarkeit</span>
+            <span>Ernährungshinweise zur Bioverfügbarkeit</span>
           </h3>
           <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
             {data.treatmentInfo.dietTips.map((tip, idx) => (
@@ -372,6 +415,13 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
           {data.treatmentInfo.interactions.length > 0 && (
             <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 mt-2">
               <strong>Wechselwirkungen &amp; Einnahmeabstand:</strong> {data.treatmentInfo.interactions.join(' ')}
+            </div>
+          )}
+
+          {data.bfrRecommendation && (
+            <div className="p-3.5 bg-slate-50 border border-slate-300 rounded-xl text-xs text-slate-700 mt-2 leading-relaxed">
+              <strong className="text-slate-900 block mb-1">BfR-Höchstmengenvorschlag &amp; Sicherheitshinweis:</strong>
+              {data.bfrRecommendation}
             </div>
           )}
         </div>
@@ -430,7 +480,7 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </section>
       )}
 
-      {/* Keyword-Cluster: Semantische Signale für Googlebot */}
+      {/* Keyword-Cluster: Verwandte Suchbegriffe */}
       {data.longTailKeywords && data.longTailKeywords.length > 0 && (
         <section aria-label="Verwandte Suchbegriffe" className="bg-slate-50 border border-slate-200 rounded-xl p-5">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Häufig gesuchte Begriffe zu {data.name}</h3>
@@ -438,20 +488,43 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
             {data.longTailKeywords.map((kw, i) => (
               <span
                 key={i}
-                className={`text-xs px-3 py-1.5 rounded-full font-medium border ${
-                  kw.searchIntent === 'commercial'
-                    ? 'bg-amber-50 text-amber-900 border-amber-200'
-                    : 'bg-white text-slate-700 border-slate-200'
-                }`}
+                className="text-xs px-3 py-1.5 rounded-full font-medium border bg-white text-slate-700 border-slate-200"
                 title={`Suchvolumen: ${kw.monthlySearches}`}
               >
                 {kw.keyword}
               </span>
             ))}
           </div>
-          <p className="text-[11px] text-slate-400 mt-3">
-            Goldene Labels = Kaufabsicht-Suchen · Weiße Labels = Informationssuchen
-          </p>
+        </section>
+      )}
+
+      {/* Wissenschaftliche Primärquellen & Referenzen */}
+      {data.sources && data.sources.length > 0 && (
+        <section aria-labelledby="sources-heading" className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-7 space-y-4">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-700" />
+            <h2 id="sources-heading" className="text-lg font-bold text-slate-900">
+              Wissenschaftliche Primärquellen &amp; Leitlinien
+            </h2>
+          </div>
+          <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
+            {data.sources.map((src, sIdx) => (
+              <li key={sIdx} className="pl-1">
+                <span>{src.citation}</span>
+                {src.url && (
+                  <a
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-emerald-700 hover:text-emerald-800 hover:underline ml-1.5 font-medium"
+                  >
+                    <span>[Quelle]</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+              </li>
+            ))}
+          </ol>
         </section>
       )}
 
