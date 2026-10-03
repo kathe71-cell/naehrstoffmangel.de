@@ -557,6 +557,96 @@ export default function DeficiencyDetailPage({ customSlug }: DeficiencyDetailPag
         </p>
       </section>
 
+      {/* Vertiefende Cluster-Fachartikel: Symptome, Laborwerte, Ursachen & Ernährung */}
+      {(() => {
+        // Contextual cluster links mapped by nutrient slug
+        const clusterLinksMap: Record<string, { label: string; url: string; type: string }[]> = {
+          eisenmangel: [
+            { label: 'Symptom: Müdigkeit & Erschöpfung', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Symptom: Haarausfall', url: '/symptome/haarausfall', type: 'Symptom' },
+            { label: 'Symptom: Blasse Haut & Schleimhäute', url: '/symptome/blasse-haut', type: 'Symptom' },
+            { label: 'Laborwert: Ferritin (Speichereisen)', url: '/laborwerte/ferritin', type: 'Laborwert' },
+            { label: 'Laborwert: Transferrinsättigung (TfS)', url: '/laborwerte/transferrinsaettigung', type: 'Laborwert' },
+            { label: 'Laborwert: Serumeisen', url: '/laborwerte/eisen', type: 'Laborwert' },
+            { label: 'Ursache: Starke Menstruation & Eisenverlust', url: '/ursachen/eisenmangel-starke-menstruation', type: 'Ursache' },
+            { label: 'Ernährung: Eisenreiche Lebensmittel & BLS-Tabelle', url: '/ernaehrung/eisenreiche-lebensmittel', type: 'Ernährung' }
+          ],
+          'vitamin-b12-mangel': [
+            { label: 'Symptom: Kribbeln & Taubheitsgefühl (Parästhesien)', url: '/symptome/kribbeln-taubheit', type: 'Symptom' },
+            { label: 'Symptom: Konzentrationsprobleme & Brain Fog', url: '/symptome/konzentrationsprobleme', type: 'Symptom' },
+            { label: 'Symptom: Müdigkeit & Erschöpfung', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Laborwert: Holotranscobalamin (Holo-TC / aktives B12)', url: '/laborwerte/holo-tc', type: 'Laborwert' },
+            { label: 'Laborwert: Methylmalonsäure (MMA)', url: '/laborwerte/mma', type: 'Laborwert' },
+            { label: 'Ursache: B12-Mangel trotz Fleischessens', url: '/ursachen/b12-mangel-trotz-fleisch', type: 'Ursache' },
+            { label: 'Ursache: B12-Mangel durch Metformin & Säureblocker (PPI)', url: '/ursachen/b12-mangel-metformin-ppi', type: 'Ursache' },
+            { label: 'Ernährung: Vitamin-B12-reiche Lebensmittel', url: '/ernaehrung/vitamin-b12-lebensmittel', type: 'Ernährung' }
+          ],
+          magnesiummangel: [
+            { label: 'Symptom: Wadenkrämpfe & Muskelzucken', url: '/symptome/wadenkraempfe', type: 'Symptom' },
+            { label: 'Symptom: Müdigkeit & Abgeschlagenheit', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Symptom: Konzentrationsprobleme', url: '/symptome/konzentrationsprobleme', type: 'Symptom' },
+            { label: 'Ursache: Magnesiummangel durch Medikamente (Diuretika, PPI)', url: '/ursachen/magnesiummangel-medikamente', type: 'Ursache' },
+            { label: 'Ernährung: Magnesiumreiche Lebensmittel', url: '/ernaehrung/magnesiumreiche-lebensmittel', type: 'Ernährung' }
+          ],
+          'vitamin-d-mangel': [
+            { label: 'Symptom: Müdigkeit & saisonale Erschöpfung', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Laborwert: 25(OH)D (25-Hydroxyvitamin-D)', url: '/laborwerte/25-oh-vitamin-d', type: 'Laborwert' },
+            { label: 'Symptom: Haarausfall', url: '/symptome/haarausfall', type: 'Symptom' }
+          ],
+          zinkmangel: [
+            { label: 'Symptom: Haarausfall & Nagelbrüchigkeit', url: '/symptome/haarausfall', type: 'Symptom' },
+            { label: 'Symptom: Blasse Haut & Wundheilung', url: '/symptome/blasse-haut', type: 'Symptom' },
+            { label: 'Ursache: Zinkmangel bei veganer Ernährung & Phytinsäure', url: '/ursachen/zinkmangel-vegan', type: 'Ursache' }
+          ],
+          folsaeuremangel: [
+            { label: 'Symptom: Müdigkeit & Blutarmut', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Symptom: Blasse Haut', url: '/symptome/blasse-haut', type: 'Symptom' },
+            { label: 'Symptom: Konzentrationsprobleme', url: '/symptome/konzentrationsprobleme', type: 'Symptom' }
+          ],
+          jodmangel: [
+            { label: 'Symptom: Müdigkeit & Antriebslosigkeit', url: '/symptome/muedigkeit', type: 'Symptom' },
+            { label: 'Symptom: Konzentrationsprobleme', url: '/symptome/konzentrationsprobleme', type: 'Symptom' },
+            { label: 'Symptom: Haarausfall & trockene Haut', url: '/symptome/haarausfall', type: 'Symptom' }
+          ]
+        };
+
+        const clusterLinks = clusterLinksMap[data.slug];
+        if (!clusterLinks || clusterLinks.length === 0) return null;
+
+        return (
+          <section aria-label="Vertiefende Fachartikel" className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <div className="flex items-center gap-2 mb-2">
+              <BookOpen className="w-5 h-5 text-emerald-600" />
+              <h2 className="text-xl font-bold text-slate-900">
+                Vertiefende Fachartikel &amp; Laborwerte zu {data.name}
+              </h2>
+            </div>
+            <p className="text-xs text-slate-500 mb-6">
+              Spezifische Einordnungen zu Symptomen, Labormarkern, Ursachen und ernährungsmedizinischen Aspekten
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {clusterLinks.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={item.url}
+                  className="group p-4 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition-all flex items-center justify-between"
+                >
+                  <div className="flex flex-col">
+                    <span className="text-[10px] uppercase font-bold tracking-wider text-emerald-700">
+                      {item.type}
+                    </span>
+                    <span className="text-sm font-semibold text-slate-800 group-hover:text-emerald-900 mt-0.5">
+                      {item.label}
+                    </span>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition-transform group-hover:translate-x-1" />
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
+
       {/* Mandatory Medical Disclaimer */}
       <MedicalDisclaimer />
 

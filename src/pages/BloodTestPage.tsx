@@ -205,6 +205,57 @@ export default function BloodTestPage() {
             </tbody>
           </table>
         </div>
+
+        {/* Links zu detaillierten Laborwert-Artikeln */}
+        <div className="pt-4 border-t border-slate-200">
+          <h3 className="text-sm font-bold text-slate-900 mb-3">
+            Ausführliche Leitfäden zu einzelnen Laborwerten &amp; Biomarkern:
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+            <a
+              href="/laborwerte/ferritin"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>Ferritin (Speichereisen)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+            <a
+              href="/laborwerte/transferrinsaettigung"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>Transferrinsättigung (TfS)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+            <a
+              href="/laborwerte/eisen"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>Serumeisen (Fe)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+            <a
+              href="/laborwerte/holo-tc"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>Holo-TC (Aktives B12)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+            <a
+              href="/laborwerte/mma"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>Methylmalonsäure (MMA)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+            <a
+              href="/laborwerte/25-oh-vitamin-d"
+              className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-semibold text-slate-800 transition-colors flex items-center justify-between"
+            >
+              <span>25(OH)D (Vitamin D)</span>
+              <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Home Test vs. Doctor Visit: Comparison */}

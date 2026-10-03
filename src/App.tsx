@@ -11,6 +11,10 @@ import BloodTestPage from './pages/BloodTestPage';
 import NutritionPage from './pages/NutritionPage';
 import AboutPage from './pages/AboutPage';
 import VitaminHubPage from './pages/VitaminHubPage';
+import SymptomArticlePage from './pages/SymptomArticlePage';
+import LabTestArticlePage from './pages/LabTestArticlePage';
+import CauseArticlePage from './pages/CauseArticlePage';
+import FoodArticlePage from './pages/FoodArticlePage';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import { SiteProvider } from '@plattform/core';
@@ -74,8 +78,12 @@ export function AppRoutes() {
       <Route path="/jodmangel" element={<DeficiencyDetailPage customSlug="jodmangel" />} />
       <Route path="/vitaminmangel" element={<VitaminHubPage />} />
       <Route path="/symptome" element={<SymptomNavigatorPage />} />
-      <Route path="/bluttest" element={<BloodTestPage />} />
+      <Route path="/symptome/:slug" element={<SymptomArticlePage />} />
+      <Route path="/laborwerte/:slug" element={<LabTestArticlePage />} />
+      <Route path="/ursachen/:slug" element={<CauseArticlePage />} />
       <Route path="/ernaehrung" element={<NutritionPage />} />
+      <Route path="/ernaehrung/:slug" element={<FoodArticlePage />} />
+      <Route path="/bluttest" element={<BloodTestPage />} />
       <Route path="/ueber-uns" element={<AboutPage />} />
       <Route path="/impressum" element={<Impressum />} />
       <Route path="/datenschutz" element={<Datenschutz />} />

@@ -433,6 +433,76 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Cluster-Themenwelten: Symptome, Laborwerte, Ursachen & Ernährung */}
+        <section aria-labelledby="themenwelten-heading" className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-10 space-y-6">
+          <div className="max-w-2xl">
+            <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1">
+              Themenwelten &amp; Fachdossiers
+            </div>
+            <h2 id="themenwelten-heading" className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Evidenzbasierte Leitfäden nach Suchintention
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              Spezifische Informationsartikel zur differentialdiagnostischen Einordnung, Labormarkern, Risikoprofilen und Ernährung.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+            {/* Silo 1: Symptome */}
+            <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+              <span className="text-[11px] uppercase font-bold tracking-wider text-emerald-700">Symptom-Dossiers</span>
+              <ul className="text-xs space-y-2 text-slate-700 font-medium">
+                <li><Link to="/symptome/muedigkeit" className="hover:text-emerald-700">Müdigkeit &amp; Erschöpfung &rarr;</Link></li>
+                <li><Link to="/symptome/haarausfall" className="hover:text-emerald-700">Diffuser Haarausfall &rarr;</Link></li>
+                <li><Link to="/symptome/wadenkraempfe" className="hover:text-emerald-700">Nächtliche Wadenkrämpfe &rarr;</Link></li>
+                <li><Link to="/symptome/kribbeln-taubheit" className="hover:text-emerald-700">Kribbeln &amp; Taubheitsgefühl &rarr;</Link></li>
+                <li><Link to="/symptome/konzentrationsprobleme" className="hover:text-emerald-700">Brain Fog &amp; Konzentration &rarr;</Link></li>
+                <li><Link to="/symptome/blasse-haut" className="hover:text-emerald-700">Blässe der Schleimhäute &rarr;</Link></li>
+              </ul>
+            </div>
+
+            {/* Silo 2: Laborwerte */}
+            <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+              <span className="text-[11px] uppercase font-bold tracking-wider text-emerald-700">Laborwert-Guides</span>
+              <ul className="text-xs space-y-2 text-slate-700 font-medium">
+                <li><Link to="/laborwerte/ferritin" className="hover:text-emerald-700">Ferritin (Speichereisen) &rarr;</Link></li>
+                <li><Link to="/laborwerte/transferrinsaettigung" className="hover:text-emerald-700">Transferrinsättigung &rarr;</Link></li>
+                <li><Link to="/laborwerte/eisen" className="hover:text-emerald-700">Serumeisen (Fe) &rarr;</Link></li>
+                <li><Link to="/laborwerte/holo-tc" className="hover:text-emerald-700">Holo-TC (Aktives B12) &rarr;</Link></li>
+                <li><Link to="/laborwerte/mma" className="hover:text-emerald-700">Methylmalonsäure (MMA) &rarr;</Link></li>
+                <li><Link to="/laborwerte/25-oh-vitamin-d" className="hover:text-emerald-700">25(OH)D (Vitamin D) &rarr;</Link></li>
+              </ul>
+            </div>
+
+            {/* Silo 3: Ursachen */}
+            <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+              <span className="text-[11px] uppercase font-bold tracking-wider text-emerald-700">Ursachen &amp; Risiken</span>
+              <ul className="text-xs space-y-2 text-slate-700 font-medium">
+                <li><Link to="/ursachen/eisenmangel-starke-menstruation" className="hover:text-emerald-700">Starke Menstruation &rarr;</Link></li>
+                <li><Link to="/ursachen/b12-mangel-trotz-fleisch" className="hover:text-emerald-700">B12-Mangel trotz Fleisch &rarr;</Link></li>
+                <li><Link to="/ursachen/b12-mangel-metformin-ppi" className="hover:text-emerald-700">Metformin &amp; PPI-Einnahme &rarr;</Link></li>
+                <li><Link to="/ursachen/zinkmangel-vegan" className="hover:text-emerald-700">Zink &amp; vegane Ernährung &rarr;</Link></li>
+                <li><Link to="/ursachen/magnesiummangel-medikamente" className="hover:text-emerald-700">Magnesium &amp; Medikamente &rarr;</Link></li>
+              </ul>
+            </div>
+
+            {/* Silo 4: Ernährung */}
+            <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+              <span className="text-[11px] uppercase font-bold tracking-wider text-emerald-700">Ernährungs-Guides</span>
+              <ul className="text-xs space-y-2 text-slate-700 font-medium">
+                <li><Link to="/ernaehrung/eisenreiche-lebensmittel" className="hover:text-emerald-700">Eisenreiche Lebensmittel &rarr;</Link></li>
+                <li><Link to="/ernaehrung/vitamin-b12-lebensmittel" className="hover:text-emerald-700">Vitamin-B12-Lebensmittel &rarr;</Link></li>
+                <li><Link to="/ernaehrung/magnesiumreiche-lebensmittel" className="hover:text-emerald-700">Magnesiumreiche Lebensmittel &rarr;</Link></li>
+                <li className="pt-2 border-t border-slate-100">
+                  <Link to="/ernaehrung" className="text-emerald-700 font-bold hover:underline">
+                    Zur Nährstoff-Matrix &rarr;
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Mandatory Medical Disclaimer */}
         <MedicalDisclaimer />
 

@@ -246,6 +246,60 @@ export default function NutritionPage() {
         </div>
       </section>
 
+      {/* Detail-Leitfäden für spezifische Nährstoffe */}
+      <section className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-4 shadow-xs">
+        <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+          <UtensilsCrossed className="w-5 h-5 text-emerald-700" />
+          <span>Spezifische Lebensmittel-Leitfäden &amp; Rezepte</span>
+        </h2>
+        <p className="text-xs text-slate-600">
+          Detaillierte Nährwerttabellen mit Portionsgrößen, Resorptionsförderern und alltagstauglichen Rezeptkombinationen:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <a
+            href="/ernaehrung/eisenreiche-lebensmittel"
+            className="p-5 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Ernährungs-Ratgeber</span>
+              <h3 className="font-bold text-slate-900 text-sm mt-1">Eisenreiche Lebensmittel</h3>
+              <p className="text-xs text-slate-600 mt-2">Top 10 Nahrungsmittel, tierisches vs. pflanzliches Eisen, Vitamin-C-Kombinationen.</p>
+            </div>
+            <span className="text-xs font-semibold text-emerald-700 mt-4 flex items-center gap-1">
+              Zum Eisen-Leitfaden &rarr;
+            </span>
+          </a>
+
+          <a
+            href="/ernaehrung/vitamin-b12-lebensmittel"
+            className="p-5 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Ernährungs-Ratgeber</span>
+              <h3 className="font-bold text-slate-900 text-sm mt-1">Vitamin-B12-Lebensmittel</h3>
+              <p className="text-xs text-slate-600 mt-2">Cobalaminquellen in Fleisch, Fisch, Eiern und Milch. Warum pflanzliche Lebensmittel kein bioaktives B12 liefern.</p>
+            </div>
+            <span className="text-xs font-semibold text-emerald-700 mt-4 flex items-center gap-1">
+              Zum B12-Leitfaden &rarr;
+            </span>
+          </a>
+
+          <a
+            href="/ernaehrung/magnesiumreiche-lebensmittel"
+            className="p-5 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition-colors flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Ernährungs-Ratgeber</span>
+              <h3 className="font-bold text-slate-900 text-sm mt-1">Magnesiumreiche Lebensmittel</h3>
+              <p className="text-xs text-slate-600 mt-2">Saaten, Nüsse, Vollkorn und Mineralwasser. Zubereitungstipps und Phytat-Reduktion.</p>
+            </div>
+            <span className="text-xs font-semibold text-emerald-700 mt-4 flex items-center gap-1">
+              Zum Magnesium-Leitfaden &rarr;
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* Disclaimer */}
       <MedicalDisclaimer />
 

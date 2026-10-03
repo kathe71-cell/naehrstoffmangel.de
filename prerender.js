@@ -98,6 +98,130 @@ const routesToPrerender = [
     title: 'Datenschutzerklärung | nährstoffmangel.de',
     desc: 'Datenschutzhinweise und DSGVO-Informationen für nährstoffmangel.de – cookielose Analyse mit Vercel Analytics, keine externen Google Fonts.',
     keywords: 'Datenschutzerklärung nährstoffmangel.de, DSGVO, Vercel Analytics Datenschutz'
+  },
+  // --- CLUSTER: SYMPTOME (6 Routen) ---
+  {
+    url: '/symptome/muedigkeit',
+    title: 'Müdigkeit durch Nährstoffmangel: Eisen, B12 oder Vitamin D? | nährstoffmangel.de',
+    desc: 'Ständige Müdigkeit und Erschöpfung: Welche Mikronährstoffdefizite infrage kommen, warum das Symptom unspezifisch ist & welche Laborwerte Klarheit bringen.',
+    keywords: 'Müdigkeit Nährstoffmangel, chronische Erschöpfung Mangel, Eisenmangel Müdigkeit, B12 Müdigkeit, Vitamin D Antriebslosigkeit, Laborwerte Müdigkeit'
+  },
+  {
+    url: '/symptome/haarausfall',
+    title: 'Haarausfall durch Nährstoffmangel: Eisen, Zink oder Vitamin D? | nährstoffmangel.de',
+    desc: 'Diffuser Haarausfall: Zusammenhang mit Ferritin, Zink und Vitamin D. Warum Haarausfall oft zeitverzögert auftritt und welche Differentialdiagnosen wichtig sind.',
+    keywords: 'Haarausfall Nährstoffmangel, diffuser Haarausfall Eisen, Ferritin Haarausfall, Zinkmangel Haarausfall, Vitamin D Haarwurzel, Haarverlust Mangel'
+  },
+  {
+    url: '/symptome/wadenkraempfe',
+    title: 'Wadenkrämpfe: Magnesiummangel oder andere Ursachen? | nährstoffmangel.de',
+    desc: 'Nächtliche Wadenkrämpfe: Warum nicht immer Magnesium fehlt, wie Elektrolytverschiebungen wirken und welche neurologischen oder vaskulären Ursachen vorliegen können.',
+    keywords: 'Wadenkrämpfe Ursache, nächtliche Wadenkrämpfe Magnesium, Muskelkrämpfe Mangel, Elektrolyte Krämpfe, Magnesiummangel Krämpfe'
+  },
+  {
+    url: '/symptome/kribbeln-taubheit',
+    title: 'Kribbeln & Taubheitsgefühl: Vitamin B12, Folsäure & Nerven | nährstoffmangel.de',
+    desc: 'Kribbeln in Händen und Füßen: Neurologische Frühwarnzeichen bei Vitamin-B12-Mangel (Funikuläre Myelose) und wann sofortige ärztliche Abklärung nötig ist.',
+    keywords: 'Kribbeln Hände Füße Mangel, Taubheitsgefühl Vitamin B12, Parästhesien Mangel, Polyneuropathie B12, funikuläre Myelose, Nervenschäden B12'
+  },
+  {
+    url: '/symptome/konzentrationsprobleme',
+    title: 'Konzentrationsprobleme & Brain Fog: Welche Nährstoffe fehlen? | nährstoffmangel.de',
+    desc: 'Konzentrationsschwäche, Vergesslichkeit und Brain Fog: Welche Rolle Eisen, B12, Jod und Folsäure für Gehirnstoffwechsel und Neurotransmitter spielen.',
+    keywords: 'Konzentrationsprobleme Nährstoffmangel, Brain Fog Ursachen, Eisenmangel Konzentration, B12 Vergesslichkeit, Jodmangel Konzentrationsschwäche'
+  },
+  {
+    url: '/symptome/blasse-haut',
+    title: 'Blasse Haut & Schleimhäute: Eisenmangelanämie oder B12? | nährstoffmangel.de',
+    desc: 'Auffällige Blässe der Konjunktiven und Mundschleimhaut: Wie Anämien durch Eisen-, Folat- oder B12-Defizite entstehen und wann ein Blutbild erforderlich ist.',
+    keywords: 'Blässe Nährstoffmangel, blasse Haut Ursachen, Eisenmangel Blässe, B12 Anämie blass, Konjunktiven Blässe Blutarmut'
+  },
+  // --- CLUSTER: LABORWERTE (6 Routen) ---
+  {
+    url: '/laborwerte/ferritin',
+    title: 'Ferritin-Wert: Was Speichereisen im Blut aussagt | nährstoffmangel.de',
+    desc: 'Ferritin im Blutbild: Referenzbereiche, klinische Einordnung von Speichereisenmangel vs. Akute-Phase-Reaktion & warum CRP mitgemessen werden sollte.',
+    keywords: 'Ferritin Wert Blutbild, Speichereisen Ferritin, Ferritin Referenzbereich, Ferritin niedrig Symptome, Ferritin Entzündung CRP'
+  },
+  {
+    url: '/laborwerte/transferrinsaettigung',
+    title: 'Transferrinsättigung (TfS): Bedeutung bei Eisenmangel | nährstoffmangel.de',
+    desc: 'Transferrinsättigung (TfS): Wie das Eisengerüst im Blut interpretiert wird, Formel (Eisen / Transferrin) und Bedeutung bei funktionellem Eisenmangel.',
+    keywords: 'Transferrinsättigung Bedeutung, TfS Eisenmangel, Transferrinsättigung normal, funktioneller Eisenmangel, Ferritin TfS Kombination'
+  },
+  {
+    url: '/laborwerte/eisen',
+    title: 'Serumeisen (Fe): Warum der Einzelwert oft täuscht | nährstoffmangel.de',
+    desc: 'Serumeisen im Labor: Warum der isolierte Eisenwert im Serum tageszeitlich stark schwankt und zur Mangeldiagnose allein ungeeignet ist.',
+    keywords: 'Serumeisen Blutwert, Eisen im Serum Aussagekraft, Tagesrhythmus Eisen, Serumeisen schwankt, Eisenmangel Diagnostik'
+  },
+  {
+    url: '/laborwerte/holo-tc',
+    title: 'Holotranscobalamin (Holo-TC): Frühester Marker für B12 | nährstoffmangel.de',
+    desc: 'Holotranscobalamin (Holo-TC / aktives B12): Warum Holo-TC ein beginnendes B12-Defizit frühzeitiger anzeigt als Gesamt-B12 im Serum.',
+    keywords: 'Holotranscobalamin Holo-TC, aktives B12 Laborwert, Holo-TC Referenzbereich, B12 Mangel Frühstadium, Holo-TC vs Gesamt-B12'
+  },
+  {
+    url: '/laborwerte/mma',
+    title: 'Methylmalonsäure (MMA): Funktioneller B12-Gewebemarker | nährstoffmangel.de',
+    desc: 'Methylmalonsäure (MMA) in Serum & Urin: Wie der funktionelle Marker einen intrazellulären B12-Mangel anzeigt und welche Rolle die Nierenfunktion spielt.',
+    keywords: 'Methylmalonsäure MMA Wert, MMA Urin Test, MMA Serum B12 Mangel, funktioneller B12 Mangel, MMA eGFR Nierenfunktion'
+  },
+  {
+    url: '/laborwerte/25-oh-vitamin-d',
+    title: '25(OH)D-Wert: 25-Hydroxyvitamin-D richtig interpretieren | nährstoffmangel.de',
+    desc: '25-Hydroxyvitamin-D [25(OH)D]: ng/ml in nmol/l umrechnen, offizielle RKI-Grenzwerte und sachliche Einordnung von Zielbereichen im Blut.',
+    keywords: '25-OH-Vitamin-D Blutwert, 25(OH)D nmol/l ng/ml, Vitamin D Referenzbereich RKI, 25-Hydroxycholecalciferol Interpretation'
+  },
+  // --- CLUSTER: URSACHEN & RISIKOGRUPPEN (5 Routen) ---
+  {
+    url: '/ursachen/eisenmangel-starke-menstruation',
+    title: 'Eisenmangel durch starke Menstruation (Hypermenorrhoe) | nährstoffmangel.de',
+    desc: 'Starke Regelblutung als Hauptursache für Eisenmangel bei prämenopausalen Frauen: Chronischer Blutverlust, Diagnostik und Therapiemöglichkeiten.',
+    keywords: 'Eisenmangel Periode, Hypermenorrhoe Eisenmangel, starke Menstruation Ferritin, Eisenverlust Monatsblutung, Menorrhagie Eisen'
+  },
+  {
+    url: '/ursachen/b12-mangel-trotz-fleisch',
+    title: 'Vitamin-B12-Mangel trotz Fleischkonsum: Ursachen | nährstoffmangel.de',
+    desc: 'B12-Mangel trotz Mischkost: Warum Malabsorption, atrophische Gastritis oder Mangel an Intrinsic Factor die B12-Resorption verhindern können.',
+    keywords: 'B12 Mangel trotz Fleisch, B12 Resorptionsstörung, atrophische Gastritis B12, Intrinsic Factor Mangel, Malabsorption Cobalamin'
+  },
+  {
+    url: '/ursachen/b12-mangel-metformin-ppi',
+    title: 'B12-Mangel durch Metformin & PPI (Magenschutz): Risiken | nährstoffmangel.de',
+    desc: 'Arzneimittelbedingter B12-Mangel: Wie Magensäureblocker (Pantoprazol, Omeprazol) und Diabetesmedikamente (Metformin) die B12-Aufnahme senken.',
+    keywords: 'B12 Mangel PPI Pantoprazol, Metformin B12 Mangel, Magenschutz Vitamin B12, Säureblocker Malabsorption, Arzneimittel Mikronährstoffe'
+  },
+  {
+    url: '/ursachen/zinkmangel-vegan',
+    title: 'Zinkmangel bei veganer Ernährung: Phytinsäure & Quellen | nährstoffmangel.de',
+    desc: 'Zinkversorgung ohne tierische Produkte: Warum Phytinsäure Zink im Darm bindet und wie Zubereitungsmethoden die Bioverfügbarkeit verdreifachen.',
+    keywords: 'Zink vegane Ernährung, Zinkmangel Veganer, Phytinsäure Zink hemmen, Zink Bioverfügbarkeit pflanzlich, Phytatabbau Einweichen'
+  },
+  {
+    url: '/ursachen/magnesiummangel-medikamente',
+    title: 'Magnesiummangel durch Medikamente: Diuretika & Säureblocker | nährstoffmangel.de',
+    desc: 'Medikamenteninduzierte Hypomagnesiämie: Welche Entwässerungstabletten (Diuretika) und PPI zu erhöhtem Magnesiumverlust führen.',
+    keywords: 'Magnesiummangel Medikamente, Diuretika Magnesiumverlust, PPI Hypomagnesiämie, Entwässerungstabletten Krämpfe, renale Magnesiumausscheidung'
+  },
+  // --- CLUSTER: ERNÄHRUNG & REZEPTE (3 Routen) ---
+  {
+    url: '/ernaehrung/eisenreiche-lebensmittel',
+    title: 'Eisenreiche Lebensmittel: Top 10 Tabelle & Resorptionstipps | nährstoffmangel.de',
+    desc: 'Eisenhaltige Lebensmittel nach BLS: Häm-Eisen vs. Nicht-Häm-Eisen, Resorptionsförderer wie Vitamin C und alltagstaugliche Mahlzeiten.',
+    keywords: 'eisenreiche Lebensmittel Tabelle, Eisenhaltige Lebensmittel Liste, pflanzliches Eisen aufnehmen, Vitamin C Eisen Resorption, BLS Eisen'
+  },
+  {
+    url: '/ernaehrung/vitamin-b12-lebensmittel',
+    title: 'Vitamin-B12-Lebensmittel: Beste Quellen & vegane Grenzen | nährstoffmangel.de',
+    desc: 'Wo ist Vitamin B12 enthalten? Die verlässlichsten tierischen Lieferanten, B12-Verluste bei Zubereitung & warum pflanzliche Alternativen nicht ausreichen.',
+    keywords: 'Vitamin B12 Lebensmittel, B12 Quellen Tabelle, B12 in Nahrungsmitteln, B12 Gehalt Fleisch Fisch Ei, vegane B12 Quellen Irrtum'
+  },
+  {
+    url: '/ernaehrung/magnesiumreiche-lebensmittel',
+    title: 'Magnesiumreiche Lebensmittel: Saaten, Nüsse & Mineralwasser | nährstoffmangel.de',
+    desc: 'Die besten Magnesiumquellen im Alltag: Kürbiskerne, Kakao, Vollkorn & magnesiumreiches Heilwasser. Bioverfügbarkeit und Phytat-Reduktion erklärt.',
+    keywords: 'magnesiumreiche Lebensmittel, Magnesium Tabelle Nahrung, Kürbiskerne Magnesium, magnesiumreiches Mineralwasser, Magnesium Tagesbedarf decken'
   }
 ];
 
