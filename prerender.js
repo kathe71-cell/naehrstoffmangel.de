@@ -263,4 +263,21 @@ for (const route of routesToPrerender) {
   }
 }
 
+// Prerender dedicated 404 page
+try {
+  const { html: notFoundHtml } = render('/404-not-found');
+  let rendered404 = template.replace('<div id="root"></div>', `<div id="root">${notFoundHtml}</div>`);
+  rendered404 = rendered404.replace(/<title>.*?<\/title>/, '<title>Seite nicht gefunden (404) | nährstoffmangel.de</title>');
+  rendered404 = rendered404.replace(/<meta name="description" content=".*?" \/>/, '<meta name="description" content="Die angeforderte Seite wurde nicht gefunden." />');
+  rendered404 = rendered404.replace(/<meta name="robots" content=".*?" \/>/, '<meta name="robots" content="noindex, nofollow" />');
+  if (!rendered404.includes('noindex')) {
+    rendered404 = rendered404.replace('</head>', '  <meta name="robots" content="noindex, nofollow" />\n</head>');
+  }
+  const notFoundPath = toAbsolute('dist/404.html');
+  fs.writeFileSync(notFoundPath, rendered404, 'utf-8');
+  console.log(`  ✓ /404 -> dist/404.html (${(rendered404.length / 1024).toFixed(1)} kB)`);
+} catch (err) {
+  console.error('  ✗ Error prerendering 404 page:', err);
+}
+
 console.log('Static Site Prerendering completed successfully!');

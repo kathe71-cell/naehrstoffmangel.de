@@ -15,6 +15,7 @@ import SymptomArticlePage from './pages/SymptomArticlePage';
 import LabTestArticlePage from './pages/LabTestArticlePage';
 import CauseArticlePage from './pages/CauseArticlePage';
 import FoodArticlePage from './pages/FoodArticlePage';
+import NotFoundPage from './pages/NotFoundPage';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import { SiteProvider } from '@plattform/core';
@@ -87,7 +88,7 @@ export function AppRoutes() {
       <Route path="/ueber-uns" element={<AboutPage />} />
       <Route path="/impressum" element={<Impressum />} />
       <Route path="/datenschutz" element={<Datenschutz />} />
-      <Route path="*" element={<HomePage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
