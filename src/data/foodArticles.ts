@@ -7,7 +7,7 @@ export const foodArticles: FoodArticle[] = [
     nutrientSlug: '/eisenmangel',
     metaTitle: 'Eisenhaltige Lebensmittel: Tabelle mit Gehalt & Bioverfügbarkeit | nährstoffmangel.de',
     metaDescription: 'Die besten eisenreichen Lebensmittel im Vergleich: Pflanzliches vs. tierisches Eisen, Resorptions-Booster (Vitamin C) & DGE-Referenzwerte.',
-    h1: 'Eisenreiche Lebensmittel: Gehaltstabelle, Bioverfügbarkeit und optimale Kombinationen',
+    h1: 'Eisenreiche Lebensmittel: Gehaltstabelle, Bioverfügbarkeit und förderliche Kombinationen',
     intro: 'Eine bedarfsgerechte Eisenversorgung über die Ernährung erfordert mehr als den reinen Blick auf Gramm- oder Milligrammangaben auf der Verpackung. Entscheidend für den Körper ist die sogenannte Bioverfügbarkeit – also welcher Anteil des in der Nahrung enthaltenen Eisens tatsächlich über die Dünndarmschleimhaut ins Blut gelangt. Man unterscheidet grundlegend zwischen zweiwertigem Häm-Eisen aus tierischen Produkten (Resorptionsquote 15–35 %) und dreiwertigem Nicht-Häm-Eisen aus pflanzlichen Quellen (Resorptionsquote 2–15 %), dessen Aufnahme stark von Nahrungsbegleitstoffen beeinflusst wird.',
     dgeRequirementSummary: 'DGE-Referenzwerte für Erwachsene: Männer 11 mg/Tag, menstruierende Frauen 16 mg/Tag, postmenopausale Frauen 14 mg/Tag, nicht menstruierende jüngere Frauen 11 mg/Tag, Schwangere 27 mg/Tag, Frauen nach der Geburt (Stillzeit) 16 mg/Tag.',
     topFoods: [
@@ -57,7 +57,7 @@ export const foodArticles: FoodArticle[] = [
         portionNote: 'ca. 3,7 mg pro Portion (60 g trocken)',
         category: 'Hülsenfrüchte',
         vegan: true,
-        tip: 'Als Curry oder Falafel idealer pflanzlicher Eisenlieferant.'
+        tip: 'Als Curry oder Falafel ergiebiger pflanzlicher Eisenlieferant.'
       },
       {
         name: 'Haferflocken',
@@ -274,7 +274,7 @@ export const foodArticles: FoodArticle[] = [
         portionNote: 'ca. 140 mg pro Portion (20 g)',
         category: 'Getreide & Saaten',
         vegan: true,
-        tip: 'Ideales Müsli- oder Salat-Topping mit optimalem Omega-3/Omega-6-Verhältnis.'
+        tip: 'Geeignetes Müsli- oder Salat-Topping mit ausgewogenem Omega-3/Omega-6-Verhältnis.'
       },
       {
         name: 'Kakaopulver (schwach entölt)',

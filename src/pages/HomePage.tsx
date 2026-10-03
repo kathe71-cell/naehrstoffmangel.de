@@ -52,8 +52,8 @@ export default function HomePage() {
     {
       slug: '/eisenmangel',
       name: 'Eisenmangel',
-      subtitle: 'Häufigster Mangel weltweit',
-      desc: 'Besonders Frauen, Schwangere und Vegetarier betroffen. Chronische Müdigkeit, Blässe und Haarausfall.',
+      subtitle: 'Prävalenz & Risikoprofile',
+      desc: 'Besonders Frauen im gebärfähigen Alter, Schwangere und Personen mit fleischloser Kost betroffen. Assoziiert mit Müdigkeit, Blässe und Haarausfall.',
       icon: Droplet,
       accent: 'border-red-200 hover:border-red-400 bg-red-50/20 text-red-700',
       badge: 'Spurenelement'
@@ -61,8 +61,8 @@ export default function HomePage() {
     {
       slug: '/vitamin-d-mangel',
       name: 'Vitamin-D-Mangel',
-      subtitle: 'Winter-Defizit in Deutschland',
-      desc: 'Sonneneinstrahlung von Oktober bis März unzureichend. Schwächt Immunsystem, Knochen und Gemüt.',
+      subtitle: 'Saisonale Versorgungslage',
+      desc: 'Sonneneinstrahlung in Deutschland von Oktober bis März gering. Vitamin D ist unter anderem für Knochenstoffwechsel und weitere Körperfunktionen relevant.',
       icon: Sun,
       accent: 'border-amber-200 hover:border-amber-400 bg-amber-50/20 text-amber-700',
       badge: 'Sonnenhormon'
@@ -70,8 +70,8 @@ export default function HomePage() {
     {
       slug: '/magnesiummangel',
       name: 'Magnesiummangel',
-      subtitle: 'Muskeln, Nerven & Stress',
-      desc: 'Typisch sind nächtliche Wadenkrämpfe, Lidzucken und innere Unruhe. Erhöhter Bedarf bei Sport & Stress.',
+      subtitle: 'Muskeln & Nervensystem',
+      desc: 'Assoziiert mit nächtlichen Wadenkrämpfen, Lidzucken und neuromuskulärer Erregbarkeit. Erhöhter Bedarf bei Sport oder anhaltendem Stress.',
       icon: Zap,
       accent: 'border-emerald-200 hover:border-emerald-400 bg-emerald-50/20 text-emerald-700',
       badge: 'Mineralstoff'
@@ -79,8 +79,8 @@ export default function HomePage() {
     {
       slug: '/vitamin-b12-mangel',
       name: 'Vitamin-B12-Mangel',
-      subtitle: 'Pflichtstoff für Veganer',
-      desc: 'Schützt Myelinscheiden der Nerven. Kribbeln in Händen/Füßen, Brain Fog und Blutarmut.',
+      subtitle: 'Besonders relevant bei veganer Ernährung',
+      desc: 'Wichtig für Myelinscheiden der Nerven und Blutbildung. Kann mit Missempfindungen, Konzentrationsproblemen und Anämie einhergehen.',
       icon: Dna,
       accent: 'border-blue-200 hover:border-blue-400 bg-blue-50/20 text-blue-700',
       badge: 'Vitamin B12'
@@ -89,7 +89,7 @@ export default function HomePage() {
       slug: '/zinkmangel',
       name: 'Zinkmangel',
       subtitle: 'Abwehrkräfte & Hautgesundheit',
-      desc: 'Erhöhte Infektanfälligkeit, verzögerte Wundheilung und brüchige Nägel. Phytinsäure hemmt Aufnahme.',
+      desc: 'Beteiligt an Immunfunktion, Wundheilung und Zellteilung. Phytinsäure in pflanzlicher Nahrung kann die Bioverfügbarkeit mindern.',
       icon: Sparkles,
       accent: 'border-purple-200 hover:border-purple-400 bg-purple-50/20 text-purple-700',
       badge: 'Spurenelement'
@@ -97,8 +97,8 @@ export default function HomePage() {
     {
       slug: '/folsaeuremangel',
       name: 'Folsäuremangel',
-      subtitle: 'Schlüsselvitamin bei Kinderwunsch',
-      desc: 'Unverzichtbar für Zellteilung und Neuralrohrverschluss in der Frühschwangerschaft. DGE rät zur Vorbeugung.',
+      subtitle: 'Bedarf bei Kinderwunsch & Schwangerschaft',
+      desc: 'Zentral für Zellteilung und Neuralrohrverschluss in der Frühschwangerschaft. DGE empfiehlt perikonzeptionelle Supplementierung.',
       icon: Baby,
       accent: 'border-teal-200 hover:border-teal-400 bg-teal-50/20 text-teal-700',
       badge: 'Vitamin B9'
@@ -106,8 +106,8 @@ export default function HomePage() {
     {
       slug: '/jodmangel',
       name: 'Jodmangel',
-      subtitle: 'Schilddrüse in Gefahr',
-      desc: 'Deutschland gilt als Jodmangel-Risikoland. Verursacht Kropfbildung, Schilddrüsenunterfunktion und Frieren.',
+      subtitle: 'Jodversorgung & Schilddrüsenfunktion',
+      desc: 'Deutschland gilt laut RKI als Risikogebiet mit rückläufiger Versorgung. Jod ist Grundbaustein der Schilddrüsenhormone.',
       icon: ShieldAlert,
       accent: 'border-sky-200 hover:border-sky-400 bg-sky-50/20 text-sky-700',
       badge: 'Spurenelement'
@@ -379,10 +379,10 @@ export default function HomePage() {
             <div className="space-y-2">
               <div className="flex flex-wrap items-center gap-2">
                 <h3 className="text-lg font-bold text-slate-900">
-                  Wissenschaftliche Fachredaktion &amp; Qualitätskriterien
+                  Redaktion &amp; Quellenmethodik
                 </h3>
                 <span className="text-xs bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 rounded-md font-semibold">
-                  Stand: September 2026
+                  Stand: Oktober 2026
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">

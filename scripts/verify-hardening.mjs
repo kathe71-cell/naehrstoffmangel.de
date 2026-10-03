@@ -27,7 +27,11 @@ const forbiddenPhrases = [
   'Männer & postmenopausale Frauen 11 mg',
   'Männer und postmenopausale Frauen 11 mg',
   'Kasse zahlt nur ungenaues Serum',
-  'um ein Vielfaches aussagekräftiger'
+  'um ein Vielfaches aussagekräftiger',
+  'Häufigster Mangel weltweit',
+  'Schilddrüse in Gefahr',
+  'Pflichtstoff für Veganer',
+  'Schwächt Immunsystem, Knochen und Gemüt'
 ];
 
 function checkFiles(dir, extensions = ['.ts', '.tsx', '.html', '.js']) {

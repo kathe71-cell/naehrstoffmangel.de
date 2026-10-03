@@ -116,7 +116,7 @@ export const labTestArticles: LabTestArticle[] = [
     referenceRanges: [
       {
         group: 'Physiologischer Normbereich (Erwachsene)',
-        range: '16 – 45 % (in den meisten Leitlinien optimal > 20 %)',
+        range: '16 – 45 % (in den meisten Leitlinien Zielwert > 20 %)',
         source: 'AWMF S3-Leitlinie Eisenmangelanämie / DGHO',
         note: 'Werte unter 20 % weisen auf eine unzureichende Eiseneisenversorgung des Knochenmarks hin.'
       },
@@ -421,7 +421,7 @@ export const labTestArticles: LabTestArticle[] = [
     markerCombinations: [
       {
         marker: 'Holotranscobalamin (Holo-TC)',
-        rationale: 'Holo-TC und MMA ergänzen sich ideal: Holo-TC zeigt die Zufuhr- und Transportsituation, MMA den funktionellen Gewebebedarf.'
+        rationale: 'Holo-TC und MMA ergänzen sich diagnostisch sinnvoll: Holo-TC zeigt die Zufuhr- und Transportsituation, MMA den funktionellen Gewebebedarf.'
       },
       {
         marker: 'Serum-Kreatinin / eGFR',

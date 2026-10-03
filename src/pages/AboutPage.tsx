@@ -54,12 +54,15 @@ export default function AboutPage() {
         </div>
         <div className="text-sm text-slate-700 leading-relaxed space-y-3">
           <p>
-            Hinter nährstoffmangel.de steht ein redaktionelles Team mit naturwissenschaftlichem und medizinjournalistischem Hintergrund. Wir werten Fachliteratur, behördliche Empfehlungen und medizinische Leitlinien systematisch aus, um komplexe physiologische Zusammenhänge für Ratsuchende klar und sachlich aufzubereiten.
+            Hinter <strong>nährstoffmangel.de</strong> steht eine spezialisierte Redaktion mit naturwissenschaftlichem und medizinjournalistischem Recherchehintergrund. Unsere Arbeit besteht in der systematischen Auswertung, Strukturierung und laienverständlichen Aufbereitung öffentlich zugänglicher Primärquellen – insbesondere behördlicher Referenzwerte (DGE, BfR, EFSA), epidemiologischer Studien (RKI) und evidenzbasierter klinischer Leitlinien (AWMF).
           </p>
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 space-y-1.5">
-            <strong className="text-slate-900 block font-semibold">Transparente Abgrenzung (Kein Arzt-Ersatz):</strong>
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 space-y-2">
+            <strong className="text-slate-900 block font-semibold">Transparenz zum Review-Prozess &amp; kein Arzt-Ersatz:</strong>
             <p>
-              Unsere Fachredaktion vermittelt fundiertes Wissen zur Gesundheitsorientierung. Wir bieten jedoch <strong>keine persönliche medizinische Beratung, Ferndiagnose oder Therapieempfehlung</strong> an. Die hier bereitgestellten Informationen können und dürfen das persönliche Gespräch, die differenzierte Diagnostik und die Therapieplanung durch eine approbierte Ärztin oder einen approbierten Arzt niemals ersetzen.
+              <strong>Kein ärztlicher Peer-Review / Keine Individualberatung:</strong> Die Artikel werden durch unser Redaktionsteam nach einem internen Mehr-Augen-Prinzip gegen Primärquellen geprüft. Es findet <em>kein externer klinischer Peer-Review durch praktizierende Ärzte oder Universitätskliniken</em> statt. Wir bieten zu keinem Zeitpunkt individuelle medizinische Beratung, Diagnostik oder Therapieempfehlungen an.
+            </p>
+            <p>
+              Die hier bereitgestellten Inhalte dienen ausschließlich der allgemeinen Information und Orientierung. Sie können und dürfen eine ärztliche Untersuchung, Anamnese und Therapieplanung keinesfalls ersetzen.
             </p>
           </div>
         </div>
